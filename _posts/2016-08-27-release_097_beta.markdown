@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Hydrogen 0.9.7-beta3 released"
+date:   2016-08-27 10:32:00 +0200
+categories: jekyll update
+---
+
+Hi everyone,
+it is time to announce the release of Hydrogen 0.9.7-beta3. The third (and hopefully the last) beta version of Hydrogen 0.9.7 contains the following changes:
+
+ * Introduction of a sample selection algorithm (thanks to Aurelien)
+ * Support for images in sound libraries (contributed by Paul)
+ * Support for fixed midi input mapping (using output notes, contributed by kurddt) 
+ * A new donation dialog (based on the dialog from the Windows version of 0.9.6)
+ * Several improvements for the windows build (smaller binaries: 60mb -> 21mb, re-enabled ladspa, supressed command unnecessary command window)
+ * A lot of smaller bugfixes..
+
+As always, the source code can be found on github, the windows binary can be grabbed from sourceforge.
+

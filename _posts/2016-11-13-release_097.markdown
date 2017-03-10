@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Hydrogen 0.9.7 released"
+date:   2016-11-13 12:26:00 +0200
+categories: jekyll update
+---
+
+Hi everyone,
+i'm happy to announce the release of Hydrogen 0.9.7. Among tons of bug fixes and smaller improvements the following new
+features are included:
+ * The color of the SongEditors squares is now configurable
+ * Added support for midi cymbal choking
+ * Added support for midi hihat pressure control
+ * Added hihat pressure groups
+ * Added basic non session manager support
+ * Added instrument components
+ * Basic lilypond export
+ * New windows cross compilation script
+ * Support for soundlibrary images
+ * Configurable sample selection algorithm
+ * Support for soundlibraries with images
+ * New midi action: SELECT_PREV_PATTERN_RELATIVE
+
+The sourcecode can be found on github, a windows installer is available on sourceforge.
+
+The next Hydrogen version will be Hydrogen 1.0. Besides other features, it will include the support of QT5, OSC support and the possibility to use a stereo-playback track to make songwriting in non-modular environments easier. In addiion, we will try to improve the GUI a bit..
+
+Happy Drumming!
