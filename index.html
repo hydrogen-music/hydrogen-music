@@ -23,7 +23,7 @@ layout: default
 	  <div class="panel-footer">
 		  <i class="fa fa-tags text-primary"></i>
 		  {% assign taglist = post.tags | sort %}
-		  {% for tag in taglist | order: descending %}
+		  {% for tag in taglist %}
 		  <small>
 			  <a class="text-dblue" href="/tags/#{{ tag | cgi_escape }}" title="View posts tagged with &quot;{{ tag }}&quot;">{{ tag }}</a>
 			  {% if forloop.last != true %}, {% endif %}

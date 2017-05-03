@@ -5,6 +5,10 @@ showInTopMenu: true
 permalink: /downloads/
 ---
 
+This site provides downloads for our installers, sources and demos.
+
+## Installers
+
 # Linux:
 
 Due to the variety of linux distributions we do not provide packages for Linux. If you do not find hydrogen in the repository of your distribution, please ask the people behind your distribution to include hydrogen.
@@ -39,7 +43,7 @@ Older MacOS X binaries (0.9.5 beta1):
 
 
  
-# Sources
+## Sources
 
 The hydrogen sourcecode can be fetched via github:
 
@@ -47,8 +51,11 @@ The hydrogen sourcecode can be fetched via github:
 
 For more information about building hydrogen from source, see our Linux compilation howto.
 
- 
-# All files
+## Demos
+
+You can find demo audio files for some of our drumkits [here](https://sourceforge.net/projects/hydrogen/files/Hydrogen/demos/).
+
+## All files
 
 All files (sources/binaries) for all platforms (Linux, Mac OS X and Windows) can be found on [Sourceforge](http://sourceforge.net/projects/hydrogen/files/)
 
