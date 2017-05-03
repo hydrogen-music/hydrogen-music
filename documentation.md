@@ -10,14 +10,19 @@ This is the hydrogen documentation page.
 ## Manual
 
 The Hydrogen manual is available online in the following languages:
-+ Lang1
-+ Lang2
++  [English](../documentation/manual/manual_en.html)
++  [French](../documentation/manual/manual_fr.html)
++  [Spanish](../documentation/manual/manual_es.html)
++  [Italian](../documentation/manual/manual_it.html)
++  [Dutch](../documentation/manual/manual_nl.html)
++  [Catalan](../documentation/manual/manual_ca.html)
 
 ## Tutorial
 
 The Hydrogen tutorial is available online in the following languages:
-+ Lang1
-+ Lang2
++  [English](../documentation/tutorial/tutorial_en.html)
++  [French](../documentation/tutorial/tutorial_fr.html)
++  [Italian](../documentation/tutorial/tutorial_it.html)
 
 ## Videos
 
