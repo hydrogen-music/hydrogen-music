@@ -1,4 +1,4 @@
-# Hydrogen Website repository
+# Hydrogen website repository
 
 This repository holds the website of the Hydrogen project.
 
