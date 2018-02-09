@@ -17,9 +17,7 @@ If you cannot find an answer to your question in the FAQ, Manual or Video's your
 
 [I'm using Windows and i cant install a new drumkit, why is that?](#im-using-windows-and-i-cant-install-a-new-drumkit-why-is-that)
 
-
 [Why does Hydrogen mute my instruments?](#why-does-hydrogen-mute-my-instruments)
-
 
 [I have connected my midi device to Hydrogen but i hear no sound. What's wrong?](#i-have-connected-my-midi-device-to-hydrogen-but-i-hear-no-sound-whats-wrong)
 
@@ -48,6 +46,8 @@ If you cannot find an answer to your question in the FAQ, Manual or Video's your
 [I copied my song to another PC and there is no sound, why is that?](#i-copied-my-song-to-another-pc-and-there-is-no-sound-why-is-that)
 
 [Windows8: my right-click menu does not show up!](#windows8-my-right-click-menu-does-not-show-up)
+
+[How can i share my H2 drumkit?](#how-can-i-share-my-h2-drumkit)
 
 
 * * *
@@ -176,7 +176,7 @@ Keep in mind that Hydrogen uses a fixed midi-mapping (more info in the manual) s
 
 **Answer**: First of all you need to know that Hydrogen needs two things to be able to play a song : the song (.h2song file) and the samples for each instrument.  These samples are are grouped in a drumkit (aka soundlibrary)
 
-The song file and the drumkit are twp totally independant things !
+The song file and the drumkit are two totally independant things !
 
 If the sounds are not available to Hydrogen it will mute these instruments (see also the previous question in this FAQ), so if you want to copy a song from PC1 to PC2 this is the best way to do it :
 
@@ -191,7 +191,7 @@ On PC1:
 + save your drumkit on PC1 under a new name (Instrument > Save library)
 + your new drumkit will now be available in the sound library on PC1
 + (with your song still open) load the drumkit you just saved (in the sound library right click the drumkit and hit load)
-+ save the song
++ save the song 
 + export the drumkit (Instrument > Export library)
 + once al that's done you will have two files : the song (.h2song) and the drumkit that you just exported
 
@@ -216,3 +216,20 @@ On PC2:
 [Top](#frequently-asked-questions)
 
 * * *
+
+# How can i share my h2 drumkit?
+
+**Answer**: If you have created your own hydrogen drumkit from your own sample file, you might want to share it with the hydrogen community. 
+
+
+The first step should be a proper check of your drumkit's metadata. Does it contain a proper description? Are all other fields up to date? 
+Since you want to publish your drumkit to a wide audience, you have to select a license for your kit. 
+
+The next step is the publication of the drumkit itself. We recommend to create a project on one of the open source hosting platforms like GitHub. Depending on your choosen license, this allows other people to collaborate on your drumkit. The repository should contain the contents of your h2drumkit file (samples and the drumkit.xml) and not the h2drumkit file itself. If you do not know how to set up such a repository or if just want to publish your h2drumkit file, you may skip this step and upload your h2drumkit file to a file hosting service of your choice. If your drumkit is GPL licensed (or if it has a compatible license) there is the possibility that we can may host the drumkit for you.
+
+At this point you can now send a mail to our development mailing list if you think that your drumkit should be listed in Hydrogen's online drumkit list or publish a link to your h2drumkit file at our forum.
+
+[Top](#frequently-asked-questions)
+
+* * *
+
