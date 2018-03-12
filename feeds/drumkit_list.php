@@ -254,6 +254,13 @@ Please visit http://forzee.org/ for contacts.
 </drumkit>
 
 
+<drumkit>
+        <name>SF3007-2011-Set-03</name>
+        <url>https://sourceforge.net/projects/hydrogen/files/Sound%20Libraries/Main%20sound%20libraries/SF3007-2011-Set-03.h2drumkit</url>
+        <author>Rainer Steffen Hain, Germany</author>
+        <info>Acoustic Drum made of samples from a huge Sonor Force 3007 Drumset. Recorded with the Phonic Helix Board MKII and Audacity in 2011 under Muppy Linux</info>
+        <license>What the Fuck Public License (WTFPL)</license>
+</drumkit>
 
 <drumkit><name>Synthie-1 (sf)</name><url>http://prdownloads.sf.net/hydrogen/Synthie-1.h2drumkit</url><info></info><author>Artemiy Pavlov</author><license></license></drumkit>
 
