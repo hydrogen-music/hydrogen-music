@@ -23,6 +23,6 @@ features are included:
 
 The sourcecode can be found on github, a windows installer is available on sourceforge.
 
-The next Hydrogen version will be Hydrogen 1.0. Besides other features, it will include the support of QT5, OSC support and the possibility to use a stereo-playback track to make songwriting in non-modular environments easier. In addiion, we will try to improve the GUI a bit..
+The next Hydrogen version will be Hydrogen 1.0. Besides other features, it will include the support of QT5, OSC support and the possibility to use a stereo-playback track to make songwriting in non-modular environments easier. In addiion, we will try to improve the GUI a bit.
 
 Happy Drumming!
