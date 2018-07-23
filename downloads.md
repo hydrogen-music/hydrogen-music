@@ -17,9 +17,12 @@ If you're using ubuntu, there's also the [kxstudio](http://kxstudio.linuxaudio.o
 
 # Windows:
 
-At the moment there are no beta versions of 1.0 available for Windows.
+Current stable version: [Hydrogen 0.9.7](https://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.7%20Binaries/Hydrogen-0.9.7-win32.exe/download)
 
-Most recent version: [Hydrogen 0.9.7](https://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.7%20Binaries/Hydrogen-0.9.7-win32.exe/download)
+Most recent BETA version:
+
+* [Hydrogen 1.0.0](https://sourceforge.net/projects/hydrogen/files/Hydrogen/1.0.0%20Binaries/Hydrogen-1.0.0-beta1-win64.exe/download)
+* [Hydrogen 1.0.0](https://sourceforge.net/projects/hydrogen/files/Hydrogen/1.0.0%20Binaries/Hydrogen-1.0.0-beta1-win32.exe/download)
 
 Older versions:
 
