@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "Hydrogen 1.0.0-beta1 released"
+date:   2018-03-18 14:20:00 +0200
+categories: jekyll update
+---
+
+The first beta release of Hydrogen 1.0.0-beta1 is now available.
+It includes the following features:
+- QT5 support
+- Midi feedback
+- OSC support (incl. feedback)
+- Playback track
+- Menu redesign
+- Note probability property
+- Velocity automation
+- Full screen mode
+- New default kit: GMRockKit
+
+The source code and the binaries (for Windows) are available at [SourceForge](https://sourceforge.net/projects/hydrogen/files/Hydrogen/). Due to some last-minute problems with mxe and our build system the windows binaries are lacking jack and OSC support, but i hope this problem can be solved in a beta2 release.
+
+As always, this release was a true community effort and made possible with the help of numerous people from all over the globe.
