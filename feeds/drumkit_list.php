@@ -124,7 +124,7 @@ Please visit http://forzee.org/ for contacts.
 
 <drumkit>
 <name>Gimme A Hand 1.0</name>
-<url>http://hydrogen-music.org/drumkits/Gimme A Hand 1.0.h2drumkit</url>
+<url>https://sourceforge.net/projects/hydrogen/files/Sound%20Libraries/Main%20sound%20libraries/Gimme A Hand 1.0.h2drumkit</url>
 <info>An Assortment of Hand Percussion Instruments Including Cajon, Bongos, Maracas and Much More...</info>
 <author>Glen MacArthur</author>
 <license>GPL</license>
@@ -162,7 +162,7 @@ Please visit http://forzee.org/ for contacts.
 
 <drumkit>
 <name>Lightning1024</name>
-<url>http://hydrogen-music.org/drumkits/Lightning1024.h2drumkit</url>
+<url>http://sourceforge.net/projects/hydrogen/files/Sound%20Libraries/Main%20sound%20libraries/Lightning1024.h2drumkit</url>
 <info>An small library made by me to get a clear sound in the most posible lightweight bank. Una pequeña libreria hecha por mi para obtener un sonido claro en un banco lo mas livianamente posible.</info>
 <author>Esteban Mariano Romanelli</author>
 <license>Free!!!</license>
@@ -270,7 +270,7 @@ Please visit http://forzee.org/ for contacts.
 
 <drumkit>
 <name>The Black Pearl 1.0</name>
-<url>http://hydrogen-music.org/drumkits/The Black Pearl 1.0.h2drumkit</url>
+<url>https://sourceforge.net/projects/hydrogen/files/Sound%20Libraries/Main%20sound%20libraries/The Black Pearl 1.0.h2drumkit</url>
 <info>A Sampled 5pc Pearl DX Series Drumkit.</info>
 <author>Glen MacArthur</author>
 <license>GPL</license>
