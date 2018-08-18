@@ -9,7 +9,7 @@ This page lists a number of Frequently Asked Questions and the answers to these 
 
 For more information on using Hydrogen please read the manual and check out the tutorial video's (both can be found under the Documentation tab)
 
-If you cannot find an answer to your question in the FAQ, Manual or Video's your best bet is to post it on the forum.
+If you cannot find an answer to your question in the FAQ, Manual or Video's feel free to ask your question via [Github](https://github.com/hydrogen-music/hydrogen-music/issues) or at our [mailing list](https://sourceforge.net/projects/hydrogen/lists/hydrogen-devel).
 
 # Frequently asked questions
 
