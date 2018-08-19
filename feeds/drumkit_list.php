@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?><drumkit_list>
 <drumkit>
 <name>Audiophob</name>
-<url>http://hydrogen-music.org/drumkits/Audiophob.h2drumkit</url>
+<url>http://hydro.smoors.de/Audiophob.h2drumkit</url>
 <info>Cheap sounds from freesound.org with no copyright</info>
 <author>soundcloud.com/audiophobdubstep</author>
 <license>This work is licensed under the Creative Commons 0 License.</license>
@@ -9,7 +9,7 @@
 
 <drumkit>
                 <name>belofilms.com - AC-Guitar-Strums (flac)</name>
-                <url>http://hydrogen-music.org/drumkits/belofilms_GuitarStrums.h2drumkit</url>
+                <url>http://hydro.smoors.de/belofilms_GuitarStrums.h2drumkit</url>
                 <info>
                 &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
                 &lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
@@ -74,7 +74,7 @@
 
 <drumkit>
 <name>Denon CRB-90</name>
-<url>http://hydrogen-music.org/drumkits/Denon CRB-90.h2drumkit</url>
+<url>http://hydro.smoors.de/Denon CRB-90.h2drumkit</url>
 <info>This drumkit was created with samples from the original Denon CRB-90 Rhythm Box.  More info can be found on http://audio-and-linux.blogspot.com/2012/06/denon-rhythm-box-for-hydrogen.htm</info>
 <author>Thijs Van Severen</author>
 <license>CC-BY-SA</license>
@@ -82,7 +82,7 @@
 
 <drumkit>
 <name>Drumkit excepcional</name>
-<url>http://hydrogen-music.org/drumkits/Drumkit excepcional.h2drumkit</url>
+<url>http://hydro.smoors.de/Drumkit excepcional.h2drumkit</url>
 <info>Sons gravados de maneira caseira</info>
 <author>Pedro MaurÃ­cio</author>
 <license>creative commons</license>
@@ -132,7 +132,7 @@ Please visit http://forzee.org/ for contacts.
 
 <drumkit>
 <name>GSCW Kit 1 (Flac edition)</name>
-<url>http://www.hydrogen-music.org/drumkits/Flac_GSCW-1.h2drumkit</url>
+<url>http://hydro.smoors.de/Flac_GSCW-1.h2drumkit</url>
 <info> The flac edition of the famous GSCW drumkit. Some layers were removed to reduce the size. Based on samples from Salvador Pelaez</info>
 <author>Stefano Carbonelli</author>
 <license>Do not redistribute or publish the inluded samples.</license>
@@ -207,7 +207,7 @@ Please visit http://forzee.org/ for contacts.
 
 <drumkit>
 <name>Roland_MC-307_CR78&amp;Cheaps</name>
-<url>http://hydrogen-music.org/drumkits/Roland_MC-307_CR78&amp;Cheaps.h2drumkit</url>
+<url>http://hydro.smoors.de/drumkits/Roland_MC-307_CR78&amp;Cheaps.h2drumkit</url>
 <info> An CR78&amp;Cheaps MC-307 groovebox clone</info>
 <author>Michael Wolkstein</author>
 <license>Do not redistribute or publish the inluded samples.</license>
@@ -215,7 +215,7 @@ Please visit http://forzee.org/ for contacts.
 
 <drumkit>
 <name>Roland_MC-307_TR-606</name>
-<url>http://hydrogen-music.org/drumkits/Roland_MC-307_TR-606.h2drumkit</url>
+<url>http://hydro.smoors.de/Roland_MC-307_TR-606.h2drumkit</url>
 <info> An TR-606 MC-307 groovebox clone</info>
 <author>Michael Wolkstein</author>
 <license>Do not redistribute or publish the inluded samples.</license>
@@ -223,7 +223,7 @@ Please visit http://forzee.org/ for contacts.
 
 <drumkit>
 <name>Roland_MC-307_TR-808_</name>
-<url>http://hydrogen-music.org/drumkits/Roland_MC-307_TR-808.h2drumkit</url>
+<url>http://hydro.smoors.de/Roland_MC-307_TR-808.h2drumkit</url>
 <info> An TR-808 MC-307 groovebox clone</info>
 <author>Michael Wolkstein</author>
 <license>Do not redistribute or publish the inluded samples.</license>
@@ -231,7 +231,7 @@ Please visit http://forzee.org/ for contacts.
 
 <drumkit>
 <name>Roland_MC-307_TR-909</name>
-<url>http://hydrogen-music.org/drumkits/Roland_MC-307_TR-909.h2drumkit</url>
+<url>http://hydro.smoors.de/Roland_MC-307_TR-909.h2drumkit</url>
 <info> An TR-909 MC-307 groovebox clone</info>
 <author>Michael Wolkstein</author>
 <license>Do not redistribute or publish the inluded samples.</license>
@@ -239,7 +239,7 @@ Please visit http://forzee.org/ for contacts.
 
 <drumkit>
 <name>Roland_MC-307_Techno1</name>
-<url>http://hydrogen-music.org/drumkits/Roland_MC-307_Techno1.h2drumkit</url>
+<url>http://hydro.smoors.de/Roland_MC-307_Techno1.h2drumkit</url>
 <info> An Techno1 MC-307 groovebox clone</info>
 <author>Michael Wolkstein</author>
 <license>Do not redistribute or publish the inluded samples.</license>
@@ -247,7 +247,7 @@ Please visit http://forzee.org/ for contacts.
 
 <drumkit>
 <name>rumpf_kit_z01_gm</name>
-<url>http://hydrogen-music.org/drumkits/rumpf_kit_z01_h2.h2drumkit</url>
+<url>http://hydro.smoors.de/rumpf_kit_z01_h2.h2drumkit</url>
 <info>Drum kit from analog samples.  Partly GM-drum compatible.  Format:48000Hz,24Bit,flac</info>
 <author>Emanuel Rumpf</author>
 <license>cc-by ==> http://creativecommons.org/licenses/by/3.0/</license>
