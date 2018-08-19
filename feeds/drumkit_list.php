@@ -140,7 +140,7 @@ Please visit http://forzee.org/ for contacts.
 
 <drumkit>
 <name>GSCW Kit 2 (Flac edition)</name>
-<url>http://www.hydrogen-music.org/drumkits/Flac_GSCW-2.h2drumkit</url>
+<url>http://hydro.smoors.de/Flac_GSCW-2.h2drumkit</url>
 <info> The flac edition of the famous GSCW drumkit. Some layers were removed to reduce the size. Based on samples from Salvador Pelaez</info>
 <author>Stefano Carbonelli</author>
 <license>Do not redistribute or publish the inluded samples.</license>
@@ -207,7 +207,7 @@ Please visit http://forzee.org/ for contacts.
 
 <drumkit>
 <name>Roland_MC-307_CR78&amp;Cheaps</name>
-<url>http://hydro.smoors.de/drumkits/Roland_MC-307_CR78&amp;Cheaps.h2drumkit</url>
+<url>http://hydro.smoors.de/Roland_MC-307_CR78&amp;Cheaps.h2drumkit</url>
 <info> An CR78&amp;Cheaps MC-307 groovebox clone</info>
 <author>Michael Wolkstein</author>
 <license>Do not redistribute or publish the inluded samples.</license>
