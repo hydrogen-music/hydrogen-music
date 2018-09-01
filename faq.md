@@ -49,6 +49,8 @@ If you cannot find an answer to your question in the FAQ, Manual or Video's feel
 
 [How can i share my H2 drumkit?](#how-can-i-share-my-h2-drumkit)
 
+[Why ain't I able to build Hydrogen with an Anaconda environment present?](#why-aint-i-able-to-build-hydrogen-with-an-anaconda-environment-present)
+
 
 * * *
 
@@ -233,3 +235,25 @@ At this point you can now send a mail to our development mailing list if you thi
 
 * * *
 
+# Why ain't I able to build Hydrogen with an Anaconda environment present?
+
+**Answer**: When installing Anaconda on your computer you have to add a path pointing to its installed binaries to your _PATH_ variable. The executables located in there are not linked against the shared objects and headers provided by your system but against the ones **conda** installed itself. Usually both the binaries of your system and of Anaconda can live together in harmony. But when building packages using **cmake**, like Hydrogen, conflicts can occur. One of those arises when installing Qt5 or a package depending on it using Anaconda. This is because the cmake scripts will search your system files for libraries exclusively and are agnostic of the ones installed using conda. Instead of making the latter ones available to cmake, it is usually a better solution to have a separate global variable containing the search path without any references to Anaconda and to use this one in the compilation process.
+
+In your **.bashrc** file prepare a second variable right before adding Anaconda to your search path
+
+``` bash
+export NOCONDA_PATH=$PATH
+export PATH=$HOME/anaconda3/bin:$PATH		
+```
+
+Now, whenever you want to compile Hydrogen from source use these modified commands instead
+
+``` bash
+mkdir build && cd build
+export PATH=$NOCONDA_PATH && cmake ..
+make && sudo make install
+```
+
+[Top](#frequently-asked-questions)
+
+* * *
