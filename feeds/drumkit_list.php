@@ -41,7 +41,49 @@
 <license>Attribution-Share Alike 3.0 United States</license>
 </drumkit>
 
+<drumkit>
+	<name>JazzFunkKit</name>
+	 <info>
+Low Kick 20x14 Gretsch - Aquarian modern vintage on both sides; felt strips on both sides. Medium DW felt beater.
 
+Kick 15x15 Ludwig - 30's era mahogany marching snare with its original calf-skin head on the resonant side; Remo pin stripe on the batter side. Medium DW felt beater.
+
+Snare 14x5.5 Ludwig - 20's era (rare; with no badge) chrome over brass 8-lug. Fiberskyn Ambassador head on top; Diplomat snare-side bottom.
+
+Rack Tom 12x8 Gretsch - 6-ply maple/gum satin pink flame wrap; stop-sign badge. Fiberskyn Diplomat head on top; clear Diplomat head on bottom.
+
+Floor Tom 14x14 Gretsch - Coated ambassador head on top; Aquarian Classic Clear on bottom.
+
+Hi-hat Top: 13.75'' K. Zildjian - Istanbul 60's era.
+Bottom: 14'' A. Zildjian - Istanbul 70's era top hat used as a bottom hat.
+
+Ride 1 22'' Istanbul Agop - Jazz ride special edition TW prototype.
+
+Ride 2 21'' Bosphorus - Flat ride Master's series.
+
+WAV samples, Kontakt and SFZ format available at:
+www.orangetreesamples.com/blog/free-jazz-funk-drum-sample-library
+
+Hydrogen drumkit format by Oddtime.
+
+License Agreement:
+Orange Tree Samples produced all of these sounds and retains all rights to these sounds.
+You may use the samples included for commercial or non-commercial music productions. You do not need to credit Orange Tree Samples.
+This license to use the sounds granted to the original purchaser of the sounds and is not transferable without the consent of Orange Tree Samples.
+You may not create any other sample-based product that uses sounds from Orange Tree Samples. This includes making other sample libraries that use Orange Tree Samples sounds as source material.
+You may not copy, edit, distribute or sell the original soundsets without the written permission of Orange Tree Samples.
+The software is provided to the user "as is". Orange Tree Samples makes no warranties, either express or implied, with respect to the software and associated materials provided to the user, including but not limited to any warranty of fitness for a particular purpose. Orange Tree Samples does not warrant that the functions contained in the software will meet your requirements, or that the operation of the software will be uninterrupted or error-free, or that defects in the software will be corrected.
+Orange Tree Samples does not warrant or make any representations regarding the use or the results of the use of the software or any documentation provided therewith in terms of their correctness, accuracy, reliability, or otherwise. No information or advice given by Orange Tree Samples shall create a warranty or in any way increase the scope of this warranty.
+Orange Tree Samples is not liable for any claims or damages whatsoever, including property damage, personal injury, intellectual property infringement, loss of profits, or interruption of business, or for any special, consequential or incidental damages, however caused.
+
+Copyright 2008 Orange Tree Samples, All Rights Reserved
+Website: http://www.orangetreesamples.com
+Email: admin@orangetreesamples.com
+</info>
+ <license>Copyright 2008 Orange Tree Samples, All Rights Reserved</license>
+ <author>Orange Tree Samples / Oddtime</author>
+ <url>https://www.orangetreesamples.com/download/JazzFunkKit.h2drumkit</url>
+</drumkit>
 
 <drumkit><name>Boss DR-110 (sf)</name><url>http://prdownloads.sf.net/hydrogen/Boss_DR-110.h2drumkit</url><info>A compact programmable drum machine, DR-110 is one of the last fully-analog computer-controlled boxes made by Roland/Boss. It's ever-fresh sounds lie somewhere between TR-808 and TR-606.</info><author>Artemiy Pavlov</author><license></license></drumkit>
 
