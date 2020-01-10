@@ -61,6 +61,6 @@ You can find demo audio files for some of our drumkits [here](https://sourceforg
 
 ## All files
 
-All files (sources/binaries) for all platforms (Linux, Mac OS X and Windows) can be found on [Sourceforge](http://sourceforge.net/projects/hydrogen/files/)
+All files (sources/binaries) for all platforms (Linux, Mac OS X and Windows) can be found on [Sourceforge](http://sourceforge.net/projects/hydrogen/files/).
 
  
