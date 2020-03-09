@@ -331,6 +331,6 @@ Please visit http://forzee.org/ for contacts.
 		<name>JazzRockFast</name>
 		<author>Benoit Rouits</author>
 		<license>Public Domain</license>
-		<url>http://hydrogen-music.org/songs_patterns/Patterns/JazzRockFast.h2pattern</url>
+		<url>http://hydro.smoors.de/songs_pattern/Patterns/unknown/JazzRockFast.h2pattern</url>
 	</pattern>
 </drumkit_list>
