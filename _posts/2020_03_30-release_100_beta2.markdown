@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Hydrogen 1.0.0-beta2 released"
+date:   2018-03-30 21:10:00 +0200
+categories: jekyll update
+---
+
+We're happy to announce the release of the second beta version of Hydrogen 1.0. Compared to the first beta version, it has no new major features, but a lot of smaller bugfixes and improvements. All files can be found on the github release [page](https://github.com/hydrogen-music/hydrogen/releases/tag/1.0.0-beta2).
+
+Many thanks to all those who have helped in the last days to fix and test bugs, close old issues and revive old pull request!
