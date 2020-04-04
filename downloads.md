@@ -22,8 +22,8 @@ Current stable version:
 
 Most recent beta version:
 
-* [Hydrogen 1.0.0-beta1 64-Bit](https://sourceforge.net/projects/hydrogen/files/Hydrogen/1.0.0%20Binaries/Hydrogen-1.0.0-beta1-win64.exe/download)
-* [Hydrogen 1.0.0-beta1 32-Bit](https://sourceforge.net/projects/hydrogen/files/Hydrogen/1.0.0%20Binaries/Hydrogen-1.0.0-beta1-win32.exe/download)
+* [Hydrogen 1.0.0-beta2 64-Bit](https://github.com/hydrogen-music/hydrogen/releases/download/1.0.0-beta2/Hydrogen-1.0.0-beta2-win64.exe)
+* [Hydrogen 1.0.0-beta2 32-Bit](https://github.com/hydrogen-music/hydrogen/releases/download/1.0.0-beta2/Hydrogen-1.0.0-beta2-win32.exe)
 
 Older versions:
 
@@ -33,17 +33,19 @@ Older versions:
 
  
 # Mac OS X:
-MacOS X binaries (0.9.7): 
-* [OS X (Intel)](https://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.7%20Binaries/Hydrogen-0.9.7.dmg/download)
- 
-MacOS X binaries (0.9.6 beta1): 
-* [OS X (Intel)](http://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.6%20Binaries/hydrogen-0.9.6-beta1.dmg/download) 
 
-Older MacOS X binaries (0.9.5 beta1): 
+Current stable version
+* [OS X (Intel), 0.9.7](https://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.7%20Binaries/Hydrogen-0.9.7.dmg/download)
 
- * [OS_X_x86_64.dmg](http://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.5%20Binaries/hydrogen_0.9.5-beta1_x86_64.dmg/download)
- * [OS X_ppc.dmg](http://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.5%20Binaries/Hydrogen_0.9.5-beta1_ppc.dmg/download)
- * [OS X_i386.dmg](http://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.5%20Binaries/hydrogen_0.9.5-beta1_i386.dmg/download)
+Most recent beta version:
+* [Hydrogen 1.0.0-beta2](https://github.com/hydrogen-music/hydrogen/releases/download/1.0.0-beta2/Hydrogen.dmg)
+
+Older versions:
+
+* [OS X (Intel), 0.9.6 beta1](http://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.6%20Binaries/hydrogen-0.9.6-beta1.dmg/download) 
+* [OS_X_x86_64.dmg, 0.9.5-beta1](http://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.5%20Binaries/hydrogen_0.9.5-beta1_x86_64.dmg/download)
+* [OS X_ppc.dmg, 0.9.5-beta1](http://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.5%20Binaries/Hydrogen_0.9.5-beta1_ppc.dmg/download)
+* [OS X_i386.dmg, 0.9,5-beta1](http://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.5%20Binaries/hydrogen_0.9.5-beta1_i386.dmg/download)
 
 
  
