@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Hydrogen 1.0.0-rc1 released"
+date:   2020-05-08 21:01:00 +0200
+categories: jekyll update
+---
+
+The first release candidate of Hydrogen 1.0 has now been released.
+The main features are:
+- several fixes to the Jack transport (missed/double beats at the begin of a pattern)
+- fixed audio artifaces when using the ALSA driver
+- fixed tempo problems/distorting when exporting a song
+- playback track now scales correctly
+
+The release can be downloaded from [GitHub](https://github.com/hydrogen-music/hydrogen/releases/tag/1.0.0-rc1).
