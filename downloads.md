@@ -18,7 +18,8 @@ If you're using ubuntu, there's also the [kxstudio](http://kxstudio.linuxaudio.o
 # Windows:
 
 Current stable version: 
-* [Hydrogen 0.9.7](https://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.7%20Binaries/Hydrogen-0.9.7-win32.exe/download)
+* [Hydrogen 1.0.0 64bit](https://sourceforge.net/projects/hydrogen/files/Hydrogen/1.0.0%20Binaries/Hydrogen-1.0.0-win64.exe/download)
+* [Hydrogen 1.0.0 32bit](https://sourceforge.net/projects/hydrogen/files/Hydrogen/1.0.0%20Binaries/Hydrogen-1.0.0-win32.exe/download)
 
 Most recent beta version:
 
@@ -27,7 +28,8 @@ Most recent beta version:
 
 Older versions:
 
-* [Windows installer 64-Bit](https://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.7%20Binaries/Hydrogen-0.9.7-rc1-win64.exe/download) (0.9.7 RC-1)
+* [Windows installer 0.9.7 64-Bit](https://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.7%20Binaries/Hydrogen-0.9.7-rc1-win64.exe/download) (0.9.7 RC-1 win64)
+* [Windows installer 0.9.7 32-Bit](https://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.7%20Binaries/Hydrogen-0.9.7-rc1-win32.exe/download) (0.9.7 RC-1 win32)
 * [Windows installer](http://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.6%20Binaries/hydrogen_0.9.6-alpha1.exe/download) (0.9.6-alpha1 snapshot of February 2011)
 * [Windows installer](http://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.6%20Binaries/hydrogen_0.9.6-snapshot1.exe/download) (experimental 0.9.6 branch snapshot of 10 may 2010)
 
@@ -35,7 +37,8 @@ Older versions:
 # Mac OS X:
 
 Current stable version
-* [OS X (Intel), 0.9.7](https://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.7%20Binaries/Hydrogen-0.9.7.dmg/download)
+* [OS X (10.12 and above), Hydrogen 1.0.0](https://sourceforge.net/projects/hydrogen/files/Hydrogen/1.0.0%20Binaries/Hydrogen-1.0.0.dmg/download)
+* [OS X (10.10 and 10.11), Hydrogen 1.0.0](https://sourceforge.net/projects/hydrogen/files/Hydrogen/1.0.0%20Binaries/Hydrogen-legacy-1.0.0.dmg/download)
 
 Most recent beta version:
 * [Hydrogen 1.0.0-rc1 (OS X 10.12 and above)](https://github.com/hydrogen-music/hydrogen/releases/download/1.0.0-rc1/Hydrogen.dmg)
@@ -43,6 +46,7 @@ Most recent beta version:
 
 Older versions:
 
+* [OS X (Intel), 0.9.7](https://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.7%20Binaries/Hydrogen-0.9.7.dmg/download)
 * [OS X (Intel), 0.9.6 beta1](http://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.6%20Binaries/hydrogen-0.9.6-beta1.dmg/download) 
 * [OS_X_x86_64.dmg, 0.9.5-beta1](http://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.5%20Binaries/hydrogen_0.9.5-beta1_x86_64.dmg/download)
 * [OS X_ppc.dmg, 0.9.5-beta1](http://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.5%20Binaries/Hydrogen_0.9.5-beta1_ppc.dmg/download)
