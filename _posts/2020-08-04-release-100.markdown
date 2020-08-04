@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Hydrogen 1.0.0 released"
+date:   2020-08-04 10:01:00 +0200
+categories: jekyll update
+---
+We're happy to announce the final release of Hydrogen 1.0.0. After nearly four long years, a new stable version of Hydrogen is available. It includes the following major features:
+- QT5 support
+- MIDI feedback
+- OSC support (incl. feedback)
+- Playback track
+- Menu redesign
+- Note probability property
+- Velocity automation
+- Full screen mode
+- New default kit: GMRockKit
+
+The sourcecode as well as binaries for Windows and Mac OS X can be download from [GitHub](https://github.com/hydrogen-music/hydrogen/releases/tag/1.0.0). Thanks a lot to everyone who was involved in this project over the last years!
