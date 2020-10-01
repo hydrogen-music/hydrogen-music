@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Hydrogen 1.0.1 released"
+date:   2020-09-03 20:24:00 +0200
+categories: jekyll update
+---
+We're happy to announce a hotfix 1.0.1 release of Hydrogen (one month after 1.0.0) which becomes the new stable Hydrogen version. It includes the following changes since the 1.0.0 release:
+- Fixed compilation with libtar
+- Fixed jack transport tempo drift when using non-integer bpm values
+- Disabled "development mode" warning
+- Fix crash on saving ladspa settings
+- Added manual + tutorial files to Windows and OS X Installers
+
+The sourcecode as well as binaries for Windows and Mac OS X can be download from [GitHub](https://github.com/hydrogen-music/hydrogen/releases/tag/1.0.1). Thanks a lot to everyone who was involved in this release (and the last years too!).
