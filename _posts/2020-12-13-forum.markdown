@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "New discussion board"
+date:   2020-12-13 15:01:00 +0200
+categories: jekyll update
+---
+
+Last week, GitHub opened the new "Discussions" feature to the public. We have decided to use it as
+a replacement for our old forum and to bring back the possibility discuss your ideas, share your work or ask questions about Hydrogen. Just head over to our discussion board on [GitHub](https://github.com/hydrogen-music/hydrogen/discussions) and say "hi"!  
