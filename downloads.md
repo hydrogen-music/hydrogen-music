@@ -18,8 +18,8 @@ If you're using ubuntu, there's also the [kxstudio](http://kxstudio.linuxaudio.o
 # Windows:
 
 Current stable version: 
-* [Hydrogen 1.0.1 64bit](https://sourceforge.net/projects/hydrogen/files/Hydrogen/1.0.0%20Binaries/Hydrogen-1.0.1-win64.exe/download)
-* [Hydrogen 1.0.1 32bit](https://sourceforge.net/projects/hydrogen/files/Hydrogen/1.0.0%20Binaries/Hydrogen-1.0.1-win32.exe/download)
+* [Hydrogen 1.0.2 64bit](https://sourceforge.net/projects/hydrogen/files/Hydrogen/1.0.0%20Binaries/Hydrogen-1.0.2-win64.exe/download)
+* [Hydrogen 1.0.2 32bit](https://sourceforge.net/projects/hydrogen/files/Hydrogen/1.0.0%20Binaries/Hydrogen-1.0.2-win32.exe/download)
 
 Most recent beta version:
 
@@ -37,7 +37,7 @@ Older versions:
 # Mac OS X:
 
 Current stable version
-* [OS X (10.12 and above), Hydrogen 1.0.1](https://sourceforge.net/projects/hydrogen/files/Hydrogen/1.0.0%20Binaries/Hydrogen-1.0.1.dmg/download)
+* [OS X (10.12 and above), Hydrogen 1.0.2](https://sourceforge.net/projects/hydrogen/files/Hydrogen/1.0.0%20Binaries/Hydrogen-1.0.2.dmg/download)
 * [OS X (10.10 and 10.11), Hydrogen 1.0.1](https://sourceforge.net/projects/hydrogen/files/Hydrogen/1.0.0%20Binaries/Hydrogen-legacy-1.0.1.dmg/download)
 
 Most recent beta version:
