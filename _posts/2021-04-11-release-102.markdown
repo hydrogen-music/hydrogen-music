@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Hydrogen 1.0.2 released"
+date:   2021-04-11 15:23:38 BST
+
+categories: jekyll update
+---
+Release 1.0.2 of Hydrogen is the latest stable release. This release primarily addresses issues and bugs discovered by users, rather than adding new features.
+
+ * User-selectable translation language
+ * Bug fixes including:
+    * critical startup bug on macOS Big Sur
+    * drumkit export failure on Windows
+
+The complete list of issues addressed by this release is [available on GitHub](https://github.com/hydrogen-music/hydrogen/milestone/6?closed=1)
+
+Source code and binary releases for Windows and macOS are available from [GitHub](https://github.com/hydrogen-music/hydrogen/releases/tag/1.0.2). 
