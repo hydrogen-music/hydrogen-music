@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Hydrogen 1.1.0 beta1 released & 20 years of Hydrogen"
+date:   2021-04-21 21:23:38 BST
+
+categories: jekyll update
+---
+We're happy to announce the release of the first beta version of Hydrogen 1.1. You can find the Changelog and all downloads at [GitHub](https://github.com/hydrogen-music/hydrogen/releases/tag/1.1.0-beta1).
+
+But there is more: ca. 20 years ago, on April 19th 2001, the tarball of Hydrogen 0.1 has been uploaded to SourceForge. So in these days, Hydrogen celebrates its 20th birthday!
+
+During those 20 years, Hydrogen established a large userbase and became a popular cross-platform application which is present in dozens of Linux distributions, software download portals and OS X/Windows software collections. The use-cases for Hydrogen became more and more diverse in the last time.
+People use it on stage as a drum machine for live performances, as a companion for guitar or other music practice , as a prototyping-tool to create drum tracks or as replacement for their e-drum modules.
+
+But there were also multiple times when the project was already declared 'dead', when development activities nearly came to a halt and the future of the project was not clear. Luckily enough those periods were always short and in the last year, Hydrogen development was more active then it has been for a long time. With an up-to-date manual, a modern cross-platform CI service and backed by a new team the project is well prepared for the future.
+
+I would like to use this occasion to thank everyone who has contributed in all those years, no matter in which role the contribution has been made and how large the contribution was. Special thanks go out to Comix, who has created Hydrogen and has build the foundation of today's project.
+Let's have another 20 years with new ideas, interesting contributions and a lot fun.

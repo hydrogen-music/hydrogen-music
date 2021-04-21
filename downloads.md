@@ -23,8 +23,8 @@ Current stable version:
 
 Most recent beta version:
 
-* [Hydrogen 1.0.0-rc1 64-Bit](https://github.com/hydrogen-music/hydrogen/releases/download/1.0.0-rc1/Hydrogen-1.0.0-rc1-win64.exe)
-* [Hydrogen 1.0.0-rc1 32-Bit](https://github.com/hydrogen-music/hydrogen/releases/download/1.0.0-rc1/Hydrogen-1.0.0-rc1-win32.exe)
+* [Hydrogen 1.1.0-beta1 64-Bit](https://github.com/hydrogen-music/hydrogen/releases/download/1.1.0-beta1/Hydrogen-1.1.0-beta1-win64.exe)
+* [Hydrogen 1.1.0-beta1 32-Bit](https://github.com/hydrogen-music/hydrogen/releases/download/1.1.0-beta1/Hydrogen-1.1.0-beta1-win32.exe)
 
 Older versions:
 
@@ -41,7 +41,7 @@ Current stable version
 * [OS X (10.10 and 10.11), Hydrogen 1.0.1](https://sourceforge.net/projects/hydrogen/files/Hydrogen/1.0.0%20Binaries/Hydrogen-legacy-1.0.1.dmg/download)
 
 Most recent beta version:
-* [Hydrogen 1.0.0-rc1 (OS X 10.12 and above)](https://github.com/hydrogen-music/hydrogen/releases/download/1.0.0-rc1/Hydrogen.dmg)
+* [Hydrogen 1.1.0-beta1 (OS X 10.12 and above)](https://github.com/hydrogen-music/hydrogen/releases/download/1.1.0-beta1/Hydrogen-1.1.0-beta1.dmg)
 * [Hydrogen 1.0.0-rc1 (OS X 10.10 and 10.11)](https://github.com/hydrogen-music/hydrogen/releases/download/1.0.0-rc1/Hydrogen-legacy.dmg)
 
 Older versions:
