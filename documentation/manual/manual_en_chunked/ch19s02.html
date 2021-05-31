@@ -1,0 +1,57 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>19.2. Creating a New Instrument</title><link rel="stylesheet" type="text/css" href="../res/docbook.css"><script src="../res/docbook.js" type="text/javascript"></script><meta name="generator" content="DocBook XSL Stylesheets V1.79.1"><link rel="home" href="index.html" title="Hydrogen v1.1 Manual"><link rel="up" href="ch19.html" title="Chapter 19. Create a New Drumkit"><link rel="prev" href="ch19.html" title="Chapter 19. Create a New Drumkit"><link rel="next" href="ch19s03.html" title="19.3. Tips on Editing Instruments"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">19.2. Creating a New Instrument</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch19.html">Prev</a> </td><th width="60%" align="center">Chapter 19. Create a New Drumkit</th><td width="20%" align="right"> <a accesskey="n" href="ch19s03.html">Next</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="chpt.examples.drumkit.new_instrument"></a>19.2. Creating a New Instrument</h2></div></div></div><p>For each instrument in a drum kit, you can load several <a class="link" href="go01.html#def.sample" title="Sample">samples</a>
+        and set different synthesizer parameters.  This section will step you
+        through how to create a new instrument and load the samples. For details about the individual parameters please refer to <a class="xref" href="ch11.html#chpt.instrument_editor.general" title="11.1. General">Section 11.1</a>.</p><p>To begin creating an instrument, select
+        <span class="guimenu">Instruments</span> → <span class="guimenuitem">Add instrument</span>.  This will give you a blank
+        instrument to start from.</p><p>Now, you need two samples.  Any .WAV or .FLAC file will do.
+        Hydrogen provides several in the <code class="filename">data/drumkits</code> folder in the Hydrogen data
+        directory (usually <code class="filename">$HOME/.hydrogen/data/</code>).</p><p>In the Instrument Editor, click on <a class="link" href="ch11s02.html" title="11.2. Layers">Layers</a>.
+        You can layer several samples into the instrument.  Which one is played
+        depends on the <a class="link" href="go01.html#def.velocity" title="Velocity">velocity</a> of the incoming note.  Click 
+       <span class="inlinemediaobject"><img src="../img/generated_en/loadLayer_off.png" alt='Grey button containing the black characters "LOAD LAYER".'></span> and point the <span class="emphasis"><em>Audio File Browser</em></span> to
+        your sample.
+        </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
+            The <span class="emphasis"><em>Audio File Browser</em></span> will
+            allow you to preview the sample before you load it.  It will also allow
+            you to load more than one sample at a time.  But for now, only load
+            one.
+          </p></td></tr></table></div><p>After you load the sample, you'll see that there is now a
+        <span class="guilabel">1</span> at the top, and the topmost rectangle has turned
+        light blue.  To load a second sample, click the slot just below it, and
+        then click
+       <span class="inlinemediaobject"><img src="../img/generated_en/loadLayer_off.png" alt='Grey button containing the black characters "LOAD LAYER".'></span>
+       to bring in another sample.
+        </p><p>After bringing in both samples, you'll probably notice that only
+        the <span class="emphasis"><em>first</em></span> sample is being played whenever you
+        trigger the instrument.  This is because you need to set the
+        <span class="emphasis"><em>velocity</em></span> ranges for the layers.  Move your mouse to
+        the sides of the light blue rectangles and you see that you get a
+        <span class="emphasis"><em>left-right drag</em></span> cursor.  Now <span class="emphasis"><em>drag</em></span> the sample to the left or right (like
+        a curtain).  You will now see Layer 2 appear.</p><p>The velocity setting for the layer is 0-velocity on the left, and
+        full velocity on the right.  Set up Layer 1 to sound for soft notes, and
+        Layer 2 to sound for hard notes, i.e. Layer 1 on the left and Layer 2
+        on the right (see <a class="link" href="ch11s02.html#chpt.instrument_editor.layers.sample_selection" title="11.2.3. Sample Selection">Sample Selection</a> for further info).</p><p>Now, in the <a class="link" href="ch09s02.html" title="9.2. Drum Pattern Editor">Drumkit Editor</a>, set up a simple pattern that plays this
+        instrument.  Adjust the velocity settings on each note in the <a class="link" href="ch09s03.html" title="9.3. Note Properties Editor">Note Properties Editor</a> so that you can
+        get the different samples to sound.  Now, set the playback to <a class="link" href="ch07.html#sect.main_toolbar.transport_control" title="7.1. Transport Control">loop</a> and
+        notice how your different samples are getting triggered. To learn
+        about editing a pattern, see <a class="xref" href="ch09.html" title="Chapter 9. Pattern Editor">Chapter 9</a>.</p><p>For each layer, you can set the <span class="guibutton">Gain</span> and
+        the <span class="guibutton">Pitch</span>.  The pitch also has a
+        <span class="guibutton">Fine</span> adjustment.</p><p>Use the <a class="link" href="ch11.html#chpt.instrument_editor.gain_and_mute_group" title="11.1.2. Gain and Mute Group">Gain</a> adjustment to control how loud
+        the sample will be played. This is necessary because it's extremely
+        difficult to get a set of samples that all sound at about the same
+        volume.  By adjusting here, the samples that were recorded too quietly
+        can be turned up to match your loud samples (that had to be turned
+        down).
+        </p><div class="warning" style="margin-left: 5%;"><table border="0" summary="Warning"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Warning]" src="../img/admonitions/warning.svg"></td><th align="left">Warning</th></tr><tr><td align="left" valign="top"><p>It is very easy to set the <span class="guibutton">Gain</span> too high,
+          causing your sample to <a class="link" href="go01.html#def.clipping" title="Clipping">clip</a>.  Remember to test the gain with
+          full-velocity using the
+       <span class="inlinemediaobject"><img src="../img/generated_en/btn_play_on_mixer.png" alt="Grey button with a filled black triangle pointing to the right."></span>
+       button in the corresponding Instrument Channel Strip.  If you clip your signal here, it will only get
+          worse as Hydrogen processes it.</p></td></tr></table></div><p>The pitch of the sample can be modified with the pitch controls.
+        The <span class="guibutton">Pitch</span> knob adjust the pitch in musical
+        half-steps.  (So, <code class="option">-12</code> is down 1 octave).  The pitch on the right adjusts
+        the pitch ±50 cents.  (One half-step is 100 cents.)</p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>The pitch is adjusted by playing the sample back faster or
+          slower.  This is called the Doppler Effect.  So, if you have a
+          1-second sample that you turn down <code class="option">12</code> (1 octave), your sample will
+          only last for 0.5-seconds.  If you do not want this to happen you should
+          use Rubber Band instead (see <a class="xref" href="ch12s02.html" title="12.2. Pitch Shifting">Section 12.2</a>)</p></td></tr></table></div><p>You can hear the sample in a layer by clicking the layer id (just 
+        below the 'General' and 'Layers' buttons).</p></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch19.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch19.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch19s03.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 19. Create a New Drumkit </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 19.3. Tips on Editing Instruments</td></tr></table></div></body></html>

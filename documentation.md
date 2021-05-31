@@ -9,13 +9,16 @@ This is the hydrogen documentation page.
 
 ## Manual
 
-The Hydrogen manual is available online in the following languages:
-+  [English](../documentation/manual/manual_en.html)
-+  [French](../documentation/manual/manual_fr.html)
-+  [Spanish](../documentation/manual/manual_es.html)
-+  [Italian](../documentation/manual/manual_it.html)
-+  [Dutch](../documentation/manual/manual_nl.html)
-+  [Catalan](../documentation/manual/manual_ca.html)
+The Hydrogen manual is available online in English:
++  [single page HTML](../documentation/manual/manual_en_single_page.html)
++  [chunked HTML](../documentation/manual/manual_en_chunked/index.html)
+
+If the manual is not available in your language, you want to
+contribute to this project, and you have some spare time at hand, why
+not considering translating it? For more information please see the
+dedicated [Github
+repo](https://github.com/hydrogen-music/documentation) or just drop a
+mail via our [mailing list](http://lists.sourceforge.net/mailman/listinfo/hydrogen-devel).
 
 ## Tutorial
 

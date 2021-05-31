@@ -1,0 +1,56 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Chapter 2. Build</title><link rel="stylesheet" type="text/css" href="../res/docbook.css"><script src="../res/docbook.js" type="text/javascript"></script><meta name="generator" content="DocBook XSL Stylesheets V1.79.1"><link rel="home" href="index.html" title="Hydrogen v1.1 Manual"><link rel="up" href="pt01.html" title="Part I. Introduction"><link rel="prev" href="ch01.html" title="Chapter 1. Download"><link rel="next" href="ch03.html" title="Chapter 3. Keyboard and Mouse"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 2. Build</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch01.html">Prev</a> </td><th width="60%" align="center">Part I. Introduction</th><td width="20%" align="right"> <a accesskey="n" href="ch03.html">Next</a></td></tr></table><hr></div><div class="chapter"><div class="titlepage"><div><div><h2 class="title"><a name="chpt.compilation"></a>Chapter 2. Build</h2></div></div></div><div class="tip" style="margin-left: 5%;"><table border="0" summary="Tip"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="../img/admonitions/tip.svg"></td><th align="left">Tip</th></tr><tr><td align="left" valign="top"><p>
+          The instructions provided in this section are for Linux only. If you
+          intend to build Hydrogen on macOS, check out the corresponding <a class="ulink" href="https://github.com/hydrogen-music/hydrogen/wiki/Building-Hydrogen-from-Source-(macOS)" target="_blank">wiki page</a>
+          for tips or guides.
+        </p></td></tr></table></div><p>
+        If you want to compile Hydrogen yourself, you can download the latest source files directly from our
+        <span class="command"><strong>git</strong></span> repository with
+      </p><pre class="screen">
+<code class="prompt">$</code><span class="command"><strong> git clone git://github.com/hydrogen-music/hydrogen.git</strong></span>
+      </pre><p>
+        A certain release can be fetched with
+      </p><pre class="screen">
+<code class="prompt">$</code><span class="command"><strong> git checkout tags/1.0.0</strong></span>
+      </pre><p>Compiling Hydrogen depends on the following libraries (among others):</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: opencircle; "><li class="listitem" style="list-style-type: circle"><p><span class="bold"><strong>Qt 5</strong></span>: at <a class="ulink" href="http://www.qt.io" target="_blank">http://www.qt.io</a></p></li><li class="listitem" style="list-style-type: circle"><p><span class="bold"><strong>libsndfile</strong></span>: at <a class="ulink" href="http://www.mega-nerd.com/libsndfile/" target="_blank">http://www.mega-nerd.com/libsndfile/</a></p></li><li class="listitem" style="list-style-type: circle"><p><span class="bold"><strong><abbr class="abbrev">ALSA</abbr></strong></span>: (&gt;= 1.x) at <a class="ulink" href="http://www.alsa-project.org" target="_blank">http://www.alsa-project.org</a>
+          (only if you wish to use <abbr class="abbrev">ALSA</abbr> as audio driver)</p></li><li class="listitem" style="list-style-type: circle"><p><span class="bold"><strong>Jack Audio Connection Kit (&gt;= 0.80)</strong></span>: at 
+          <a class="ulink" href="http://jackaudio.org/" target="_blank">http://jackaudio.org/</a>
+          (only if you wish to use <abbr class="abbrev">JACK</abbr> as audio driver)</p></li><li class="listitem" style="list-style-type: circle"><p><span class="bold"><strong>PortAudio</strong></span>: at <a class="ulink" href="http://www.portaudio.com" target="_blank">http://www.portaudio.com</a>
+          (only if you wish to use PortAudio as audio driver)</p></li><li class="listitem" style="list-style-type: circle"><p><span class="bold"><strong>PulseAudio</strong></span>: at <a class="ulink" href="http://www.pulseaudio.org" target="_blank">http://www.pulseaudio.org</a>
+          (only if you wish to use PulseAudio as audio driver)</p></li><li class="listitem" style="list-style-type: circle"><p><span class="bold"><strong>Flac</strong></span>: at <a class="ulink" href="http://flac.sf.net" target="_blank">http://flac.sf.net</a> (only if you
+          wish to use Flac samples)</p></li><li class="listitem" style="list-style-type: circle"><p><span class="bold"><strong>LADSPA</strong></span>: at <a class="ulink" href="http://www.ladspa.org" target="_blank">http://www.ladspa.org</a> (only if you wish
+          to use <abbr class="abbrev">LADSPA</abbr> effects)</p></li><li class="listitem" style="list-style-type: circle"><p><span class="bold"><strong>liblrdf</strong></span>: at <a class="ulink" href="http://sf.net/projects/lrdf" target="_blank">http://sf.net/projects/lrdf</a> (only if you wish to use lrdf to categorise effects)</p></li><li class="listitem" style="list-style-type: circle"><p><span class="bold"><strong><abbr class="abbrev">LASH</abbr></strong></span>: at <a class="ulink" href="http://lash.nongnu.org" target="_blank">http://lash.nongnu.org</a> (only if
+          you wish to use <abbr class="abbrev">LASH</abbr>)</p></li><li class="listitem" style="list-style-type: circle"><p>
+	        <span class="bold"><strong>liblo</strong></span>: at <a class="ulink" href="http://liblo.sourceforge.net/" target="_blank">http://liblo.sourceforge.net/</a> for <a class="link" href="ch17.html" title="Chapter 17. OSC API"><abbr class="abbrev">OSC</abbr></a> and <a class="link" href="ch04s05.html#chpt.overview.session_management.nsm" title="4.5.1. NSM"><abbr class="abbrev">NSM</abbr></a> support
+          </p></li></ul></div><p>Please install them with your distribution's package manager. If
+      you're running a Debian-based system, you can install the libraries
+      with:</p><pre class="screen">
+<code class="prompt">$</code> <span class="command"><strong>apt-get install qtbase5-dev qtbase5-dev-tools           \
+    qttools5-dev qttools5-dev-tools libqt5xmlpatterns5-dev  \
+    libarchive-dev libsndfile1-dev libasound2-dev liblo-dev \
+    libpulse-dev libcppunit-dev liblrdf-dev                 \
+    liblash-compat-dev librubberband-dev libjack-jackd2-dev</strong></span>
+</pre><p>Compiling with <span class="command"><strong>cmake</strong></span> can be done easily by using the <code class="filename">build.sh</code> script. Go to the directory where the <span class="command"><strong>git</strong></span> repository
+        was cloned and run the <code class="filename">build.sh</code> script without any arguments to display the help :</p><pre class="screen">
+<code class="prompt">$</code> <span class="command"><strong>./build.sh</strong></span>
+        </pre><p>The help is now displayed (and is self-explanatory) :
+        </p><pre class="screen">
+<span class="command"><strong>   r[m]     =&gt; all built, temp and cache files</strong></span>
+<span class="command"><strong>   c[lean]  =&gt; remove cache files</strong></span>
+<span class="command"><strong>   m[ake]   =&gt; launch the build process</strong></span>
+<span class="command"><strong>   mm       =&gt; launch the build process using ccache</strong></span>
+<span class="command"><strong>   mt       =&gt; launch the build process with clang tidy checks enabled</strong></span>
+<span class="command"><strong>   d[oc]    =&gt; build html documentation</strong></span>
+<span class="command"><strong>   g[raph]  =&gt; draw a dependencies graph</strong></span>
+<span class="command"><strong>   h[elp]   =&gt; show the build options</strong></span>
+<span class="command"><strong>   x|exec   =&gt; execute hydrogen</strong></span>
+<span class="command"><strong>   t[ests]  =&gt; execute tests</strong></span>
+<span class="command"><strong>   p[kg]    =&gt; build source package</strong></span>
+<span class="command"><strong>   z        =&gt; build using ccache and run from tree</strong></span>
+        </pre><p>To build Hydrogen and execute the result, run the build script with the <em class="parameter"><code>m</code></em> option
+        </p><pre class="screen">
+<code class="prompt">$</code> <span class="command"><strong>./build.sh m x</strong></span>
+        </pre><p>and to install it permanently on your computer, change into the <code class="filename">build</code> folder and use the <span class="command"><strong>make</strong></span> command.
+        </p><pre class="screen">
+<code class="prompt">$</code> <span class="command"><strong>cd build</strong></span>
+<code class="prompt">$</code> <span class="command"><strong>sudo make install</strong></span>
+        </pre><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>For further details about the installation process please have a look the <code class="filename">INSTALL.txt</code> file (located in the top level directory once you downloaded the sources).</p></td></tr></table></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch01.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="pt01.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch03.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 1. Download </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Chapter 3. Keyboard and Mouse</td></tr></table></div></body></html>
