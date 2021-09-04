@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Hydrogen 1.1.0 released"
+date:   2021-09-04 22:17:23 BST
+
+categories: jekyll update
+---
+
+Release 1.1.0 of Hydrogen is the new stable release of Hydrogen. This release brings new features as well as many bug fixes, and is generally recommended for all users.
+
+New features in this release include:
+
+  - Keyboard cursor-driven pattern, song and note properties editing
+  - Note selection and movement in pattern editors
+  - New OSC commands (new song, open song, save song (as), quit,
+      * toggle looped playback, toggle timeline, toggle Jack transport,
+      * toggle Jack timebase master, add/delete timeline marker,
+      * toggle song/pattern playback mode)
+  - NSM support reworked
+  - Deprecating JACK-session
+  - Instrument main pitch shift offset
+  - Custom pattern size support with representation in note values
+  - Custom pan law support in mixer
+  - Audio output device selection in CoreAudio (macOS) and PortAudio (Windows)
+
+The complete list of bugs and other issues addressed by this release is available [via the Github issue tracker](https://github.com/hydrogen-music/hydrogen/milestone/5?closed=1).
+Source code and binary releases for Windows and macOS are available from [GitHub](https://github.com/hydrogen-music/hydrogen/releases/tag/1.1.0). 
