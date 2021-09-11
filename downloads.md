@@ -53,9 +53,9 @@ Older versions:
  
 ## Sources
 
-The hydrogen sourcecode can be fetched via github:
+The hydrogen sourcecode for the most recent release can be fetched via github:
 
-	git clone git://github.com/hydrogen-music/hydrogen.git
+	git clone -b releases/1.1  git://github.com/hydrogen-music/hydrogen.git
 
 For more information about building hydrogen from source, see our Linux compilation howto.
 
