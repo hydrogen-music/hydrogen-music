@@ -11,9 +11,7 @@ This site provides downloads for our installers, sources and demos.
 
 # Linux:
 
-Due to the variety of linux distributions we do not provide packages for Linux. If you do not find hydrogen in the repository of your distribution, please ask the people behind your distribution to include hydrogen.
-
-If you're using ubuntu, there's also the [kxstudio](http://kxstudio.linuxaudio.org/Repositories) repository which provides packages for hydrogen.
+Due to the variety of linux distributions we do not provide packages for Linux ourselves. You can check the compiled list of [Repology](https://repology.org/project/hydrogen-drum-machine/versions) to see which version is available for which distribution. If you do not find one for yours, please ask the people behind your distribution to include Hydrogen.
 
 # Windows:
 
