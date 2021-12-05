@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Hydrogen 1.1.0 released"
+date:   2021-12-05 22:07:12 BST
+
+categories: jekyll update
+---
+
+Release 1.1.1 of Hydrogen is the new stable release of Hydrogen. This is a maintenance release which addresses issues affecting release 1.1.0 and earlier versions of Hydrogen, including:
+
+  - Preferences dialog 'OK' bug
+  - Audio problems when using LADSPA plugins with PulseAudio
+  - MIDI crashes and other issues on 64-bit Windows
+  - Missing tags and markers
+  - Inability to control audio latency on Windows (PortAudio)
+
+Full details of these issues are [available on GitHub](https://github.com/hydrogen-music/hydrogen/milestone/8?closed=1).
+
+Source code and binary releases for Windows and macOS are available from [GitHub](https://github.com/hydrogen-music/hydrogen/releases/tag/1.1.1). 
