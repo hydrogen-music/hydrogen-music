@@ -10,7 +10,7 @@ This is the hydrogen documentation page.
 ## Manual
 
 The Hydrogen manual is available online in English:
-+  [single page HTML](../documentation/manual/manual_en_single_page.html)
++  [single page HTML](../documentation/manual/manual_en.html)
 +  [chunked HTML](../documentation/manual/manual_en_chunked/index.html)
 
 If the manual is not available in your language, you want to
