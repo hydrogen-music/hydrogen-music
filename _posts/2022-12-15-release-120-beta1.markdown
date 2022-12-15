@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "Hydrogen 1.2.0-beta1 released"
+date:   2022-12-15 17:20:00 BST
+
+categories: jekyll update
+---
+
+Hydrogen-1.2.0-beta1 is a beta test release of Hydrogen, which previews new features in Hydrogen-1.2.
+
+As this is a beta test release, please report any issues encountered on [the GitHub issue tracker](https://github.com/hydrogen-music/hydrogen/issues). The Hydrogen-1.1 release line (including the latest Hydrogen-1.1.1) remains the stable release line, and can be used if any critical issues are encountered.
+
+New features previewed by this release include:
+  - New scalable SVG-based GUI components
+  - Configurable colour themes
+  - Pattern and Song editor can follow playback
+  - Stacked mode and virtual patterns can show notes from other patterns alongside currently selecte pattern
+  - Tagging improvements
+  - New OSC commands
+  - Builtin crash reporter
+  - Slightly changed ADSR behaviour to align with natural user expectations
+
+In addition there are many bug fixes, smaller tweaks to behaviour, and many under-the-hood improvements to audio processing structure, timekeeping and performance, as well as GUI speed.
+
+
+Source code and binary releases for Windows and macOS are available from [GitHub](https://github.com/hydrogen-music/hydrogen/releases/tag/1.2.0-beta1).
