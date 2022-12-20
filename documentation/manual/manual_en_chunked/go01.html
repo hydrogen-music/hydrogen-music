@@ -1,0 +1,168 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Glossary</title><link rel="stylesheet" type="text/css" href="../res/docbook.css"><script src="../res/docbook.js" type="text/javascript"></script><meta name="generator" content="DocBook XSL Stylesheets V1.79.1"><link rel="home" href="index.html" title="Hydrogen v1.1 Manual"><link rel="up" href="pt04.html" title="Part IV. Appendix"><link rel="prev" href="ch22.html" title="Chapter 22. Shortcut Lists"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Glossary</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch22.html">Prev</a> </td><th width="60%" align="center">Part IV. Appendix</th><td width="20%" align="right"> </td></tr></table><hr></div><div class="glossary"><div class="titlepage"><div><div><h2 class="title"><a name="glossary"></a>Glossary</h2></div></div></div><p>This is a glossary of general terms encountered when using Hydrogen,
+     synthesizers, drums, or samplers. The definitions here provide more
+     detail and explanation than the simplified ones in the text. For
+     example, the text of the manual would have you believe that an ADSR is
+     the only kind of envelope generator and could only ever control the
+     volume. While the simplified definitions help new users start using
+     Hydrogen quickly, they can lack the nuances presented here.</p><dl><dt><a name="def.adsr"></a><span class="glossterm">ADSR</span></dt><dd class="glossdef"><p>A type of envelope generator that allows you to control the
+        <a class="link" href="go01.html#def.attack" title="Attack">Attack</a>,
+        <a class="link" href="go01.html#def.decay" title="Decay">Decay</a>,
+        <a class="link" href="go01.html#def.sustain" title="Sustain">Sustain</a>, and
+        <a class="link" href="go01.html#def.release" title="Release">Release</a> parameters.
+        Generally, the
+        parameters are proportional to
+        the <a class="link" href="go01.html#def.velocity" title="Velocity">velocity</a>.</p><p>
+          After you trigger
+            a note, Hydrogen will start the <a class="link" href="go01.html#def.attack" title="Attack">attack</a> phase in which the volume of the note is increase from 0 to its full <a class="link" href="go01.html#def.velocity" title="Velocity">velocity</a>.
+            After reaching full velocity, the volume will <a class="link" href="go01.html#def.decay" title="Decay">decay</a> until it reaches the
+            <a class="link" href="go01.html#def.sustain" title="Sustain">sustain</a> level. When the note is
+            <a class="link" href="go01.html#def.release" title="Release">released</a>, Hydrogen reduces the volume from the
+            sustain level back down to 0.
+        </p><p>In Hydrogen, the ADSR envelope generator only controls the volume
+        (attenuation).</p><p>Read more about this in the Wikipedia
+        Article <a class="ulink" href="http://en.wikipedia.org/wiki/ADSR_envelope" target="_blank">ADSR
+        Envelope</a></p><p>See Also <a class="glossseealso" href="go01.html#def.envelopegenerator">Envelope Generator</a>, <a class="glossseealso" href="go01.html#def.attack">Attack</a>, <a class="glossseealso" href="go01.html#def.decay">Decay</a>, <a class="glossseealso" href="go01.html#def.sustain">Sustain</a>, <a class="glossseealso" href="go01.html#def.release">Release</a>.</p></dd><dt><a name="def.attack"></a><span class="glossterm">Attack</span></dt><dd class="glossdef"><p>This is the first phase of an <a class="link" href="go01.html#def.adsr" title="ADSR">ADSR</a> envelope. It represents the amount
+        of <span class="emphasis"><em>time</em></span> to increase the volume of a note from
+        0 (triggering) to full <a class="link" href="go01.html#def.velocity" title="Velocity">velocity</a>.</p><p>See Also <a class="glossseealso" href="go01.html#def.adsr">ADSR</a>.</p></dd><dt><a name="def.attenuation"></a><span class="glossterm">Attenuation</span></dt><dd class="glossdef"><p>In filters and mixers, this the amount that a signal is reduced
+        (volume).</p><p>See Also <a class="glossseealso" href="go01.html#def.rolloff">Roll-off</a>.</p></dd><dt><a name="def.bandpassfilter"></a><span class="glossterm">Band-Pass Filter</span></dt><dd class="glossdef"><p>A filter that preserves a certain band of frequencies, and
+        attenuates (silences) all others.  This is often done by combining a
+        high-pass and a low-pass filter.</p><p>See Also <a class="glossseealso" href="go01.html#def.filter">Filter</a>, <a class="glossseealso" href="go01.html#def.highpassfilter">High-Pass Filter</a>, <a class="glossseealso" href="go01.html#def.lowpassfilter">Low-Pass Filter</a>.</p></dd><dt><a name="def.clipping"></a><span class="glossterm">Clipping</span></dt><dd class="glossdef"><p>A phenomenon that happens to a signal when its amplitude is too large
+        for whatever is receiving it.  The peaks of the signal (which are
+        normally smooth curves) get cut off straight at the max volume
+        (clipped).  This distorts the sound and is usually undesirable.</p><p>An example of clipping is when you play music louder than your
+        speaker can handle.  Parts of the music sound harsh and fuzzy.</p></dd><dt><a name="def.component"></a><span class="glossterm">Component</span></dt><dd class="glossdef"><p>
+	      A component is a part of Hydrogen's instrument model.
+          Instrument consist of one or more components, and each component consists of one or more layers.
+        </p><p>To make an example: A snare could have two components.
+        One component includes sounds from the top side of the snare drum, and the other component includes
+        the sounds from the bottom side of the snare drum (where the snare wires are fitted).
+        Each component can consist of several layers (snare drum hits with different velocities).
+        Now you can adjust the volume of the two components to build your ideal drum sound.
+        If you want more of the attack, you can put in more of the "top head" component.
+        If you want more of the snare wires, you put in more of the bottom component.
+        
+        </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
+	        Components will be created for all instruments. So, even if you just want to have two of them in the snare you will automatically have two components in all other instruments. If you thus remove an empty component in one instrument, you will remove it for all other instruments - even if they are non-empty - too.
+          </p><p>
+	        In addition, all <a class="link" href="go01.html#def.layer" title="Layer">layers</a> belonging to the same component do share a common volume fader in the <a class="link" href="ch13s02.html" title="13.2. Component Channel Strips">Component Channel Strips</a> in the Mixer.
+          </p></td></tr></table></div><p>
+        </p></dd><dt><a name="def.cutoff"></a><span class="glossterm">Cutoff Frequency</span></dt><dd class="glossdef"><p>On high-pass and low-pass filters, this is the frequency that
+        divides between those that pass, and those that are attenuated
+        (silenced).  In a high-pass resonance filter, or a low-pass resonance
+        filter, the cutoff is also the frequency zone that gets boosted.</p><p>For example, if you have a low-pass filter and you set the cutoff
+        frequency high (i.e. 20kHz)... the filter will not affect the sound.
+        All the audible frequencies will pass through undisturbed.  As you lower
+        the cutoff frequency to something like 40 Hz (the low string on a bass
+        guitar), it sounds like someone is putting a blanket over the speaker.
+        The higher frequencies are being attenuated above 30 Hz.</p><p>See Also <a class="glossseealso" href="go01.html#def.filter">Filter</a>, <a class="glossseealso" href="go01.html#def.highpassfilter">High-Pass Filter</a>, <a class="glossseealso" href="go01.html#def.lowpassfilter">Low-Pass Filter</a>, <a class="glossseealso" href="go01.html#def.resonancefilter">Resonance Filter</a>.</p></dd><dt><a name="def.decay"></a><span class="glossterm">Decay</span></dt><dd class="glossdef"><p>After the <a class="link" href="go01.html#def.attack" title="Attack">attack</a> phase, this is the amount
+        of <span class="emphasis"><em>time</em></span> for the volume of a note to decrease from full
+        <a class="link" href="go01.html#def.velocity" title="Velocity">velocity</a> to the <a class="link" href="go01.html#def.sustain" title="Sustain">sustain</a> level.</p><p>See Also <a class="glossseealso" href="go01.html#def.adsr">ADSR</a>.</p></dd><dt><a name="def.dc-offsety"></a><span class="glossterm">DC-offset</span></dt><dd class="glossdef"><p>DC offset, or DC coefficient is the mean value of the waveform.</p><p>DC offset is usually undesirable. For example, in audio processing, a 
+        sound that has DC offset will not be at its loudest possible volume when
+        <a class="link" href="go01.html#def.normalization" title="Normalization">normalized</a> (because the offset consumes headroom), and this problem can 
+        possibly extend to the mix as a whole, since a sound with DC offset and a sound
+        without DC offset will have DC offset when mixed. It may also cause other artifacts
+        depending on what is being done with the signal.</p></dd><dt><a name="def.envelopegenerator"></a><span class="glossterm">Envelope Generator</span></dt><dd class="glossdef"><p>A way to control (change) a parameter over time as a response to
+        triggering, holding, and releasing a note.</p><p>Did your eyes just glaze over? Let's try again:</p><p>Imagine that you're playing a note on the keyboard and you have
+        your other hand on a knob (volume, filter cutoff, etc.).  As you play
+        the note, you twist the knob (often up, then down... or down, then up).
+        You do the same thing on each note.  That's what an envelope generator
+        does.  See also <a class="link" href="go01.html#def.adsr" title="ADSR">ADSR</a></p></dd><dt><a name="def.fader"></a><span class="glossterm">Fader</span></dt><dd class="glossdef"><p>A slider control used to adjust the attenuation (volume) in a
+        mixer.  Faders always have an "audio" taper, which means that the
+        attenuation amount changes on an exponential scale.</p></dd><dt><a name="def.filter"></a><span class="glossterm">Filter</span></dt><dd class="glossdef"><p>A device that changes a sound by attenuating specific frequencies.
+        A tone knob is an example of a simple, low-pass filter.</p><p>See Also <a class="glossseealso" href="go01.html#def.bandpassfilter">Band-Pass Filter</a>, <a class="glossseealso" href="go01.html#def.highpassfilter">High-Pass Filter</a>, <a class="glossseealso" href="go01.html#def.lowpassfilter">Low-Pass Filter</a>, <a class="glossseealso" href="go01.html#def.resonancefilter">Resonance Filter</a>.</p></dd><dt><a name="def.gain"></a><span class="glossterm">Gain</span></dt><dd class="glossdef"><p>In an amplifier, this adjust how much (or how little) a signal is
+        amplified (volume).  A higher gain value is a louder signal.</p><p>
+          In Hydrogen there is a plethora of different ways to affect the volume
+          of the resulting sound.  Each single note rendered to audio will
+          contain contributions of
+        </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+              Its individual <a class="link" href="ch09s03.html" title="9.3. Note Properties Editor">Note Velocity</a>
+            </p></li><li class="listitem"><p>
+              Its individual <a class="link" href="ch09s03.html#chpt.pattern_editor.note_properties.pan">Note Pan</a>
+            </p></li><li class="listitem"><p>
+              Its <a class="link" href="ch11s02.html#chpt.instrument_editor.layers.controls.layer_gain">Layer Gain</a>
+            </p></li><li class="listitem"><p>
+              The <a class="link" href="ch11.html#chpt.instrument_editor.general.sustain">Sustain</a>
+              value of its instrument's <a class="link" href="go01.html#def.adsr" title="ADSR">ADSR</a>
+            </p></li><li class="listitem"><p>
+              Its <a class="link" href="ch13.html#chpt.mixer.channel_strips" title="13.1. Instrument Channel Strips">Instrument Pan</a>
+            </p></li><li class="listitem"><p>
+              Its <a class="link" href="ch11.html#chpt.instrument_editor.gain_and_mute_group" title="11.1.2. Gain and Mute Group">Instrument Gain</a>
+            </p></li><li class="listitem"><p>
+              Its <a class="link" href="ch13.html#chpt.mixer.channel_strips" title="13.1. Instrument Channel Strips">Instrument Volume</a>
+            </p></li><li class="listitem"><p>
+              Its <a class="link" href="ch11s02.html#chpt.instrument_editor.layers.controls.component_gain">Component Gain</a>
+            </p></li><li class="listitem"><p>
+              Its <a class="link" href="ch13s02.html" title="13.2. Component Channel Strips">Component Volume</a>
+            </p></li><li class="listitem"><p>
+              Velocity contributions by the <a class="link" href="ch08s07.html" title="8.7. Automation Path">Automation
+              Path</a> when played in <a class="link" href="ch08s02.html#chpt.song_editor.editor_modes.song_mode" title="8.2.3. Song Mode">Song Mode</a>
+            </p></li><li class="listitem"><p>
+              Random contributions introduced by <a class="link" href="ch13s04.html" title="13.4. Master Fader Strip">Velocity Humanization</a>
+            </p></li><li class="listitem"><p>
+              The overall <a class="link" href="ch13s04.html" title="13.4. Master Fader Strip">Song Volume</a>
+            </p></li></ul></div><p>
+          Further modifications of the note's audio can be applied using the
+          <a class="link" href="ch12.html" title="Chapter 12. Sample Editor">Sample Editor</a>, the <a class="link" href="ch11.html#chpt.instrument_editor.filter" title="11.1.3. Filter Parameters">Low-Pass Resonance
+          Filter</a>, and <a class="link" href="ch13s03.html" title="13.3. FX Rack and LADSPA Plugins">FX Plugins</a>.
+        </p></dd><dt><a name="def.highpassfilter"></a><span class="glossterm">High-Pass Filter</span></dt><dd class="glossdef"><p>A filter that attenuates (silences) low frequencies, but allows
+        high frequencies to pass through.</p><p>See Also <a class="glossseealso" href="go01.html#def.filter">Filter</a>, <a class="glossseealso" href="go01.html#def.cutoff">Cutoff Frequency</a>.</p></dd><dt><a name="def.instrument"></a><span class="glossterm">Instrument</span></dt><dd class="glossdef"><p>In Hydrogen, an instrument is a single noise-maker (like a bass
+        drum kick, or a tom).</p></dd><dt><a name="def.layer"></a><span class="glossterm">Layer</span></dt><dd class="glossdef"><p>In an instrument you can load several different samples (each one
+        called a <span class="bold"><strong>layer</strong></span>), and have a different
+        sample play depending on the velocity of the note.  Only one sample at a
+        time will play.</p><p>Suppose you have a sample of a floor tom being struck softly.  If
+        you simply play the sample louder - it will
+        <span class="emphasis"><em>not</em></span> sound the same as a real tom that has been
+        struck very hard.  If you wish to mimic this in your instrument, you can
+        load one sample for soft playing, and a different sample for loud
+        playing.</p><p>See Also <a class="glossseealso" href="go01.html#def.instrument">Instrument</a>.</p></dd><dt><a name="def.lowpassfilter"></a><span class="glossterm">Low-Pass Filter</span></dt><dd class="glossdef"><p>A filter that attenuates (silences) high frequencies, but allows
+        low frequencies to pass through.</p><p>See Also <a class="glossseealso" href="go01.html#def.filter">Filter</a>, <a class="glossseealso" href="go01.html#def.cutoff">Cutoff Frequency</a>.</p></dd><dt><a name="def.mute"></a><span class="glossterm">Mute</span></dt><dd class="glossdef"><p>To make no noise.  A setting on an instrument that prevents any
+        audio output.</p></dd><dt><a name="def.mutegroup"></a><span class="glossterm">Mute Group</span></dt><dd class="glossdef"><p>A group of instruments (<a class="link" href="go01.html#def.sample" title="Sample">samples</a>) out of which only a single one can be unmuted. If another instrument from the same group is triggered, the former one will be <a class="link" href="go01.html#def.mute" title="Mute">muted</a> (stop playing) immediately.</p><p>This is typically used in hi-hats, where there's a different
+        instrument (sample) for when the hi-hat is open or closed.  With a real
+        hi-hat, the sound of the open hi-hat will stop as soon as you close it.
+        However, if you use two samples - the open sound will continue
+        even after you have triggered the closed sound.  By placing both
+        instruments in the same mute group (group #1, for example)... triggering
+        closed sound will immediately stop the open sound (and vice
+        versa).</p></dd><dt><a name="def.normalization"></a><span class="glossterm">Normalization</span></dt><dd class="glossdef"><p>Normalization is the process of applying a uniform <a class="link" href="go01.html#def.gain" title="Gain">gain</a> to an audio signal in order to make its largest amplitude peak match a predefined value (usually 0dBFS).</p></dd><dt><a name="def.octave"></a><span class="glossterm">Octave</span></dt><dd class="glossdef"><p>A span of frequencies where the top-most frequency is exactly
+        twice the frequency of the bottom frequency.</p><p>For example, the range 20 Hz to 40 Hz is an octave.  So is 120 Hz
+        to 240 Hz, and 575 Hz to 1150 Hz.  While the frequency differences are
+        very different (20 Hz, 120 Hz, and 575 Hz, respectively), to the human
+        ear they <span class="emphasis"><em>sound</em></span> like the same distance.</p></dd><dt><a name="def.pan"></a><span class="glossterm">Pan</span></dt><dd class="glossdef"><p>Panning allows you to change the position of both a mono and stereo sample within the stereo sound field of the resulting audio output. In other words, it controls whether the sound of e.g. the snare is coming from the left or right speaker or somewhere in between. With careful pan adjustments of the different instruments you can make you drumkit sound more natural and simulate the feeling of listening to a real kit in close distance.</p><p>
+          The effect of <a class="link" href="ch09s03.html#chpt.pattern_editor.note_properties.pan">note Pan</a> depends on the <a class="link" href="ch13.html#chpt.mixer.channel_strips.pan">instrument Pan</a>
+          knob, which is set in the <a class="link" href="ch13.html#chpt.mixer.channel_strips" title="13.1. Instrument Channel Strips">Mixer</a>.
+          Look to next figure to see how the <span class="bold"><strong>Resultant Pan</strong></span>
+          is determined (from version 1.1):
+
+          </p><div class="figure"><a name="matryoshkaPanning"></a><p class="title"><b>Figure 47. Visualization of the Interaction of the Different Pan Parameters</b></p><div class="figure-contents"><div class="mediaobject"><img src="../img/matrioskaPanH2.png" alt="Visualization of the Interaction of the Different Pan Parameters"></div></div></div><p><br class="figure-break">
+          
+	      This multi-pan model resembles a "matryoshka" in some way: the <span class="emphasis"><em>note Pan</em></span> value moves the 
+	      <span class="emphasis"><em>Resultant Pan</em></span> in a smaller pan range centered at
+	      <span class="emphasis"><em>instrument Pan</em></span>, whose extension depends on <span class="emphasis"><em>instrument Pan</em></span> value.
+	      Some examples: 
+		  if <span class="emphasis"><em>instrument Pan</em></span> is central, <span class="emphasis"><em>note Pan</em></span> moves the signal in the
+		  whole stereo range (really from Left to Right);
+		  if <span class="emphasis"><em>instrument Pan</em></span> is sided, <span class="emphasis"><em>note Pan</em></span> moves the signal in a
+		  progressively smaller stereo range centered at <span class="emphasis"><em>instrument Pan</em></span>;
+		  if <span class="emphasis"><em>instrument Pan</em></span> is HARD-sided, <span class="emphasis"><em>note Pan</em></span> doesn't have any effect.
+        </p><p>
+	        The way the <span class="emphasis"><em>Resultant Pan</em></span> will be translated into the volume of each stereo channel is determined by the <a class="link" href="ch13s04.html#chpt.mixer.master_fader_strip.mixer_settings" title="13.4.2. Mixer Settings">Pan Law</a> in the Mixer settings.
+          </p></dd><dt><a name="def.release"></a><span class="glossterm">Release</span></dt><dd class="glossdef"><p>The amount of
+        <span class="emphasis"><em>time</em></span> to reduce the volume of a note from the <a class="link" href="go01.html#def.sustain" title="Sustain">sustain</a> level
+        to 0.</p><p>See Also <a class="glossseealso" href="go01.html#def.adsr">ADSR</a>.</p></dd><dt><a name="def.resonance"></a><span class="glossterm">Resonance</span></dt><dd class="glossdef"><p>When referring to a resonance filter, this is the parameter that
+        determines how much of a boost (gain) to give the frequencies at the
+        cutoff.</p><p>See Also <a class="glossseealso" href="go01.html#def.resonancefilter">Resonance Filter</a>.</p></dd><dt><a name="def.resonancefilter"></a><span class="glossterm">Resonance Filter</span></dt><dd class="glossdef"><p>A filter that gives a large boost to a very narrow range of
+        frequencies.  Typically it will be part of a high-pass or a low-pass
+        filter, where the boosted frequencies are centered on the cut-off
+        frequency.</p><p>See Also <a class="glossseealso" href="go01.html#def.filter">Filter</a>, <a class="glossseealso" href="go01.html#def.cutoff">Cutoff Frequency</a>, <a class="glossseealso" href="go01.html#def.lowpassfilter">Low-Pass Filter</a>, <a class="glossseealso" href="go01.html#def.highpassfilter">High-Pass Filter</a>, <a class="glossseealso" href="go01.html#def.resonance">Resonance</a>.</p></dd><dt><a name="def.rolloff"></a><span class="glossterm">Roll-off</span></dt><dd class="glossdef"><p>This is the amount that frequencies are attenuated (suppressed) as
+        the frequency changes (typically measured in dB/octave).</p><p>For example, in a low-pass filter the frequencies below the cutoff
+        frequency are not attenuated (they pass-through with the same volume).
+        Same with the cutoff frequency.  As you go above the cutoff frequency,
+        the frequencies that are near the cutoff frequency are not attenuated
+        very much at all.  However, the frequencies that are much higher than
+        the cutoff are attenuated (suppressed) a lot.  This is usually
+        approximated by a straight line (on a log scale) and measured in in dB
+        of attenuation per octave of frequency.</p><p>See Also <a class="glossseealso" href="go01.html#def.attenuation">Attenuation</a>, <a class="glossseealso" href="go01.html#def.filter">Filter</a>.</p></dd><dt><a name="def.sample"></a><span class="glossterm">Sample</span></dt><dd class="glossdef"><p>A short recording of a sound, typically between .1 and 3.0 seconds
+        long. Each time a note is triggered within Hydrogen the corresponding sample will be played back (after applying all customization and effects).</p></dd><dt><a name="def.sustain"></a><span class="glossterm">Sustain</span></dt><dd class="glossdef"><p>The <span class="emphasis"><em>level</em></span> (how loud; volume) to hold the note between the <a class="link" href="go01.html#def.decay" title="Decay">decay</a> and the <a class="link" href="go01.html#def.release" title="Release">release</a>. It is given as percentage of the <a class="link" href="go01.html#def.velocity" title="Velocity">velocity</a> and does not depend on time.</p><p>See Also <a class="glossseealso" href="go01.html#def.adsr">ADSR</a>.</p></dd><dt><a name="def.velocity"></a><span class="glossterm">Velocity</span></dt><dd class="glossdef"><p>How hard you hit a note.</p><p><abbr class="abbrev">MIDI</abbr> devices are required to send this information along with the
+        note.  Synthesizers use this information to adjust several parameters on
+        the sample (typically the volume).  In Hydrogen, it is only used to
+        adjust how loud the sample is played back.</p></dd></dl></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch22.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="pt04.html">Up</a></td><td width="40%" align="right"> </td></tr><tr><td width="40%" align="left" valign="top">Chapter 22. Shortcut Lists </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> </td></tr></table></div></body></html>

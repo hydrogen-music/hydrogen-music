@@ -1,0 +1,90 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>5.5. Appearance</title><link rel="stylesheet" type="text/css" href="../res/docbook.css"><script src="../res/docbook.js" type="text/javascript"></script><meta name="generator" content="DocBook XSL Stylesheets V1.79.1"><link rel="home" href="index.html" title="Hydrogen v1.1 Manual"><link rel="up" href="ch05.html" title="Chapter 5. Preferences"><link rel="prev" href="ch05s04.html" title="5.4. OSC"><link rel="next" href="ch06.html" title="Chapter 6. Main Menu"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.5. Appearance</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch05s04.html">Prev</a> </td><th width="60%" align="center">Chapter 5. Preferences</th><td width="20%" align="right"> <a accesskey="n" href="ch06.html">Next</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="chpt.preferences.appearance_tab"></a>5.5. Appearance</h2></div></div></div><p>
+          The settings available in the <span class="emphasis"><em>Appearance</em></span> tab let you modify the look of Hydrogen and are treated differently than the ones found in other tabs. While the latter are stored in the <code class="filename">hydrogen.conf</code> file in Hydrogen's data folder, the appearance is stored in <a class="link" href="ch21.html#chpt.file_types.h2theme">.h2theme</a> files in the dedicated <code class="filename">theme</code> subfolder. The idea is that while the remaining settings are tailored to your local setup, a theme is something that is easily portable. E.g. you can create a custom dark theme and share it with the Hydrogen community without them having to adopt it to their local setup.
+        </p><p>
+          This can be done using the
+          <span class="inlinemediaobject"><img src="../img/generated_en/preferencesExportThemeButton.png" alt='Grey record button with label "Export Theme".'></span>
+
+          and
+          
+          <span class="inlinemediaobject"><img src="../img/generated_en/preferencesImportThemeButton.png" alt='Grey record button with label "Import Theme".'></span>
+          
+          buttons. All changes applied to a theme (unless indicated otherwise in the dialog) will take effect immediately. If you are satisfied with the result, accept the dialog by clicking the OK button to save it. If you, however, want to reset all options to their state encountered when opening the dialog or importing last theme, hit the 
+          
+          <span class="inlinemediaobject"><img src="../img/generated_en/preferencesResetThemeButton.png" alt='Grey record button with label "Reset Appearance Tab".'></span>
+
+          button or close the dialog.
+        </p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="chpt.preferences.appearance_tab.interface"></a>5.5.1. Interface</h3></div></div></div><div class="figure"><a name="fig.preferences.appearance_tab.interface"></a><p class="title"><b>Figure 5.5. The Interface Tab</b></p><div class="figure-contents"><div class="mediaobject"><img src="../img/generated_en/preferencesInterfaceTab.png" alt="The Interface Tab"></div></div></div><br class="figure-break"><p>
+            The <span class="emphasis"><em>Interface</em></span> tab covers the overall appearance of Hydrogen.
+          </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+	            <span class="bold"><strong>Style</strong></span>:
+                specifies a certain look of GUI elements, like menus, scrollbars, and dialog windows.
+
+                </p><div class="tip" style="margin-left: 5%;"><table border="0" summary="Tip"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="../img/admonitions/tip.svg"></td><th align="left">Tip</th></tr><tr><td align="left" valign="top"><p>
+	                Using this option you might be able to better integrate Hydrogen into your operating system.
+                  </p></td></tr></table></div><p>
+              </p></li><li class="listitem"><p>
+	            <span class="bold"><strong>Meters falloff speed</strong></span>:
+                specifies how fast the visual update of the peak values shown in the <a class="link" href="ch13.html#chpt.mixer.channel_strips" title="13.1. Instrument Channel Strips">Instrument Channel Strips</a>, <a class="link" href="ch13s02.html" title="13.2. Component Channel Strips">Component Channel Strips</a>, and <a class="link" href="ch13s04.html" title="13.4. Master Fader Strip">Master Fader Strip</a> will be done.
+              </p></li><li class="listitem"><p>
+	            <span class="bold"><strong>Default interface layout</strong></span>:
+                specifies whether the GUI of Hydrogen will be arranged in <a class="link" href="ch04.html#fig.UI_overview" title="Figure 4.1. The Main UI in Single Pane mode">Single Pane mode</a> or <a class="link" href="ch04.html#fig.tabbed_UI_overview" title="Figure 4.2. The Main UI in Tabbed mode">Tabbed mode</a> (see <a class="link" href="ch04.html#chpt.overview.gui" title="4.1. Main User Interface">Main User Interface</a> for details).
+                </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
+	                In order for this setting to take effect, Hydrogen has to be restarted.
+                  </p></td></tr></table></div><p>
+              </p></li><li class="listitem"><p>
+	            <span class="bold"><strong>High-resolution display scaling</strong></span>:
+                specifies whether the underlying bitmap graphics of the GUI should be scaled to larger sizes by Qt in order for Hydrogen to look nice with your system's resolution settings.
+              </p></li><li class="listitem"><p>
+	            <span class="bold"><strong>Icon color</strong></span>:
+                while the color of all button labels can be set in the <a class="link" href="ch05s05.html#chpt.preferences.appearance_tab.colors" title="5.5.2. Colors">Colors</a> tab, the icons hold the color used in the corresponding <abbr class="abbrev">SVG</abbr> file and can not be altered freely. To still allow you to change the overall colors conveniently, Hydrogen is shipped with all icons available in either <code class="option">Black</code> and <code class="option">White</code> color.
+              </p></li><li class="listitem"><p>
+	            <span class="bold"><strong>Coloring method for Song Editor elements</strong></span>:
+                determines the coloring of the grid boxes indicating the presence of a pattern in the <a class="link" href="ch08.html" title="Chapter 8. Song Editor">Song Editor</a>. The options available are:
+              </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>
+	                <code class="option">Automatic</code>:
+                    uses as many colors as there are patterns in the song.
+                  </p></li><li class="listitem"><p>
+	                <code class="option">Custom</code>:
+                    uses a certain number of colors in a repeated way.
+                  </p></li></ul></div><p>
+                By chosing <code class="option">Custom</code> two more settings will become available:
+              </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>
+	                <span class="bold"><strong>Number of colors in Song Editor</strong></span>:
+                    how many different colors should be used.
+                  </p></li><li class="listitem"><p>
+	                <span class="bold"><strong>Selected colors</strong></span>:
+                    a list of color buttons. Clicking one will open a dialog allowing you to change its color.
+                  </p></li></ul></div></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="chpt.preferences.appearance_tab.colors"></a>5.5.2. Colors</h3></div></div></div><div class="figure"><a name="fig.preferences.appearance_tab.colors"></a><p class="title"><b>Figure 5.6. The Colors Tab</b></p><div class="figure-contents"><div class="mediaobject"><img src="../img/generated_en/preferencesColorsTab.png" alt="The Colors Tab"></div></div></div><br class="figure-break"><p>
+            The <span class="emphasis"><em>Colors</em></span> tab exposes most of the colors used within Hydrogen.
+          </p><p>
+            You can select a color by clicking its name in the tree you find on the left side. It is grouping the individual colors into
+            
+            </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+                  <span class="bold"><strong>General</strong></span>:
+                  basic Qt colors. Most of them are used in many parts of the GUI. But some of them might be not used at all. So, don't worry in case altering one of these does not result in visual changes.
+                </p></li><li class="listitem"><p>
+                  <span class="bold"><strong>Widgets</strong></span>:
+                  colors in small and interactive elements of the GUI, like buttons or combo boxes.
+                </p></li><li class="listitem"><p>
+                  <span class="bold"><strong>Song Editor</strong></span>:
+                  colors specific to the <a class="link" href="ch08.html" title="Chapter 8. Song Editor">Song Editor</a>.
+                </p></li><li class="listitem"><p>
+                  <span class="bold"><strong>Pattern Editor</strong></span>:
+                  colors specific to the <a class="link" href="ch09.html" title="Chapter 9. Pattern Editor">Pattern Editor</a>.
+                </p></li></ul></div><p>
+          </p><p>
+            Once selected you can change a color by either clicking the large colored rectangle in the upper right part of the tab (which opens a color dialog) or by using the spinboxes and sliders in the lower right part. The latter represent the colors components according to the <abbr class="abbrev">RGB</abbr> as well as the <abbr class="abbrev">HSV</abbr> color model.
+          </p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="chpt.preferences.appearance_tab.font"></a>5.5.3. Font</h3></div></div></div><div class="figure"><a name="fig.preferences.appearance_tab.font"></a><p class="title"><b>Figure 5.7. The Font Tab</b></p><div class="figure-contents"><div class="mediaobject"><img src="../img/generated_en/preferencesFontTab.png" alt="The Font Tab"></div></div></div><br class="figure-break"><p>The <span class="emphasis"><em>Font</em></span> tab contains all options affecting strings, characters, and numbers displayed in the GUI.
+          </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+	            <span class="bold"><strong>Application font</strong></span>:
+                specifies the font family used for headings, larger labels, and most parts of the dialogs and popups.
+              </p></li><li class="listitem"><p>
+	            <span class="bold"><strong>Item font</strong></span>:
+                specifies the font family used for smaller elements, like the name of patterns in the <a class="link" href="ch08s03.html" title="8.3. Sidebar">Sidebar</a> of the Song Editor or the name of the samples in the <a class="link" href="ch11s02.html" title="11.2. Layers">Layers view</a> of the Instrument Editor.
+              </p></li><li class="listitem"><p>
+	            <span class="bold"><strong>Widget font</strong></span>:
+                specifies the font family used for small and interactive elements of the GUI, like buttons.
+              </p></li><li class="listitem"><p>
+	            <span class="bold"><strong>Font size</strong></span>:
+                accessibility option to increase or decrease the overall font size of Hydrogen.
+              </p></li></ul></div></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch05s04.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch05.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch06.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">5.4. OSC </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Chapter 6. Main Menu</td></tr></table></div></body></html>

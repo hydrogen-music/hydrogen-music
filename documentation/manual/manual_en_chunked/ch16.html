@@ -1,0 +1,217 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Chapter 16. MIDI API</title><link rel="stylesheet" type="text/css" href="../res/docbook.css"><script src="../res/docbook.js" type="text/javascript"></script><meta name="generator" content="DocBook XSL Stylesheets V1.79.1"><link rel="home" href="index.html" title="Hydrogen v1.1 Manual"><link rel="up" href="pt02.html" title="Part II. Using Hydrogen"><link rel="prev" href="ch15s02.html" title="15.2. Menu"><link rel="next" href="ch16s02.html" title="16.2. MIDI-learnable Widgets"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 16. MIDI API</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch15s02.html">Prev</a> </td><th width="60%" align="center">Part II. Using Hydrogen</th><td width="20%" align="right"> <a accesskey="n" href="ch16s02.html">Next</a></td></tr></table><hr></div><div class="chapter"><div class="titlepage"><div><div><h2 class="title"><a name="chpt.midi"></a>Chapter 16. MIDI API</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="sect1"><a href="ch16.html#chpt.midi.actions">16.1. MIDI Actions</a></span></dt><dd><dl><dt><span class="sect2"><a href="ch16.html#chpt.midi.actions.events">16.1.1. Events</a></span></dt><dt><span class="sect2"><a href="ch16.html#chpt.midi.actions.actions">16.1.2. Actions</a></span></dt></dl></dd><dt><span class="sect1"><a href="ch16s02.html">16.2. MIDI-learnable Widgets</a></span></dt></dl></div><p>In this section you can find more info about how to make Hydrogen respond to <abbr class="abbrev">MIDI</abbr> messages. This is either done using the <a class="link" href="ch16.html#chpt.midi.actions" title="16.1. MIDI Actions">available <abbr class="abbrev">MIDI</abbr> Actions</a> or using the <a class="link" href="ch16s02.html" title="16.2. MIDI-learnable Widgets"><abbr class="abbrev">MIDI</abbr>-learnable Widgets</a>, like knobs or faders, both triggered using <a class="link" href="ch16.html#chpt.midi.actions" title="16.1. MIDI Actions"><abbr class="abbrev">MIDI</abbr> Events</a>.
+      </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
+          Before you can work with <abbr class="abbrev">MIDI</abbr> actions
+          you should have your <abbr class="abbrev">MIDI</abbr> devices, drivers, and connections configured
+          correctly in the <a class="link" href="ch05s03.html" title="5.3. MIDI System">MIDI System </a> tab of the Preferences.
+        </p><p>
+	      Please note that this chapter will only cover the table linking external <abbr class="abbrev">MIDI</abbr> Events to Hydrogen's <abbr class="abbrev">MIDI</abbr> Actions. For all other parameters of the <abbr class="abbrev">MIDI</abbr> API please see the <a class="link" href="ch05s03.html" title="5.3. MIDI System">MIDI System </a> tab of the Preferences.
+        </p></td></tr></table></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="chpt.midi.actions"></a>16.1. MIDI Actions</h2></div></div></div><div class="figure"><a name="midi_actions"></a><p class="title"><b>Figure 16.1. MIDI Actions are set in MIDI System tab of the Preferences Dialog</b></p><div class="figure-contents"><div class="mediaobject"><img src="../img/generated_en/MidiSystem_V2.png" alt="MIDI Actions are set in MIDI System tab of the Preferences Dialog"></div></div></div><br class="figure-break"><p>An <abbr class="abbrev">MIDI</abbr> <span class="bold"><strong>Event</strong></span> is an incoming <abbr class="abbrev">MIDI</abbr> message, originating from e.g. a <abbr class="abbrev">MIDI</abbr> controller or an external sequencer. A <abbr class="abbrev">MIDI</abbr> <span class="bold"><strong>Action</strong></span> is a function built into Hydrogen that can be used to react to a specific <abbr class="abbrev">MIDI</abbr> Event. Binding an Event to an Action can be done using the <a class="link" href="ch05s03.html" title="5.3. MIDI System">MIDI System</a> tab of the Preferences.
+      </p><p>
+	    You can also define <abbr class="abbrev">MIDI</abbr> bindings by simply pressing the
+        <span class="inlinemediaobject"><img src="../img/generated_en/midiSenseButton.png" alt="Red circle."></span>
+        button left of the Event-Action binding line. 
+        A popup will inform you that Hydrogen is waiting for your input.  Press/hit/turn 
+        the key/pad/knob on your <abbr class="abbrev">MIDI</abbr> keyboard (or controller) that you want to link to 
+        this action.  The popup will close and the <span class="bold"><strong>Event Param.</strong></span> value will now show the 
+        <abbr class="abbrev">MIDI</abbr> note value of the key you pressed.  Once this is done you can select an Action 
+        from the action drop-down list.
+      </p><div class="tip" style="margin-left: 5%;"><table border="0" summary="Tip"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="../img/admonitions/tip.svg"></td><th align="left">Tip</th></tr><tr><td align="left" valign="top"><p>
+	      You can also define a binding without the 
+        <span class="inlinemediaobject"><img src="../img/generated_en/midiSenseButton.png" alt="Red circle."></span> button by setting the <span class="bold"><strong>Event Param.</strong></span> manually to the desired <abbr class="abbrev">MIDI</abbr> note.
+        </p></td></tr></table></div><p>
+        The <span class="bold"><strong>Action Param.</strong></span> column to the right of the table specifies the input parameter to the Action (see the corresponding <a class="link" href="ch16.html#chpt.midi.actions.actions" title="16.1.2. Actions">Actions reference</a> for details).
+      </p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="chpt.midi.actions.events"></a>16.1.1. Events</h3></div></div></div><p>
+            Four types of <abbr class="abbrev">MIDI</abbr> Events are available (as described in the <abbr class="abbrev">MIDI</abbr> standard):
+          </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: opencircle; "><li class="listitem" style="list-style-type: circle"><p>
+	          <span class="bold"><strong>NOTE</strong></span>: an input coming from a regular black/white key of a keyboard or a drumpad.
+	        </p></li><li class="listitem" style="list-style-type: circle"><p>
+	          <span class="bold"><strong>CC</strong></span>: controller commands coming from faders or rotary controllers.
+	        </p></li><li class="listitem" style="list-style-type: circle"><p>
+	          <span class="bold"><strong>MMC_x</strong></span>: <a class="ulink" href="http://en.wikipedia.org/wiki/MIDI_Machine_Control" target="_blank">
+	          machine control events</a> coming from buttons, like 'play' or 'stop',  on a controller.
+	        </p></li><li class="listitem" style="list-style-type: circle"><p>
+	          <span class="bold"><strong>PROGRAM_CHANGE</strong></span>: 
+	          usually intended to change the sound of instruments or to select different sound banks.
+	        </p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="chpt.midi.actions.actions"></a>16.1.2. Actions</h3></div></div></div><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
+             Some of the <abbr class="abbrev">MIDI</abbr> Actions require that their <span class="bold"><strong>Action Param.</strong></span> to be configured.  These parameter usually references a specific channel, instrument, FXsend...  Keep in mind that their values are <span class="emphasis"><em>zero-based</em></span>. So, if you want to reference channel 1 you 
+         have to enter <code class="option">0</code> in the <span class="bold"><strong>Action Param.</strong></span> field (<code class="option">1</code> for channel 2, <code class="option">2</code> for channel 3, and so on).
+           </p></td></tr></table></div><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: opencircle; "><li class="listitem" style="list-style-type: circle"><p>
+	           <span class="bold"><strong>&lt;&lt;_PREVIOUS_BAR</strong></span>:
+               moves the playhead to the previous pattern/bar.
+             </p></li><li class="listitem" style="list-style-type: circle"><p>
+	           <span class="bold"><strong>&gt;&gt;_NEXT_BAR</strong></span>:
+               moves the playhead to the next pattern/bar.
+             </p></li><li class="listitem" style="list-style-type: circle"><p>
+	         <span class="bold"><strong>BEATCOUNTER</strong></span>: calculates the average
+             time passing between successive encounters of this commands and uses
+             it to set the current tempo using the <a class="link" href="ch07s02.html#sect.main_toolbar.tap_tempo_beat_counter.beat_counter" title="7.2.2. Beat Counter">Beat Counter</a>.
+	       </p></li><li class="listitem" style="list-style-type: circle"><p><a name="chpt.midi.actions.actions.bpm_cc_relative"></a>
+	           <span class="bold"><strong>BPM_CC_RELATIVE</strong></span>: changes the tempo relative to the current tempo, using a controller. Using the <span class="bold"><strong>Action Param</strong></span> you can specify by how much the current tempo will change. If the incoming Event is <code class="option">-1</code> (negative), the tempo will be increased and if it's <code class="option">1</code> (positive), it will be increased.
+               </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
+                   This Action will have no effect if Hydrogen is both in <a class="link" href="ch08s02.html#chpt.song_editor.editor_modes.song_mode" title="8.2.3. Song Mode">Song Mode</a>
+                   and the <a class="link" href="ch08s04.html" title="8.4. Timeline">Timeline</a> is activated.
+	             </p></td></tr></table></div><p>
+	         </p></li><li class="listitem" style="list-style-type: circle"><p>
+	         <span class="bold"><strong>BPM_DECR</strong></span>: decreases the current tempo
+             by the supplied value.
+           </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
+               This Action will have no effect if Hydrogen is in <a class="link" href="ch08s02.html#chpt.song_editor.editor_modes.song_mode" title="8.2.3. Song Mode">Song Mode</a>
+               or <a class="link" href="ch08s04.html" title="8.4. Timeline">Timeline</a> is activated.
+	         </p></td></tr></table></div></li><li class="listitem" style="list-style-type: circle"><p>
+	           <span class="bold"><strong>BPM_FINE_CC_RELATIVE</strong></span>:
+               as <a class="xref" href="ch16.html#chpt.midi.actions.actions.bpm_cc_relative">BPM_CC_RELATIVE</a> but with changes 100 times smaller than the value specified in <span class="bold"><strong>Action Param</strong></span>.
+               </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
+                   This Action will have no effect if Hydrogen is in <a class="link" href="ch08s02.html#chpt.song_editor.editor_modes.song_mode" title="8.2.3. Song Mode">Song Mode</a>
+                   or <a class="link" href="ch08s04.html" title="8.4. Timeline">Timeline</a> is activated.
+	             </p></td></tr></table></div><p>
+             </p></li><li class="listitem" style="list-style-type: circle"><p>
+	         <span class="bold"><strong>BPM_INCR</strong></span>: increases the current tempo
+             by the supplied value.
+           </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
+               This Action will have no effect if Hydrogen is in <a class="link" href="ch08s02.html#chpt.song_editor.editor_modes.song_mode" title="8.2.3. Song Mode">Song Mode</a>
+               or <a class="link" href="ch08s04.html" title="8.4. Timeline">Timeline</a> is activated.
+	         </p></td></tr></table></div></li><li class="listitem" style="list-style-type: circle"><p><a name="chpt.midi.actions.actions.effect_level_absolute"></a>
+             <span class="bold"><strong>EFFECT_LEVEL_ABSOLUTE</strong></span>:
+                          changes the <a class="link" href="ch13.html#chpt.mixer.channel_strips.fx_volume">volume level of an FX</a>. Parameter 1 determines the <a class="link" href="ch13.html#chpt.mixer.channel_strips" title="13.1. Instrument Channel Strips">Instrument Channel Strip</a> and Parameter 2 specifies the FX the Action will be applied to.
+           </p></li><li class="listitem" style="list-style-type: circle"><p>
+             <span class="bold"><strong>EFFECT_LEVEL_RELATIVE</strong></span>:
+             same as <a class="xref" href="ch16.html#chpt.midi.actions.actions.effect_level_absolute">EFFECT_LEVEL_ABSOLUTE</a> but instead mapping the incoming values directly to the FX volume <code class="option">1</code> will increase and all other values will decrease it by 5%.
+           </p></li><li class="listitem" style="list-style-type: circle"><p>
+	           <span class="bold"><strong>FILTER_CUTOFF_LEVEL_ABSOLUTE</strong></span>:
+               for a value of <code class="option">0</code> it sets the <a class="link" href="ch11.html#chpt.instrument_editor.filter" title="11.1.3. Filter Parameters">Filter Cutoff</a> of the
+                 instrument strip specified using the <span class="bold"><strong>Action Param</strong></span> to <code class="option">0</code>. For all other
+                 values it sets the cutoff to the provided number divided by
+                 127.0.
+             </p></li><li class="listitem" style="list-style-type: circle"><p>
+             <span class="bold"><strong>GAIN_LEVEL_ABSOLUTE</strong></span>:
+	         sets the <a class="link" href="ch11s02.html#chpt.instrument_editor.layers.controls.layer_gain">Layer Gain</a>. Parameter 1 specifies the instrument, parameter 2 the component, and parameter 3 the layer.
+           </p></li><li class="listitem" style="list-style-type: circle"><p><a name="chpt.midi.actions.actions.master_volume_absolute"></a>
+	         <span class="bold"><strong>MASTER_VOLUME_ABSOLUTE</strong></span>: sets the <a class="link" href="ch13s04.html" title="13.4. Master Fader Strip">Master output volume</a> to the value provided by the <abbr class="abbrev">MIDI</abbr> event times 1.5 and divided by 127.
+	       </p></li><li class="listitem" style="list-style-type: circle"><p><a name="chpt.midi.actions.actions.master_volume_relative"></a>
+	         <span class="bold"><strong>MASTER_VOLUME_RELATIVE</strong></span>: changes the <a class="link" href="ch13s04.html" title="13.4. Master Fader Strip">Master output volume</a>, relative
+	         to its current setting. For a value of <code class="option">0</code> it sets the volume of
+             the master fader to 0. For a value of <code class="option">1</code> it increases its
+             volume by 0.05 and for all other values it decreases it by
+             0.05. (<code class="option">-1</code>: -0.05 , <code class="option">0</code>: 0 ,<code class="option">1</code>: +0.05)
+	       </p></li><li class="listitem" style="list-style-type: circle"><p>
+             <span class="bold"><strong>MUTE</strong></span>: <a class="link" href="go01.html#def.mute" title="Mute">mutes</a> the <a class="link" href="ch13s04.html" title="13.4. Master Fader Strip">Master output</a> (sequencer keeps running).
+	       </p></li><li class="listitem" style="list-style-type: circle"><p>
+	         <span class="bold"><strong>MUTE_TOGGLE</strong></span>: toggles the <a class="link" href="go01.html#def.mute" title="Mute">muting</a> of the
+             <a class="link" href="ch13s04.html" title="13.4. Master Fader Strip">Master output</a> (sequencer keeps running).
+	       </p></li><li class="listitem" style="list-style-type: circle"><p><a name="chpt.midi.actions.actions.pan_absolute"></a>
+	         <span class="bold"><strong>PAN_ABSOLUTE</strong></span>: changes the <a class="link" href="go01.html#def.pan" title="Pan">pan</a> of an <a class="link" href="ch13.html#chpt.mixer.channel_strips.pan">instrument</a> determined by the <span class="bold"><strong>Action Param</strong></span> to the absolute value that the linked controller sends to Hydrogen. Incoming values from <code class="option">0</code> to <code class="option">127</code> will be mapped to pan values between -1 and 1.
+	       </p></li><li class="listitem" style="list-style-type: circle"><p>
+	         <span class="bold"><strong>PAN_ABSOLUTE_SYM</strong></span>: same as <a class="xref" href="ch16.html#chpt.midi.actions.actions.pan_absolute">PAN_ABSOLUTE</a> but supports incoming values from <code class="option">-127</code> to <code class="option">127</code> will be mapped.
+	       </p></li><li class="listitem" style="list-style-type: circle"><p>
+	         <span class="bold"><strong>PAN_RELATIVE</strong></span>: changes the <a class="link" href="go01.html#def.pan" title="Pan">pan</a> of an <a class="link" href="ch13.html#chpt.mixer.channel_strips.pan">instrument</a> determined by the <span class="bold"><strong>Action Param</strong></span> relative to the current value. For a
+             value of <code class="option">1</code> it increase the pan by 0.05. For all other values
+             it decreases it by 0.05. (<code class="option">-1</code>: -0.05 , <code class="option">1</code>: +0.05).
+	       </p></li><li class="listitem" style="list-style-type: circle"><p><a name="chpt.midi.actions.actions.pause"></a>
+	         <span class="bold"><strong>PAUSE</strong></span>: pauses playback.
+	       </p></li><li class="listitem" style="list-style-type: circle"><p><a name="chpt.midi.actions.actions.pitch_level_absolute"></a>
+             <span class="bold"><strong>PITCH_LEVEL_ABSOLUTE</strong></span>:
+	         sets the <a class="link" href="ch11s02.html#chpt.instrument_editor.layers.controls.pitch">Layer Pitch</a>. Parameter 1 specifies the instrument, parameter 2 the component, and parameter 3 the layer.
+	         <span class="bold"><strong>PAUSE</strong></span>: pauses playback.
+	       </p></li><li class="listitem" style="list-style-type: circle"><p><a name="chpt.midi.actions.actions.play"></a>
+	         <span class="bold"><strong>PLAY</strong></span>: starts playback.
+	       </p></li><li class="listitem" style="list-style-type: circle"><p>
+	         <span class="bold"><strong>PLAY/PAUSE_TOGGLE</strong></span>: works the same as
+             <a class="xref" href="ch16.html#chpt.midi.actions.actions.play">PLAY</a> if the
+             playback has not started yet and same as. 
+             <a class="xref" href="ch16.html#chpt.midi.actions.actions.pause">PAUSE</a> otherwise. (The playhead will not return
+	         to the start of the song, but will stay at its current position).
+	       </p></li><li class="listitem" style="list-style-type: circle"><p>
+             <span class="bold"><strong>PLAY/STOP_TOGGLE</strong></span>: works the same as <a class="xref" href="ch16.html#chpt.midi.actions.actions.play">PLAY</a> if the
+             playback has not started yet and same as.
+             <a class="xref" href="ch16.html#chpt.midi.actions.actions.stop">STOP</a> otherwise.
+	       </p></li><li class="listitem" style="list-style-type: circle"><p>
+	           <span class="bold"><strong>PLAYLIST_NEXT_SONG</strong></span>:
+               opens the song in the current <a class="link" href="ch15.html" title="Chapter 15. Playlist Editor">playlist</a> corresponding to the song number specified in <span class="bold"><strong>Action Param</strong></span>.
+             </p></li><li class="listitem" style="list-style-type: circle"><p>
+	           <span class="bold"><strong>PLAYLIST_PREV_SONG</strong></span>:
+               opens the previous song in the current <a class="link" href="ch15.html" title="Chapter 15. Playlist Editor">playlist</a>.
+             </p></li><li class="listitem" style="list-style-type: circle"><p>
+	           <span class="bold"><strong>PLAYLIST_SONG</strong></span>:
+               opens the next song in the current <a class="link" href="ch15.html" title="Chapter 15. Playlist Editor">playlist</a>.
+             </p></li><li class="listitem" style="list-style-type: circle"><p>
+	           <span class="bold"><strong>RECORD/STROBE_TOGGLE</strong></span>:
+               toggles <a class="link" href="ch04s04.html" title="4.4. Recording in Hydrogen">recording</a> (same as pressing the <a class="link" href="ch07.html#sect.main_toolbar.transport_control" title="7.1. Transport Control">record button</a>
+                 in the main toolbar).
+             </p></li><li class="listitem" style="list-style-type: circle"><p>
+	           <span class="bold"><strong>RECORD_EXIT</strong></span>:
+               deactivates <a class="link" href="ch04s04.html" title="4.4. Recording in Hydrogen">recording</a>.
+             </p></li><li class="listitem" style="list-style-type: circle"><p>
+	           <span class="bold"><strong>RECORD_READY</strong></span>:
+               toggles <a class="link" href="ch04s04.html" title="4.4. Recording in Hydrogen">recording</a> (same as pressing the <a class="link" href="ch07.html#sect.main_toolbar.transport_control" title="7.1. Transport Control">record button</a>
+                 in the main toolbar) if the playback has not started yet.
+             </p></li><li class="listitem" style="list-style-type: circle"><p>
+	           <span class="bold"><strong>RECORD_STROBE</strong></span>:
+               activates <a class="link" href="ch04s04.html" title="4.4. Recording in Hydrogen">recording</a>.
+             </p></li><li class="listitem" style="list-style-type: circle"><p>
+	           <span class="bold"><strong>REDO_ACTION</strong></span>:
+               redoes the previous undone action.
+             </p></li><li class="listitem" style="list-style-type: circle"><p>
+             <span class="bold"><strong>SELECT_AND_PLAY_PATTERN</strong></span>: works as
+             <a class="xref" href="ch16.html#chpt.midi.actions.actions.select_next_pattern">SELECT_NEXT_PATTERN</a> combined with
+             <a class="xref" href="ch16.html#chpt.midi.actions.actions.play">PLAY</a>.
+	       </p></li><li class="listitem" style="list-style-type: circle"><p><a name="chpt.midi.actions.actions.select_instrument"></a>
+	           <span class="bold"><strong>SELECT_INSTRUMENT</strong></span>:
+               selects the instrument in the drumkit corresponding to the number supplied in the incoming <abbr class="abbrev">MIDI</abbr> Event.
+	       </p></li><li class="listitem" style="list-style-type: circle"><p><a name="chpt.midi.actions.actions.select_next_pattern"></a>
+             <span class="bold"><strong>SELECT_NEXT_PATTERN</strong></span>:
+             selects the pattern specified in <span class="bold"><strong>Action Param</strong></span>.
+
+             </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
+                 If Hydrogen is in <a class="link" href="ch08s02.html#chpt.song_editor.editor_modes.pattern_mode" title="8.2.4. Selected Pattern Mode">Selected Pattern Mode</a>, playback will be switched to the selected pattern immediately. If it is, instead, in <a class="link" href="ch08s02.html#chpt.song_editor.editor_modes.stacked" title="8.2.5. Stacked Pattern Mode">Stacked Pattern Mode</a>, playback of the selected pattern will be toggled next time transport is loop again. In case the pattern was already playing, it will be stopped. If not, it will be started.
+               </p><p>
+	             If Hydrogen is in <a class="link" href="ch08s02.html#chpt.song_editor.editor_modes.song_mode" title="8.2.3. Song Mode">Song Mode</a>, the command will have no effect.
+               </p></td></tr></table></div><p>
+           </p></li><li class="listitem" style="list-style-type: circle"><p>
+             <span class="bold"><strong>SELECT_NEXT_PATTERN_CC_ABSOLUTE</strong></span>:
+             like <a class="xref" href="ch16.html#chpt.midi.actions.actions.select_next_pattern">SELECT_NEXT_PATTERN</a> but the pattern to be selected is determined by the value of the <abbr class="abbrev">MIDI</abbr> message.
+           </p></li><li class="listitem" style="list-style-type: circle"><p>
+             <span class="bold"><strong>SELECT_NEXT_PATTERN_RELATIVE</strong></span>:
+             like <a class="xref" href="ch16.html#chpt.midi.actions.actions.select_next_pattern">SELECT_NEXT_PATTERN</a> but the pattern to be selected is determined by the pattern number of the currently selected one plus the value specified in <span class="bold"><strong>Action Param</strong></span>.
+           </p></li><li class="listitem" style="list-style-type: circle"><p><a name="chpt.midi.actions.actions.select_only_next_pattern"></a>
+             <span class="bold"><strong>SELECT_ONLY_NEXT_PATTERN</strong></span>:
+             selects the pattern specified in <span class="bold"><strong>Action Param</strong></span>.
+
+             </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
+                 If Hydrogen is in <a class="link" href="ch08s02.html#chpt.song_editor.editor_modes.stacked" title="8.2.5. Stacked Pattern Mode">Stacked Pattern Mode</a>, only the selected pattern will be played back once the transport gets looped again. For <a class="link" href="ch08s02.html#chpt.song_editor.editor_modes.pattern_mode" title="8.2.4. Selected Pattern Mode">Selected Pattern Mode</a> this action behaves as <a class="xref" href="ch16.html#chpt.midi.actions.actions.select_next_pattern">SELECT_NEXT_PATTERN</a>.
+               </p><p>
+	             If Hydrogen is in <a class="link" href="ch08s02.html#chpt.song_editor.editor_modes.song_mode" title="8.2.3. Song Mode">Song Mode</a>, the command will have no effect.
+               </p></td></tr></table></div><p>
+             </p><div class="tip" style="margin-left: 5%;"><table border="0" summary="Tip"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="../img/admonitions/tip.svg"></td><th align="left">Tip</th></tr><tr><td align="left" valign="top"><p>
+                 By providing a number smaller than <code class="option">0</code> or larger than the number of available patterns all playing patterns can be stopped at once without stopping playback itself.
+               </p></td></tr></table></div><p>
+           </p></li><li class="listitem" style="list-style-type: circle"><p>
+             <span class="bold"><strong>SELECT_ONLY_NEXT_PATTERN_CC_ABSOLUTE</strong></span>:
+             like <a class="xref" href="ch16.html#chpt.midi.actions.actions.select_only_next_pattern">SELECT_ONLY_NEXT_PATTERN</a> but the pattern to be selected is determined by the value of the <abbr class="abbrev">MIDI</abbr> message.
+           </p></li><li class="listitem" style="list-style-type: circle"><p><a name="chpt.midi.actions.actions.stop"></a>
+	         <span class="bold"><strong>STOP</strong></span>: stops playback and moves the
+             playhead to the beginning of the song.
+	       </p></li><li class="listitem" style="list-style-type: circle"><p>
+	         <span class="bold"><strong>STRIP_MUTE_TOGGLE</strong></span>:
+             <a class="link" href="go01.html#def.mute" title="Mute">mutes</a> the instrument specified in <span class="bold"><strong>Action Param</strong></span>.
+	       </p></li><li class="listitem" style="list-style-type: circle"><p>
+	         <span class="bold"><strong>STRIP_SOLO_TOGGLE</strong></span>:
+             <a class="link" href="go01.html#def.mute" title="Mute">mutes</a> the instrument specified in <span class="bold"><strong>Action Param</strong></span>.
+	       </p></li><li class="listitem" style="list-style-type: circle"><p>
+	         <span class="bold"><strong>STRIP_VOLUME_ABSOLUTE</strong></span>: see  <a class="xref" href="ch16.html#chpt.midi.actions.actions.master_volume_absolute">MASTER_VOLUME_ABSOLUTE</a>, but applies to
+	         the <a class="link" href="ch13.html#chpt.mixer.channel_strips" title="13.1. Instrument Channel Strips">Instrument Channel Strip</a> specified in <span class="bold"><strong>Action Param</strong></span>.
+	       </p></li><li class="listitem" style="list-style-type: circle"><p>
+	         <span class="bold"><strong>STRIP_VOLUME_RELATIVE</strong></span>: see <a class="xref" href="ch16.html#chpt.midi.actions.actions.master_volume_relative">MASTER_VOLUME_RELATIVE</a>, but applies to
+	         the <a class="link" href="ch13.html#chpt.mixer.channel_strips" title="13.1. Instrument Channel Strips">Instrument Channel Strip</a> specified in <span class="bold"><strong>Action Param</strong></span>.
+	       </p></li><li class="listitem" style="list-style-type: circle"><p>
+	         <span class="bold"><strong>TAP_TEMPO</strong></span>: another command
+             calculating the average time passing between successive encounters of
+             this commands and uses it to set the current tempo using <a class="link" href="ch07s02.html#sect.main_toolbar.tap_tempo_beat_counter.tap_tempo" title="7.2.1. Tap Tempo">Tap Tempo</a>.
+	       </p></li><li class="listitem" style="list-style-type: circle"><p>
+	         <span class="bold"><strong>TOGGLE_METRONOME</strong></span>:
+             toggles the metronome.
+	       </p></li><li class="listitem" style="list-style-type: circle"><p>
+	         <span class="bold"><strong>UNDO_ACTION</strong></span>:
+             undoes the previous action.
+	       </p></li><li class="listitem" style="list-style-type: circle"><p>
+	         <span class="bold"><strong>UNMUTE</strong></span>: unmutes the <a class="link" href="ch13s04.html" title="13.4. Master Fader Strip">Master output</a> (sequencer keeps running).
+	       </p></li></ul></div></div></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch15s02.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="pt02.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch16s02.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">15.2. Menu </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 16.2. MIDI-learnable Widgets</td></tr></table></div></body></html>

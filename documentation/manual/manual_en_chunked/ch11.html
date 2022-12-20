@@ -1,0 +1,136 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Chapter 11. Instrument Editor</title><link rel="stylesheet" type="text/css" href="../res/docbook.css"><script src="../res/docbook.js" type="text/javascript"></script><meta name="generator" content="DocBook XSL Stylesheets V1.79.1"><link rel="home" href="index.html" title="Hydrogen v1.1 Manual"><link rel="up" href="pt02.html" title="Part II. Using Hydrogen"><link rel="prev" href="ch10s03.html" title="10.3. Patterns"><link rel="next" href="ch11s02.html" title="11.2. Layers"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 11. Instrument Editor</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch10s03.html">Prev</a> </td><th width="60%" align="center">Part II. Using Hydrogen</th><td width="20%" align="right"> <a accesskey="n" href="ch11s02.html">Next</a></td></tr></table><hr></div><div class="chapter"><div class="titlepage"><div><div><h2 class="title"><a name="chpt.instrument_editor"></a>Chapter 11. Instrument Editor</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="sect1"><a href="ch11.html#chpt.instrument_editor.general">11.1. General</a></span></dt><dd><dl><dt><span class="sect2"><a href="ch11.html#chpt.instrument_editor.envelope_parameters">11.1.1. Envelope Parameters</a></span></dt><dt><span class="sect2"><a href="ch11.html#chpt.instrument_editor.gain_and_mute_group">11.1.2. Gain and Mute Group</a></span></dt><dt><span class="sect2"><a href="ch11.html#chpt.instrument_editor.filter">11.1.3. Filter Parameters</a></span></dt><dt><span class="sect2"><a href="ch11.html#chpt.instrument_editor.pitch_shift_parameters">11.1.4. Pitch Shift Parameters</a></span></dt><dt><span class="sect2"><a href="ch11.html#chpt.instrument_editor.midi_out_settings">11.1.5. <abbr class="abbrev">MIDI</abbr> Out Settings</a></span></dt><dt><span class="sect2"><a href="ch11.html#chpt.instrument_editor.HH_pressure_group">11.1.6. Hi-Hat Pressure Group</a></span></dt></dl></dd><dt><span class="sect1"><a href="ch11s02.html">11.2. Layers</a></span></dt><dd><dl><dt><span class="sect2"><a href="ch11s02.html#chpt.instrument_editor.layers.components">11.2.1. Components</a></span></dt><dt><span class="sect2"><a href="ch11s02.html#chpt.instrument_editor.layers.layers">11.2.2. Layers</a></span></dt><dt><span class="sect2"><a href="ch11s02.html#chpt.instrument_editor.layers.sample_selection">11.2.3. Sample Selection</a></span></dt><dt><span class="sect2"><a href="ch11s02.html#chpt.instrument_editor.layers.controls">11.2.4. Controls</a></span></dt></dl></dd></dl></div><div class="figure"><a name="instrumenteditor.general"></a><p class="title"><b>Figure 11.1. The Instrument editor General view</b></p><div class="figure-contents"><div class="mediaobject"><img src="../img/generated_en/Instrument_General.png" alt="The Instrument editor General view"></div></div></div><br class="figure-break"><p>
+	    The Instrument Editor is located in the Instrument Rack in the lower right corner of Hydrogen, which can be shown or hidden via the <a class="link" href="ch06s05.html" title="6.5. View">View</a> option in the Main Menu or via the <a class="link" href="ch07s06.html" title="7.6. GUI State">corresponding button</a> in the Main Toolbar. The Instrument Rack does either show the <a class="link" href="ch11.html" title="Chapter 11. Instrument Editor">Instrument Editor</a> or the Sound Library depending on what is chosen in the <a class="link" href="ch06s05.html" title="6.5. View">View</a> option in the Main Menu or the corresponding buttons at the top of the Instrument Rack.
+      </p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="chpt.instrument_editor.general"></a>11.1. General</h2></div></div></div><p>When clicking the <code class="option">General</code> button in the Instrument Editor you can adjust several
+        parameters that apply to the particular instrument (and all its <a class="link" href="go01.html#def.layer" title="Layer">layers</a>) selected in the <a class="link" href="ch09.html#chpt.pattern_editor.sidebar" title="9.1.2. Sidebar">Sidebar</a> of the Pattern Editor.
+        </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>It's important that you understand <a class="link" href="ch04s02.html" title="4.2. Drumkit Concept">Drumkit Concepts</a> and a couple of basic concepts of sound synthesis described in the <a class="link" href="go01.html" title="Glossary">Glossary</a> in order to continue
+          on. To ease reading, several of the latter concepts are linked in the text.</p></td></tr></table></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="chpt.instrument_editor.envelope_parameters"></a>11.1.1. Envelope Parameters</h3></div></div></div><div class="informalfigure"><a name="fig.instrument_editor.envelope_parameters"></a><div class="mediaobject"><img src="../img/generated_en/instrument_editor_envelope.png" alt='Four rotaries are displayed. From left to right: "ATTACK", "DECAY", "SUSTAIN", and "RELEASE".'></div></div><p>When a note associated with this instrument is triggered, its volume is run through an
+          <a class="link" href="go01.html#def.adsr" title="ADSR">ADSR Envelope</a>. Its particular settings can be adjusted using the envelope parameters located right below the instrument name.</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a name="chpt.instrument_editor.general.attack"></a><span class="bold"><strong><a class="link" href="go01.html#def.attack" title="Attack">Attack</a></strong></span>: the amount
+              of <span class="emphasis"><em>time</em></span> that the volume of the <a class="link" href="go01.html#def.sample" title="Sample">sample</a> goes
+              from <code class="option">0</code> to the full <a class="link" href="go01.html#def.velocity" title="Velocity">velocity</a> of the note. If the value is <code class="option">0</code>, the
+              sample will play back immediately at full velocity.
+              </p></li><li class="listitem"><p><a name="chpt.instrument_editor.general.decay"></a><span class="bold"><strong><a class="link" href="go01.html#def.decay" title="Decay">Decay</a></strong></span>: the amount of
+              <span class="emphasis"><em>time</em></span> for the volume of the <a class="link" href="go01.html#def.sample" title="Sample">sample</a> to go from
+              full <a class="link" href="go01.html#def.velocity" title="Velocity">velocity</a> down to the sustain volume.  If the value is <code class="option">0</code>, the
+              sample will immediately skip from the full velocity to the <a class="link" href="go01.html#def.sustain" title="Sustain">sustain</a>
+              volume.
+              </p></li><li class="listitem"><p><a name="chpt.instrument_editor.general.sustain"></a><span class="bold"><strong><a class="link" href="go01.html#def.sustain" title="Sustain">Sustain</a></strong></span>: the
+              <span class="emphasis"><em>volume</em></span> to play the note after the <a class="link" href="go01.html#def.decay" title="Decay">decay</a> phase
+              is over and until the note is released.  If set to <code class="option">0</code>, the note
+              will be silent.  If set to <code class="option">1.0</code>, the note will play at full
+              <a class="link" href="go01.html#def.velocity" title="Velocity">velocity</a>.</p></li><li class="listitem"><p><a name="chpt.instrument_editor.general.release"></a><span class="bold"><strong><a class="link" href="go01.html#def.release" title="Release">Release</a></strong></span>: the
+              <span class="emphasis"><em>time</em></span> to fade out the note from the <a class="link" href="go01.html#def.sustain" title="Sustain">sustain
+              volume</a> back down to <code class="option">0</code> (silent).  If set to <code class="option">0</code>, the note will fade
+              out in the minimum amount of time (about 5 ms).  If set to <code class="option">1</code>, it
+              will fade out for the maximum time available.
+              </p><p>
+                Note, however, that
+              this only affects notes for which you set a note length smaller
+              than the underlying sample length (see <a class="xref" href="ch09s02.html" title="9.2. Drum Pattern Editor">Section 9.2</a>). All other notes are
+              played back till the end of the sample without reaching the
+              release phase.
+              </p></li></ul></div><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left"><a name="fn.adsrtimes"></a>Note</th></tr><tr><td align="left" valign="top"><p>All transitions between the individual <abbr class="abbrev">ADSR</abbr>
+            phases are done using exponential functions.
+            </p><p>The <a class="link" href="ch11.html#chpt.instrument_editor.general.attack">Attack</a>, <a class="link" href="ch11.html#chpt.instrument_editor.general.decay">Decay</a>, and <a class="link" href="ch11.html#chpt.instrument_editor.general.release">Release</a> parameters are all set by
+            the number of <a class="link" href="go01.html#def.sample" title="Sample">audio samples</a>.  This means
+            that the time changes depending on the sample rate of your sound
+            card.  The max time for each of them is 100,000 audio samples
+            (type. 2.27 sec at 44.1 kHz).</p></td></tr></table></div><p>If the <a class="link" href="go01.html#def.sample" title="Sample">sample</a> is shorter than the times that you specify, the
+          sample will end, regardless of which phase of the <a class="link" href="go01.html#def.adsr" title="ADSR">ADSR</a> it is in.  If
+          the note is sustained, it does <span class="emphasis"><em>not</em></span> draw out the
+          note while you are holding it.  It only holds the <a class="link" href="go01.html#def.gain" title="Gain">gain</a> (volume)
+          parameter during that time.
+          </p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="chpt.instrument_editor.gain_and_mute_group"></a>11.1.2. Gain and Mute Group</h3></div></div></div><div class="informalfigure"><a name="fig.instrument_editor.gain_and_mute_group"></a><div class="mediaobject"><img src="../img/generated_en/instrument_editor_mute_group.png" alt='In the upper half there is a display showing "1.00" (left) next to a rotary titled "GAIN" (middle) and a display with corresponding decrease and increase buttons (right) titled "MUTE GROUP". In the lower part there are two checkboxes: "AUTO-STOP-NOTE" (left) and "APPLY-VELOCITY" (right).'></div></div><p>The <span class="bold"><strong><a class="link" href="go01.html#def.gain" title="Gain">Gain</a></strong></span> adjusts the overall volume of all <a class="link" href="go01.html#def.sample" title="Sample">samples</a> associated with this Instrument. This Gain is
+          applied in addition to the one you set for each <a class="link" href="ch11s02.html#chpt.instrument_editor.layers.controls.layer_gain">layer</a> and before the one
+          that is set in the <a class="link" href="ch13.html#chpt.mixer.channel_strips.fader_and_lcd">Instrument Channel Strips</a>.  If the
+          set to <code class="option">0</code>, the instrument will be
+          silent.  If the Gain is <code class="option">1.0</code>, the volume of the samples will not be
+          adjusted.  If the Gain is set higher, the samples will be
+          amplified.</p><div class="warning" style="margin-left: 5%;"><table border="0" summary="Warning"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Warning]" src="../img/admonitions/warning.svg"></td><th align="left">Warning</th></tr><tr><td align="left" valign="top"><p>It is very easy to set the <span class="guibutton">Gain</span> too
+            high, causing your sample to <a class="link" href="go01.html#def.clipping" title="Clipping">clip</a>.  Remember to test the Gain with
+            full-<a class="link" href="go01.html#def.velocity" title="Velocity">velocity</a> notes.  If you clip your signal here, it will only get
+            worse as Hydrogen processes it.</p></td></tr></table></div><p>Hydrogen provides more <span class="bold"><strong><a class="link" href="go01.html#def.mutegroup" title="Mute Group">Mute Groups</a></strong></span> than you know what to do with
+          (over 256).  A Mute Group is a grouping of instruments which's playback is
+          mutually exclusive - only one instrument of the group may be playing at a
+          time.  If one is playing and another instrument in the group is
+          triggered, the former will immediately be silence (<a class="link" href="go01.html#def.mute" title="Mute">muted</a>) and the latter starts playing.  This is useful, especially, for instruments like
+          hi-hats where the opened and closed sound are incorporated into the drumkit as different
+          instruments.</p><p>If the Mute Group is set to <code class="option">Off</code>, then the
+          instrument is not part of any mute grouping.  If the Mute Group is set
+          to any number, then that is the group that the instrument is a part
+          of.  To set other instruments into the same grouping, set their Mute
+          Group parameter to the same number.  (For example, to group all the
+          high-hat instruments, you can set all their Mute Group parameters to
+          <code class="option">1</code>.  To have a snare drum Mute Group, set their Mute Group parameters
+          to <code class="option">2</code>.)
+          </p><p>If the <span class="bold"><strong>Auto-Stop-Note</strong></span> box is checked, Hydrogen will immediately stop any playing <a class="link" href="go01.html#def.sample" title="Sample">samples</a>
+          belonging to this instrument whenever the instrument is re-triggered, e.g. by another note.</p><p>This option is particularly useful when you are using long samples like a 
+          crash or some existing audio that you have sampled (like a looped voice in a 
+          dance/electro song).  For the crash you will need to use the Auto Stop-Note when 
+          you are sequencing multiple notes in fast succession and want to make it sound realistic.  If you do 
+          not check this option the cymbal will start to sound like multiple cymbals 
+          instead of only one (since the sample of each individual hit will be played completely).
+          For the voice sample this option is useful if you are trying to get that 'stuttering' effect.
+
+          </p><p>
+             The <span class="bold"><strong>Apply Velocity</strong></span> box lets the user decide whether Hydrogen should apply the note <a class="link" href="go01.html#def.velocity" title="Velocity">velocity</a> to the <a class="link" href="go01.html#def.sample" title="Sample">sample</a> being played.
+          </p><div class="tip" style="margin-left: 5%;"><table border="0" summary="Tip"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="../img/admonitions/tip.svg"></td><th align="left">Tip</th></tr><tr><td align="left" valign="top"><p>
+	          The note velocity can set it the <a class="link" href="ch09s03.html#chpt.pattern_editor.note_properties.velocity">Note Properties Editor</a>.
+            </p></td></tr></table></div><p>
+             When activated, Hydrogen will apply the note velocity to the sample
+             gain in addition to e.g. the <a class="link" href="ch11s02.html#chpt.instrument_editor.layers.controls.layer_gain">layer gain</a>,
+             the <a class="link" href="ch11.html#chpt.instrument_editor.gain_and_mute_group" title="11.1.2. Gain and Mute Group">instrument gain</a>, the <a class="link" href="ch11s02.html#chpt.instrument_editor.layers.controls.component_gain">component gain</a>, or the <a class="link" href="ch13.html#chpt.mixer.channel_strips.fader_and_lcd">instrument volume</a>.
+             (A full list of all contributions can be found in <a class="xref" href="go01.html#def.gain" title="Gain">Gain</a>).
+              If all the <a class="link" href="go01.html#def.layer" title="Layer">layer</a> samples are <a class="link" href="go01.html#def.normalization" title="Normalization">normalized</a>, this option should be used.
+          </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
+              By default this option will be selected as this is the way older versions of Hydrogen used to work.
+            </p></td></tr></table></div><p>
+              When not activated, the note velocity will only be used to <a class="link" href="ch11s02.html#chpt.instrument_editor.layers.sample_selection" title="11.2.3. Sample Selection">select</a> the sample to be played,
+              but the sample gain itself will not be changed.
+              This is useful for set of samples that already have their gain "hard-coded".
+          </p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="chpt.instrument_editor.filter"></a>11.1.3. Filter Parameters</h3></div></div></div><div class="informalfigure"><a name="fig.instrument_editor.filter"></a><div class="mediaobject"><img src="../img/generated_en/instrument_editor_filter.png" alt='From left to right: a button titled "BYP", a rotary titled "CUTOFF", and another one titled "RESONANCE".'></div></div><p>The filter used in here is a <a class="link" href="go01.html#def.lowpassfilter" title="Low-Pass Filter">low-pass</a> <a class="link" href="go01.html#def.resonancefilter" title="Resonance Filter">resonance filter</a>.  If you don't wish to
+          use is, click the <code class="option">BYP</code> button (bypass) so that it's
+          red.  If it's not red, then the filter is active.  The <a class="link" href="go01.html#def.cutoff" title="Cutoff Frequency">cutoff</a>
+          parameter adjusts the cutoff frequency for the filter.  The <a class="link" href="go01.html#def.resonance" title="Resonance">resonance</a>
+          parameter adjusts how much to boost to provide at the cutoff frequency.  If the
+          resonance is set to <code class="option">0</code>, then the filter is just a simple low-pass
+          filter.</p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>The cutoff frequency of the filter varies with the sample rate
+            of your audio card.  The range of the knob <code class="option">0</code> to <code class="option">1.0</code>) is optimized
+            for a 48,000 kHz sample rate.</p></td></tr></table></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="chpt.instrument_editor.pitch_shift_parameters"></a>11.1.4. Pitch Shift Parameters</h3></div></div></div><div class="informalfigure"><a name="fig.instrument_editor.pitch_shift_parameters"></a><div class="mediaobject"><img src="../img/generated_en/instrument_editor_pitch.png" alt='From left to right: a display showing the total pitch and three rotaries titled "PITCH", "FINE", and "RANDOM".'></div></div><p> The first two knobs control the pitch shift offset.
+                 You can use it to change the tuning of the instrument.
+                <span class="bold"><strong>Pitch</strong></span> is the <span class="emphasis"><em>Coarse</em></span> control and has quantized steps of half-tones from <code class="option">-24</code> to <code class="option">+24</code>.
+                <span class="bold"><strong>Fine</strong></span> is the <span class="emphasis"><em>Fine</em></span> control and has quantized steps of cents of half-tones from <code class="option">-0.50</code> to <code class="option">+0.50</code>.
+          </p><p>The <span class="bold"><strong>Random</strong></span> parameter allows you to randomly vary the pitch
+              of the <a class="link" href="go01.html#def.sample" title="Sample">sample</a> every time it is triggered.  The value is set between <code class="option">0</code>
+              and <code class="option">1.0</code>.
+
+              </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
+                  The pitch change is fairly small, almost always between ±1 half-steps
+                  ⨉ value.  Using this sparingly can help your sequences to sound
+                  more like a real drummer.	              
+                </p></td></tr></table></div><p>
+
+          </p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="chpt.instrument_editor.midi_out_settings"></a>11.1.5. <abbr class="abbrev">MIDI</abbr> Out Settings</h3></div></div></div><div class="informalfigure"><a name="fig.instrument_editor.midi_out_settings"></a><div class="mediaobject"><img src="../img/generated_en/instrument_editor_midi_out.png" alt='Two displays with corresponding decrease and increase buttons. The left one is titled "CHANNEL" and the right one "NOTE".'></div></div><p>Hydrogen is capable of generating <abbr class="abbrev">MIDI</abbr> messages that you can use
+          to trigger any external <abbr class="abbrev">MIDI</abbr> device or application.  To do this, you
+          simply need to configure the <abbr class="abbrev">MIDI</abbr> output <span class="bold"><strong>Channel</strong></span> and <span class="bold"><strong>Note</strong></span> for every
+          instrument.  You need to have a sample loaded (an empty WAV file is
+          fine) and make sure the proper <abbr class="abbrev">MIDI</abbr> routing/wiring is in place and
+          you're set.  As you can see this is a very flexible approach that
+          enables you to trigger samples or sounds from multiple devices and/or
+          apps.</p><p>From now on every time a note is played for that instrument (in the Hydrogen sequencer) 
+          a <abbr class="abbrev">MIDI</abbr> message will be sent to your external app/device and trigger a sound.  
+          This way you can use Hydrogen as a pure sequencer for other apps, or combine the 
+          internal Hydrogen sampler with multiple external apps/devices.</p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
+	          By enabling <span class="bold"><strong>Use output note as input</strong></span> in the <a class="link" href="ch05s03.html" title="5.3. MIDI System"><abbr class="abbrev">MIDI</abbr> system</a> tab of the Preferences dialog the number specified in the <span class="bold"><strong>Note</strong></span> field will also be used to associate the current instrument with the corresponding incoming <abbr class="abbrev">MIDI</abbr> messages.
+            </p></td></tr></table></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="chpt.instrument_editor.HH_pressure_group"></a>11.1.6. Hi-Hat Pressure Group</h3></div></div></div><div class="informalfigure"><a name="fig.instrument_editor.HH_pressure_group"></a><div class="mediaobject"><img src="../img/generated_en/instrument_editor_hihat_pressure_group.png" alt='Three displays with corresponding decrease and increase buttons titled "HH PRESS. GRP", "MIN. RANGE", and "MAX RANGE" (from left to right).'></div></div><p>The hi-hat is a particular instrument of the drumkit as its sound can be changed by pressing the foot pedal.
+            </p><p>For e-drum owners, the hi-hat pressure group enables to group different hi-hat instruments
+                together, for example closed, half closed, fully open.
+            </p><p><span class="bold"><strong>Pressure Group</strong></span>: you can assign more instruments to the same group.
+                You can create many groups. For example one group for the different opening levels of a hi-hat when playing 
+                the top of it, another group when playing the edge.
+                 Another example: timpanis - create a group for each timpani and the pressure will change the note.
+            </p><p><span class="bold"><strong>Range</strong></span>: set the minimum and maximum pressure for each instrument.
+              Each instrument of a given group should seat in its own separate pressure range.
+               The range will decide at what pressure level the instrument will be played.
+                For example, if your closed hi-hat has range from <code class="option">0</code> to <code class="option">20</code>,
+               when the hi-hat pedal is pressed between <code class="option">0</code> and <code class="option">20</code> the closed hi-hat is played.
+            </p></div></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch10s03.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="pt02.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch11s02.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">10.3. Patterns </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 11.2. Layers</td></tr></table></div></body></html>

@@ -1,0 +1,48 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>13.3. FX Rack and LADSPA Plugins</title><link rel="stylesheet" type="text/css" href="../res/docbook.css"><script src="../res/docbook.js" type="text/javascript"></script><meta name="generator" content="DocBook XSL Stylesheets V1.79.1"><link rel="home" href="index.html" title="Hydrogen v1.1 Manual"><link rel="up" href="ch13.html" title="Chapter 13. Mixer"><link rel="prev" href="ch13s02.html" title="13.2. Component Channel Strips"><link rel="next" href="ch13s04.html" title="13.4. Master Fader Strip"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">13.3. FX Rack and LADSPA Plugins</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch13s02.html">Prev</a> </td><th width="60%" align="center">Chapter 13. Mixer</th><td width="20%" align="right"> <a accesskey="n" href="ch13s04.html">Next</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="sect.fx_rack_LADSPA"></a>13.3. FX Rack and LADSPA Plugins</h2></div></div></div><div class="figure"><a name="fig.mixer.fx_strip"></a><p class="title"><b>Figure 13.4. The FX Rack in the Mixer</b></p><div class="figure-contents"><div class="mediaobject"><img src="../img/generated_en/mixerFXRack.png" alt="The FX Rack in the Mixer"></div></div></div><br class="figure-break"><p>
+      The FX Rack can be accessed by clicking the
+
+      <span class="inlinemediaobject"><img src="../img/generated_en/mixerShowFXButton.png" alt='Blue button containing the black characters "FX".'></span>
+
+      button in the <a class="link" href="ch13s04.html" title="13.4. Master Fader Strip">Master Fader Strip</a>.
+      </p><p>It has 4 slots where you can load a <abbr class="abbrev">LADSPA</abbr> effect plugin already installed on your system.</p><p>There are dozens of plugins available for download from various sources:
+
+      </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><span class="bold"><strong><abbr class="abbrev">SWH</abbr>-Plugins</strong></span>: available at <a class="ulink" href="http://plugin.org.uk" target="_blank">http://plugin.org.uk</a>. </p></li><li class="listitem"><p><span class="bold"><strong><abbr class="abbrev">CMT</abbr></strong></span>: available at <a class="ulink" href="http://www.ladspa.org" target="_blank">http://www.ladspa.org</a>.</p></li><li class="listitem"><p><span class="bold"><strong><abbr class="abbrev">TAP</abbr></strong></span>: available at <a class="ulink" href="http://tap-plugins.sf.net" target="_blank">http://tap-plugins.sf.net</a>.</p></li><li class="listitem"><p><span class="bold"><strong>Calf plugins</strong></span>: available at <a class="ulink" href="http://calf.sourceforge.net/" target="_blank">http://calf.sourceforge.net/</a>.</p></li><li class="listitem"><p><span class="bold"><strong><abbr class="abbrev">LSP</abbr> plugins</strong></span>: available at <a class="ulink" href="https://github.com/sadko4u/lsp-plugins/" target="_blank">https://github.com/sadko4u/lsp-plugins/</a>.</p></li><li class="listitem"><p> ....</p></li></ul></div><p>
+        </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
+            Linux Audio Developer's Simple Plugin API (<abbr class="abbrev">LADSPA</abbr>) is the only plugin format supported by Hydrogen and it is tailored to be used on Linux platforms. On <span class="bold"><strong>macOS</strong></span> it's rather easy to get the plugins running as most of their code works on this platform too without any changes. On <span class="bold"><strong>Windows</strong></span>, however, things are not that straight forward. As of 2022 there are no packages, bundles, or other applications shipping LADSPA plugins for Windows usable within Hydrogen and you have to compile them from source too. But in contrast to Linux and macOS your have to adopt the codebase first (which is most easily done for the <abbr class="abbrev">CMT</abbr> plugins). So, it's possible to use plugins under Windows but, unfortunately, not feasible at all.
+          </p></td></tr></table></div><p>You can select a plugin using the FX selector opened by clicking the
+      
+
+      <span class="inlinemediaobject"><img src="../img/generated_en/mixerFXEditButton.png" alt='Grey button containing the black characters "EDIT".'></span>
+
+      button.
+      
+      </p><div class="figure"><a name="fig.select_effect"></a><p class="title"><b>Figure 13.5. Select an Effect</b></p><div class="figure-contents"><div class="mediaobject"><img src="../img/MixerFXSelect.png" alt="Select an Effect"></div></div></div><p><br class="figure-break">
+      
+      Once you have selected a plugin you will immediately have access 
+      to its parameters.
+      
+       
+        </p><div class="informalfigure"><a name="figLADSPA_FX_Properties"></a><div class="mediaobject"><img src="../img/LADSPA_FX_Properties.png" alt='Example widget to alter the properties of a LADSPA FX. At the top left the name of the FX is displayed and at the top left two buttons - "Select FX" and "Deactivate" - are shown. In the remainder there are several vertical strips stacked horizontally with each one carrying: an display showing the current value (top), the name of the parameter (left), and a fader with included meter (right).'></div></div><p>
+      
+      </p><div class="warning" style="margin-left: 5%;"><table border="0" summary="Warning: Plugins Kill"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Warning]" src="../img/admonitions/warning.svg"></td><th align="left">Plugins Kill</th></tr><tr><td align="left" valign="top"><p>A badly designed <abbr class="abbrev">LADSPA</abbr> plugin is capable of
+        hanging, crashing, freezing, screeching, overflowing buffers, and even
+        phoning home.  If you start having issues with Hydrogen, disable your
+        plugins and see if things improve.  Some plugins are not designed for
+        real-time use and some are just plain better than others.</p></td></tr></table></div><p>
+
+
+      You can select another plugin by clicking the <span class="bold"><strong>Select FX</strong></span> button. If you quickly want to 
+      enable/disable the effect click the <span class="bold"><strong>Deactivate</strong></span> button (or the Bypass 
+
+      <span class="inlinemediaobject"><img src="../img/generated_en/mixerFXBypassButton.png" alt='Redish button containing the black characters "BYP".'></span>
+
+        button in the FX Rack).
+      </p><div class="tip" style="margin-left: 5%;"><table border="0" summary="Tip"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="../img/admonitions/tip.svg"></td><th align="left">Tip</th></tr><tr><td align="left" valign="top"><p>
+	      This can be handy for a quick A/B comparison.
+        </p></td></tr></table></div><p>After you have selected the FX and tweaked it's parameters you can use the 
+      <span class="bold"><strong>Return</strong></span> knob in the FX Rack of the mixer to increase/decrease how much of this FX will be added to the master output.
+      </p><p>
+        The FX itself lives in an <span class="emphasis"><em>aux</em></span> channel. This means it's not directly added into the signal path of any instrument line but a copy of the audio output of each of them is sent to the FX for processing instead. The amount of signal - 0 per default - send by each can be controlled using the <a class="link" href="ch13.html#chpt.mixer.channel_strips.fx_volume">pre-fader FX knobs</a> in the corresponding instrument channel strip. The top left one refers to the top-most FX, the top right one to the second FX and so on. This means, in order to get an all wet signal (none of the original signal but just the processed one enters the mix) of an instrument, you have to ramp up the pre-fader FX knob and set the line's fader to 0.
+      </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
+          Since the FX signal lives in an aux channel it is neither affected by <a class="link" href="ch11.html#chpt.instrument_editor.gain_and_mute_group" title="11.1.2. Gain and Mute Group">Auto-Stop-Note</a> nor <a class="link" href="ch11.html#chpt.instrument_editor.gain_and_mute_group" title="11.1.2. Gain and Mute Group">Mute Groups</a>.
+        </p></td></tr></table></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch13s02.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch13.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch13s04.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">13.2. Component Channel Strips </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 13.4. Master Fader Strip</td></tr></table></div></body></html>
