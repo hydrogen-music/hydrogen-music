@@ -4,38 +4,46 @@
               opens one of the registered drumkits and replaces the currently loaded one.
 
               </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
-	              Via this option you can only load drumkits that have been already imported into Hydrogen. If you just received a new one from an external source, be sure to use the <a class="link" href="ch06s03.html#sect.main_form.import_drumkit">Import</a> option described below.
+	              Using this option you can only load drumkits that have been already imported into Hydrogen. If you just received a new one from an external source, be sure to use the <a class="link" href="ch06s03.html#sect.main_form.import_drumkit">Import</a> option described below.
                 </p></td></tr></table></div><p>
-            </p></li><li class="listitem"><p>
+            </p></li><li class="listitem"><p><a name="sect.main_menu.drumkits.properties"></a>
 	          <span class="bold"><strong>Properties</strong></span>:
-              sets general properties of the drumkit such as its name, author, license, general information, image, and image license.
-            </p></li><li class="listitem"><p><span class="bold"><strong>Save</strong></span>: saves all settings of the current drumkit (including those of their instruments and sound samples).
+              sets general properties of the drumkit associated with the current song, such as name, author, <a class="link" href="ch20.html" title="Chapter 20. Licensing">license</a>, general information, image, and image license.
+            </p></li><li class="listitem"><p><a name="sect.main_menu.drumkits.save"></a><span class="bold"><strong>Save</strong></span>: saves all settings of the drumkit associated with the current (including those of their instruments and sound samples).
+
+            </p><div class="tip" style="margin-left: 5%;"><table border="0" summary="Tip"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="../img/admonitions/tip.svg"></td><th align="left">Tip</th></tr><tr><td align="left" valign="top"><p>
+                See <a class="xref" href="ch04s02.html" title="4.2. Drumkit Concept">Drumkit Concept</a> and <a class="xref" href="ch20.html" title="Chapter 20. Licensing">Licensing</a> for further information.
+              </p></td></tr></table></div><p>
             </p></li><li class="listitem"><p><a name="sect.main_menu.drumkits.save_as"></a><span class="bold"><strong>Save As</strong></span>: saves all settings of the current drumkit (including those of their instruments and sound samples) as new drumkit.
 
             </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
 	            The new drumkit will be a physical copy of the old one and is stored into the <code class="filename">$HOME/.hydrogen/data/drumkits/</code> folder.
               </p></td></tr></table></div><p>
-            </p></li><li class="listitem"><p><a name="sect.main_form.export_drumkit"></a><span class="bold"><strong>Export</strong></span>: compress and stores all instruments samples and settings of any drumkit (not just the current one) into a folder of your choice as <a class="link" href="ch20.html#chpt.file_types.h2drumkit">.h2drumkit</a> file.
+            
+            </p><div class="tip" style="margin-left: 5%;"><table border="0" summary="Tip"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="../img/admonitions/tip.svg"></td><th align="left">Tip</th></tr><tr><td align="left" valign="top"><p>
+                See <a class="xref" href="ch04s02.html" title="4.2. Drumkit Concept">Drumkit Concept</a> and <a class="xref" href="ch20.html" title="Chapter 20. Licensing">Licensing</a> for further information.
+              </p></td></tr></table></div><p>
+            </p></li><li class="listitem"><p><a name="sect.main_form.export_drumkit"></a><span class="bold"><strong>Export</strong></span>: compresses and stores all instrument samples and settings of the current drumkit into a folder of your choice as <a class="link" href="ch21.html#chpt.file_types.h2drumkit">.h2drumkit</a> file.
 
             </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
-	            For compatibility reasons you can also export your drumkit in a format used in older versions ( &lt;= 0.9.6 ) of Hydrogen. By doing so you need to select a single <a class="link" href="go01.html#def.component" title="Component">component</a> to export since this functionality was not supported back than.
+	            For compatibility reasons you can also export your drumkit in a format used in older versions ( &lt;= 0.9.6 ) of Hydrogen. By doing so you need to select a single <a class="link" href="go01.html#def.component" title="Component">component</a> to export since having multiple ones was not supported back than.
               </p></td></tr></table></div><p>
-            </p></li><li class="listitem"><p><a name="sect.main_form.import_drumkit"></a><span class="bold"><strong>Import</strong></span>: imports a drumkit (a <a class="link" href="ch20.html#chpt.file_types.h2drumkit">.h2drumkit</a> file) from the local filesystem.
+            </p></li><li class="listitem"><p><a name="sect.main_form.import_drumkit"></a><span class="bold"><strong>Import</strong></span>: imports a drumkit (a <a class="link" href="ch21.html#chpt.file_types.h2drumkit">.h2drumkit</a> file) from the local filesystem.
             </p></li><li class="listitem"><p><a name="sect.main_form.online_import_drumkit"></a><span class="bold"><strong>Online Import</strong></span>: imports another drumkit from a remote location
             through a <abbr class="abbrev">XML</abbr> feed. The <abbr class="abbrev">XML</abbr> file that should be provided is <span class="bold"><strong>NOT</strong></span> <abbr class="abbrev">RSS</abbr> compliant (see <a class="ulink" href="http://www.hydrogen-music.org/feeds/drumkit_list.php" target="_blank">Hydrogen
             website</a> for an example).
             </p><p>
               </p><div class="figure"><a name="fig.import_drumkit"></a><p class="title"><b>Figure 6.2. Import Drumkit</b></p><div class="figure-contents"><div class="mediaobject"><img src="../img/generated_en/Sound_Library_import.png" alt="Import Drumkit"></div></div></div><p><br class="figure-break">
 
-              The Import window will pop up with the Internet tab selected.
-              By default the link to the drumkit list (on hydrogen-music.org) will be filled in, 
+              The Import window will pop up with the <span class="emphasis"><em>Internet</em></span> tab selected.
+              By default the link to the drumkit list (on <a class="ulink" href="http://hydrogen-music.org" target="_blank">http://hydrogen-music.org</a>) will be filled in, 
               and after pressing the <span class="bold"><strong>Update list</strong></span> button you will get a complete list of all
-              drumkits that are available for download.  In the status column you can see
+              drumkits that are available for download. In the <span class="emphasis"><em>Status</em></span> column on the you can see
               if a kit is installed or not.
             </p><p>
         If you select one of the drumkits you will see info about this kit in the right
         pane of the Import window: name, description, author and also the
-        license type.
+        <a class="link" href="ch20.html" title="Chapter 20. Licensing">license</a>.
         </p><p>
          You can install a drumkit by selecting it and clicking <span class="bold"><strong>Download and Install</strong></span>.
          

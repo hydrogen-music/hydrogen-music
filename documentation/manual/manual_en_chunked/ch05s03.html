@@ -31,10 +31,9 @@
               specifies whether a <abbr class="abbrev">MIDI</abbr> note - after performing the <abbr class="abbrev">MIDI</abbr> action associated with it - should be played back or be discard.
             </p></li><li class="listitem"><p>
 	          <span class="bold"><strong>Use output note as input note</strong></span>:
-              specifies whether the output <abbr class="abbrev">MIDI</abbr> note of an instrument specified in the <a class="link" href="ch11.html#chpt.instrument_editor.midi_out_settings" title="11.1.5. MIDI Out Settings"><abbr class="abbrev">MIDI</abbr> Out Settings</a> of the Instrument Editor should be used to map the input as well.
-
+              if checked the instrument mapped to an incoming <abbr class="abbrev">MIDI</abbr> note is determined by its <a class="link" href="ch11.html#chpt.instrument_editor.midi_out_settings" title="11.1.5. MIDI Out Settings"><abbr class="abbrev">MIDI</abbr> Out Settings</a> in the Instrument Editor. Otherwise, the <a class="link" href="ch04s03.html" title="4.3. MIDI-mapping and Virtual Keyboard">default <abbr class="abbrev">MIDI mapping</abbr></a> (based on the instrument order in the <a class="link" href="ch09.html" title="Chapter 9. Pattern Editor">Pattern Editor</a>) will be used.
               </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
-	              If this option is unchecked, only the currently selected instrument will used to play back the received <abbr class="abbrev">MIDI</abbr> notes.
+	              This option only takes effect if <span class="bold"><strong>Input mode</strong></span> in the <a class="link" href="ch06s06.html" title="6.6. Options">Options</a> tab of the Main Menu is set to <code class="option">Drumkit</code>.
                 </p></td></tr></table></div><p>
             </p></li></ul></div><p>
 	      Using the table in the lower part of the tab you can associate <a class="link" href="ch16.html#chpt.midi.actions" title="16.1. MIDI Actions"><abbr class="abbrev">MIDI</abbr> actions</a> provided by Hydrogen with incoming <abbr class="abbrev">MIDI</abbr> messages. How this is done will be explained in the <a class="xref" href="ch16.html#chpt.midi.actions" title="16.1. MIDI Actions">Section 16.1</a>.

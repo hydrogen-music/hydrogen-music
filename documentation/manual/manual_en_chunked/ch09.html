@@ -5,55 +5,54 @@
       can be used in two modes: as <a class="link" href="ch09s02.html" title="9.2. Drum Pattern Editor">Drumkit Editor</a> or as <a class="link" href="ch09s04.html" title="9.4. Piano Roll Editor">Piano Roll Editor</a>. You can switch between these 
       two by clicking the
       <span class="inlinemediaobject"><img src="../img/generated_en/btn_drum_piano_off.png" alt="Grey button containing a small piano illustration with three white and two black keys."></span>
+
+      and
+      
+      <span class="inlinemediaobject"><img src="../img/generated_en/btn_drum_piano_on.png" alt="Blue button with a quasi-3D display a cylinder with black outlines, blue sides, and a white top."></span>
+              
       button (located on the top-right of the Pattern Editor).
       </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
-          If you are editing a pattern in <a class="link" href="ch08s02.html#chpt.song_editor.editor_modes.pattern_mode" title="8.2.4. Pattern Mode">Single Pattern mode</a> you will always hear the pattern you are 
+          If you are editing a pattern in <a class="link" href="ch08s02.html#chpt.song_editor.editor_modes.pattern_mode" title="8.2.4. Selected Pattern Mode">Selected Pattern Mode</a> you will always hear the pattern you are 
           editing when you playback is rolling.
         </p><p>
-          If you are working in <a class="link" href="ch08s02.html#chpt.song_editor.editor_modes.stacked" title="8.2.5. Stacked Mode">Stacked Pattern mode</a> you will hear the <span class="emphasis"><em>active</em></span> pattern(s), 
+          If you are working in <a class="link" href="ch08s02.html#chpt.song_editor.editor_modes.stacked" title="8.2.5. Stacked Pattern Mode">Stacked Pattern Mode</a> you will hear the <span class="emphasis"><em>active</em></span> pattern(s), 
           not necessarily the pattern you are currently editing.
-          The active patterns have a small triangle next to the pattern name in the Song Editor.  (see <a class="xref" href="ch08.html#chpt.song_editor.main_controls.single_vs_stacked">Single Pattern and Stacked mode</a> for details).
         </p></td></tr></table></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="chpt.pattern_editor.general"></a>9.1. General</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="chpt.pattern_editor.controls"></a>9.1.1. Controls</h3></div></div></div><div class="figure"><a name="fig.PatternEditorControls"></a><p class="title"><b>Figure 9.2. Pattern Editor Controls</b></p><div class="figure-contents"><div class="mediaobject"><img src="../img/generated_en/PatternEditorControls.png" alt="Pattern Editor Controls"></div></div></div><br class="figure-break"><p>The top part of the Pattern Editor contains a number of controls applying to both the <a class="link" href="ch09s02.html" title="9.2. Drum Pattern Editor">Drumkit Editor</a> and the <a class="link" href="ch09s04.html" title="9.4. Piano Roll Editor">Piano Roll Editor</a>:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: opencircle; "><li class="listitem" style="list-style-type: circle"><p><a name="chpt.pattern_editor.controls.size"></a>
-                <span class="inlinemediaobject"><img src="../img/generated_en/lcd_size.png" alt='Blue LCD showing "4/4" and titled "SIZE".'></span>
+                <span class="inlinemediaobject"><img src="../img/generated_en/lcd_size.png" alt='Two blue combo boxes showing "4.00" and "4" and are labeled "Size".'></span>
                 
                : lets you choose the length of the pattern (in note values).
               </p><p>
-                It will open a dialog to enter the new size as text, in the standard music fractional notation:                  
-              </p><div class="informalfigure"><a name="fig.PatternSizeDialog"></a><div class="mediaobject"><img src="../img/PatternSizeDialog.png" alt='Dialog for entering the "New Pattern length (beats/note value)" via a Text input in the middle. At the bottom there are "Cancel" (right) and "OK" (left) buttons.'></div></div><p>
-                Type <span class="keycap"><strong>/</strong></span> to separate numerator and denominator.
-              </p><p>
-                If you enter just the numerator (e.g. <code class="option">4</code>), the current denominator will be assumed.
-                You can enter a decimal numerator (e.g. <code class="option">4.5/4</code>) but since Hydrogen resolution is limited,
-                some values are not supported and will be approximated.
+                The left combo box represents the numerator of your current measure. You can enter a decimal numerator, like <code class="option">4.5/4</code>, but since resolution in Hydrogen is limited,
+                some values are not supported and can not be entered.
               </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
-                  Hydrogen supports (only) the following denominators: <code class="option">1</code>, <code class="option">2</code>, <code class="option">3</code>, <code class="option">4</code>, <code class="option">6</code>, <code class="option">8</code>, <code class="option">12</code>, <code class="option">16</code>, <code class="option">24</code>, <code class="option">32</code>, <code class="option">48</code>, <code class="option">64</code>, <code class="option">96</code>, and <code class="option">192</code>
-                  because these are the factors of the maximum resolution (192 ticks per whole note).
-                  You can use unsupported denominators, but the size will be approximated almost all the times,
-                  hence a warning icon will appear:               
-                </p><div class="informalfigure"><a name="fig.DenominatorWarningIcon"></a><div class="mediaobject"><img src="../img/generated_en/DenominatorWarningIcon.png" alt='A yellow upright triangle containing a exclamation mark is shown to the right of the "SIZE" LCD.'></div></div></td></tr></table></div></li><li class="listitem" style="list-style-type: circle"><p><a name="chpt.pattern_editor.controls.res"></a>
-            <span class="inlinemediaobject"><img src="../img/generated_en/lcd_res.png" alt='Blue LCD showing "1/16" and titled "RES".'></span>
+                  Hydrogen supports (only) the following denominators (right combo box): <code class="option">1</code>, <code class="option">2</code>, <code class="option">3</code>, <code class="option">4</code>, <code class="option">6</code>, <code class="option">8</code>, <code class="option">12</code>, <code class="option">16</code>, <code class="option">24</code>, <code class="option">32</code>, <code class="option">48</code>, <code class="option">64</code>, <code class="option">96</code>, and <code class="option">192</code>
+                  because these are the factors of the maximum resolution (192 ticks per whole note).        
+                </p></td></tr></table></div><div class="tip" style="margin-left: 5%;"><table border="0" summary="Tip"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="../img/admonitions/tip.svg"></td><th align="left">Tip</th></tr><tr><td align="left" valign="top"><p>
+                  Typing <span class="keycap"><strong>/</strong></span> within the numerator (first combo box) also you to quickly jump to the denominator.
+                </p></td></tr></table></div></li><li class="listitem" style="list-style-type: circle"><p><a name="chpt.pattern_editor.controls.res"></a>
+            <span class="inlinemediaobject"><img src="../img/generated_en/lcd_res.png" alt='Blue display showing "1/16" and titled "RES".'></span>
                  : this is the current grid resolution (<code class="option">1/4</code> through <code class="option">1/64</code> with triplet-based resolutions marked as <code class="option">1/8T</code>).
               </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
                   If you are working
-                  with a resolution of <code class="option">1/16</code> you can't go back to <code class="option">8</code> and remove an upbeat 16th note. On
-                  the other hand if you are working with a resolution of <code class="option">8</code> and you try to
-                  insert a note in the middle of two bars (looking for a <code class="option">16</code> bars precision),
+                  with a resolution of <code class="option">1/16</code> you can't go back to <code class="option">1/8</code> and remove an upbeat 16th note. On
+                  the other hand, if you are working with a resolution of <code class="option">1/8</code> and you try to
+                  insert a note in the middle of two bars (looking for a <code class="option">1/16</code> bars precision),
                   notes will be placed in the previous or in the following 8th bar.  This
                   constraint can be removed if you disable the whole grid resolution (choose
-                  <code class="option">off</code> from the grid resolution LCD control). Now you'll be able to place
+                  <code class="option">off</code> from the grid resolution combo box). Now you'll be able to place
                 notes wherever you prefer.</p></td></tr></table></div></li><li class="listitem" style="list-style-type: circle"><p>
                 <span class="inlinemediaobject"><img src="../img/generated_en/btn_hear.png" alt="Blue button containing a black speaker symbol."></span>
-                : when enabled Hydrogen 
+                : when checked Hydrogen 
                 will play back samples as they are being added to the pattern (even if transport is not rolling).
               </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
 	              When disabled you will still hear the preview sound when clicking on the instrument name in the <a class="link" href="ch09.html#chpt.pattern_editor.sidebar" title="9.1.2. Sidebar">Sidebar</a>. Be sure to click at the left-most position - where the preview is silent - in case you don't want to get disturbed.
                 </p></td></tr></table></div></li><li class="listitem" style="list-style-type: circle"><p>
             <span class="inlinemediaobject"><img src="../img/generated_en/btn_quant_off.png" alt="Blue button showing a black 2 by 3 grid."></span> : enables/disables quantization.
-            When enabled, beats <a class="link" href="ch04s04.html" title="4.4. Recording in Hydrogen">recorded</a> from MIDI or from the
+            When checked, notes <a class="link" href="ch04s04.html" title="4.4. Recording in Hydrogen">recorded</a> using MIDI input or the
             <a class="link" href="ch04s03.html" title="4.3. MIDI-mapping and Virtual Keyboard">virtual keyboard</a> will automatically respect the grid
             resolution currently applied, just like notes inserted by
             clicking. </p></li><li class="listitem" style="list-style-type: circle"><p><a name="chpt.pattern_editor.controls.input"></a>
-            <span class="inlinemediaobject"><img src="../img/generated_en/btn_drum_piano_off.png" alt="Grey button containing a small piano illustration with three white and two black keys."></span> /  <span class="inlinemediaobject"><img src="../img/generated_en/btn_drum_piano_on.png" alt="Blue button with a quasi-3D display a a cylinder with black outlines, blue sides, and a white top."></span> : switches between <a class="link" href="ch09s02.html" title="9.2. Drum Pattern Editor">Drumkit Editor</a> and <a class="link" href="ch09s04.html" title="9.4. Piano Roll Editor">Piano Roll Editor</a>.</p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="chpt.pattern_editor.sidebar"></a>9.1.2. Sidebar</h3></div></div></div><div class="figure"><a name="fig.pattern_editor.sidebar"></a><p class="title"><b>Figure 9.3. The Sidebar of the Pattern Editor</b></p><div class="figure-contents"><div class="mediaobject"><img src="../img/generated_en/PatternEditorInstr_V2.png" alt="The Sidebar of the Pattern Editor"></div></div></div><br class="figure-break"><p>The section on the left shows you what drumkit is currently selected (GMRockKit by default) and below that you can see
+            <span class="inlinemediaobject"><img src="../img/generated_en/btn_drum_piano_off.png" alt="Grey button containing a small piano illustration with three white and two black keys."></span> /  <span class="inlinemediaobject"><img src="../img/generated_en/btn_drum_piano_on.png" alt="Blue button with a quasi-3D display a cylinder with black outlines, blue sides, and a white top."></span> : switches between <a class="link" href="ch09s02.html" title="9.2. Drum Pattern Editor">Drumkit Editor</a> and <a class="link" href="ch09s04.html" title="9.4. Piano Roll Editor">Piano Roll Editor</a>.</p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="chpt.pattern_editor.sidebar"></a>9.1.2. Sidebar</h3></div></div></div><div class="figure"><a name="fig.pattern_editor.sidebar"></a><p class="title"><b>Figure 9.3. The Sidebar of the Pattern Editor</b></p><div class="figure-contents"><div class="mediaobject"><img src="../img/generated_en/PatternEditorInstr_V2.png" alt="The Sidebar of the Pattern Editor"></div></div></div><br class="figure-break"><p>The section on the left shows you what drumkit is currently selected (GMRockKit by default) and below that you can see
         the instruments that are part of this kit.</p><p><span class="emphasis"><em>Left-clicking</em></span> the box containing the instrument name will play back a sample of the instrument. Which layer will be select depends on the horizontal position of the mouse click representing zero <a class="link" href="go01.html#def.velocity" title="Velocity">velocity</a> to the left and maximum velocity to the right. In addition, each instrument has its own set of features that are accessible by 
         <span class="emphasis"><em>right-clicking</em></span> the instrument.  From the context menu that pops up you can select.</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: opencircle; "><li class="listitem" style="list-style-type: circle"><p><span class="bold"><strong>Delete notes</strong></span>:
           removes all notes for this instrument in this pattern.  </p></li><li class="listitem" style="list-style-type: circle"><p><a name="chpt.pattern_editor.sidebar.fill_notes"></a><span class="bold"><strong>Fill notes</strong></span>: this allows you to fill
@@ -105,9 +104,9 @@
                 change the name of the instrument.
                 </p></li><li class="listitem"><p><span class="bold"><strong>Delete
                 Instrument</strong></span>: well, deletes the instrument ;-)</p></li></ul></div></li></ul></div><p>The
-        <span class="inlinemediaobject"><img src="../img/generated_en/btn_mute_on.png" alt='Grey button containing a black "M".'></span>
+        <span class="inlinemediaobject"><img src="../img/generated_en/btn_instrument_line_mute_off.png" alt='Grey button containing a black "M".'></span>
         button <a class="link" href="go01.html#def.mute" title="Mute">mutes</a> the instrument and 
-        <span class="inlinemediaobject"><img src="../img/generated_en/btn_solo_off.png" alt='Grey button containing a black "S".'></span>
+        <span class="inlinemediaobject"><img src="../img/generated_en/btn_instrument_line_solo_off.png" alt='Grey button containing a black "S".'></span>
         solos it.
         </p><p>The order of the instruments can be rearranged by simply <span class="emphasis"><em>dragging</em></span> an instrument 
         up/down in the list and <span class="emphasis"><em>dropping</em></span> it on a new position within the drumkit.  Doing so 

@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Glossary</title><link rel="stylesheet" type="text/css" href="../res/docbook.css"><script src="../res/docbook.js" type="text/javascript"></script><meta name="generator" content="DocBook XSL Stylesheets V1.79.1"><link rel="home" href="index.html" title="Hydrogen v1.1 Manual"><link rel="up" href="pt04.html" title="Part IV. Appendix"><link rel="prev" href="ch21.html" title="Chapter 21. Shortcut Lists"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Glossary</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch21.html">Prev</a> </td><th width="60%" align="center">Part IV. Appendix</th><td width="20%" align="right"> </td></tr></table><hr></div><div class="glossary"><div class="titlepage"><div><div><h2 class="title"><a name="glossary"></a>Glossary</h2></div></div></div><p>This is a glossary of general terms encountered when using Hydrogen,
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Glossary</title><link rel="stylesheet" type="text/css" href="../res/docbook.css"><script src="../res/docbook.js" type="text/javascript"></script><meta name="generator" content="DocBook XSL Stylesheets V1.79.1"><link rel="home" href="index.html" title="Hydrogen v1.1 Manual"><link rel="up" href="pt04.html" title="Part IV. Appendix"><link rel="prev" href="ch22.html" title="Chapter 22. Shortcut Lists"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Glossary</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch22.html">Prev</a> </td><th width="60%" align="center">Part IV. Appendix</th><td width="20%" align="right"> </td></tr></table><hr></div><div class="glossary"><div class="titlepage"><div><div><h2 class="title"><a name="glossary"></a>Glossary</h2></div></div></div><p>This is a glossary of general terms encountered when using Hydrogen,
      synthesizers, drums, or samplers. The definitions here provide more
      detail and explanation than the simplified ones in the text. For
      example, the text of the manual would have you believe that an ADSR is
@@ -70,7 +70,41 @@
         mixer.  Faders always have an "audio" taper, which means that the
         attenuation amount changes on an exponential scale.</p></dd><dt><a name="def.filter"></a><span class="glossterm">Filter</span></dt><dd class="glossdef"><p>A device that changes a sound by attenuating specific frequencies.
         A tone knob is an example of a simple, low-pass filter.</p><p>See Also <a class="glossseealso" href="go01.html#def.bandpassfilter">Band-Pass Filter</a>, <a class="glossseealso" href="go01.html#def.highpassfilter">High-Pass Filter</a>, <a class="glossseealso" href="go01.html#def.lowpassfilter">Low-Pass Filter</a>, <a class="glossseealso" href="go01.html#def.resonancefilter">Resonance Filter</a>.</p></dd><dt><a name="def.gain"></a><span class="glossterm">Gain</span></dt><dd class="glossdef"><p>In an amplifier, this adjust how much (or how little) a signal is
-        amplified (volume).  A higher gain value is a louder signal.</p></dd><dt><a name="def.highpassfilter"></a><span class="glossterm">High-Pass Filter</span></dt><dd class="glossdef"><p>A filter that attenuates (silences) low frequencies, but allows
+        amplified (volume).  A higher gain value is a louder signal.</p><p>
+          In Hydrogen there is a plethora of different ways to affect the volume
+          of the resulting sound.  Each single note rendered to audio will
+          contain contributions of
+        </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+              Its individual <a class="link" href="ch09s03.html" title="9.3. Note Properties Editor">Note Velocity</a>
+            </p></li><li class="listitem"><p>
+              Its individual <a class="link" href="ch09s03.html#chpt.pattern_editor.note_properties.pan">Note Pan</a>
+            </p></li><li class="listitem"><p>
+              Its <a class="link" href="ch11s02.html#chpt.instrument_editor.layers.controls.layer_gain">Layer Gain</a>
+            </p></li><li class="listitem"><p>
+              The <a class="link" href="ch11.html#chpt.instrument_editor.general.sustain">Sustain</a>
+              value of its instrument's <a class="link" href="go01.html#def.adsr" title="ADSR">ADSR</a>
+            </p></li><li class="listitem"><p>
+              Its <a class="link" href="ch13.html#chpt.mixer.channel_strips" title="13.1. Instrument Channel Strips">Instrument Pan</a>
+            </p></li><li class="listitem"><p>
+              Its <a class="link" href="ch11.html#chpt.instrument_editor.gain_and_mute_group" title="11.1.2. Gain and Mute Group">Instrument Gain</a>
+            </p></li><li class="listitem"><p>
+              Its <a class="link" href="ch13.html#chpt.mixer.channel_strips" title="13.1. Instrument Channel Strips">Instrument Volume</a>
+            </p></li><li class="listitem"><p>
+              Its <a class="link" href="ch11s02.html#chpt.instrument_editor.layers.controls.component_gain">Component Gain</a>
+            </p></li><li class="listitem"><p>
+              Its <a class="link" href="ch13s02.html" title="13.2. Component Channel Strips">Component Volume</a>
+            </p></li><li class="listitem"><p>
+              Velocity contributions by the <a class="link" href="ch08s07.html" title="8.7. Automation Path">Automation
+              Path</a> when played in <a class="link" href="ch08s02.html#chpt.song_editor.editor_modes.song_mode" title="8.2.3. Song Mode">Song Mode</a>
+            </p></li><li class="listitem"><p>
+              Random contributions introduced by <a class="link" href="ch13s04.html" title="13.4. Master Fader Strip">Velocity Humanization</a>
+            </p></li><li class="listitem"><p>
+              The overall <a class="link" href="ch13s04.html" title="13.4. Master Fader Strip">Song Volume</a>
+            </p></li></ul></div><p>
+          Further modifications of the note's audio can be applied using the
+          <a class="link" href="ch12.html" title="Chapter 12. Sample Editor">Sample Editor</a>, the <a class="link" href="ch11.html#chpt.instrument_editor.filter" title="11.1.3. Filter Parameters">Low-Pass Resonance
+          Filter</a>, and <a class="link" href="ch13s03.html" title="13.3. FX Rack and LADSPA Plugins">FX Plugins</a>.
+        </p></dd><dt><a name="def.highpassfilter"></a><span class="glossterm">High-Pass Filter</span></dt><dd class="glossdef"><p>A filter that attenuates (silences) low frequencies, but allows
         high frequencies to pass through.</p><p>See Also <a class="glossseealso" href="go01.html#def.filter">Filter</a>, <a class="glossseealso" href="go01.html#def.cutoff">Cutoff Frequency</a>.</p></dd><dt><a name="def.instrument"></a><span class="glossterm">Instrument</span></dt><dd class="glossdef"><p>In Hydrogen, an instrument is a single noise-maker (like a bass
         drum kick, or a tom).</p></dd><dt><a name="def.layer"></a><span class="glossterm">Layer</span></dt><dd class="glossdef"><p>In an instrument you can load several different samples (each one
         called a <span class="bold"><strong>layer</strong></span>), and have a different
@@ -99,7 +133,7 @@
           Look to next figure to see how the <span class="bold"><strong>Resultant Pan</strong></span>
           is determined (from version 1.1):
 
-          </p><div class="figure"><a name="matryoshkaPanning"></a><p class="title"><b>Figure 44. Visualization of the Interaction of the Different Pan Parameters</b></p><div class="figure-contents"><div class="mediaobject"><img src="../img/matrioskaPanH2.png" alt="Visualization of the Interaction of the Different Pan Parameters"></div></div></div><p><br class="figure-break">
+          </p><div class="figure"><a name="matryoshkaPanning"></a><p class="title"><b>Figure 47. Visualization of the Interaction of the Different Pan Parameters</b></p><div class="figure-contents"><div class="mediaobject"><img src="../img/matrioskaPanH2.png" alt="Visualization of the Interaction of the Different Pan Parameters"></div></div></div><p><br class="figure-break">
           
 	      This multi-pan model resembles a "matryoshka" in some way: the <span class="emphasis"><em>note Pan</em></span> value moves the 
 	      <span class="emphasis"><em>Resultant Pan</em></span> in a smaller pan range centered at
@@ -131,4 +165,4 @@
         long. Each time a note is triggered within Hydrogen the corresponding sample will be played back (after applying all customization and effects).</p></dd><dt><a name="def.sustain"></a><span class="glossterm">Sustain</span></dt><dd class="glossdef"><p>The <span class="emphasis"><em>level</em></span> (how loud; volume) to hold the note between the <a class="link" href="go01.html#def.decay" title="Decay">decay</a> and the <a class="link" href="go01.html#def.release" title="Release">release</a>. It is given as percentage of the <a class="link" href="go01.html#def.velocity" title="Velocity">velocity</a> and does not depend on time.</p><p>See Also <a class="glossseealso" href="go01.html#def.adsr">ADSR</a>.</p></dd><dt><a name="def.velocity"></a><span class="glossterm">Velocity</span></dt><dd class="glossdef"><p>How hard you hit a note.</p><p><abbr class="abbrev">MIDI</abbr> devices are required to send this information along with the
         note.  Synthesizers use this information to adjust several parameters on
         the sample (typically the volume).  In Hydrogen, it is only used to
-        adjust how loud the sample is played back.</p></dd></dl></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch21.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="pt04.html">Up</a></td><td width="40%" align="right"> </td></tr><tr><td width="40%" align="left" valign="top">Chapter 21. Shortcut Lists </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> </td></tr></table></div></body></html>
+        adjust how loud the sample is played back.</p></dd></dl></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch22.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="pt04.html">Up</a></td><td width="40%" align="right"> </td></tr><tr><td width="40%" align="left" valign="top">Chapter 22. Shortcut Lists </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> </td></tr></table></div></body></html>

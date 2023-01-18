@@ -3,7 +3,7 @@
             </p><p>
 	          Available options:
             </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p><code class="option">Auto</code>: Hydrogen will try a
-                number of different drivers in a predetermined order, choose the
+                number of different drivers in a predetermined, OS-dependent order, choose the
                 first working one, and display the result.
 
                 </p><div class="tip" style="margin-left: 5%;"><table border="0" summary="Tip"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="../img/admonitions/tip.svg"></td><th align="left">Tip</th></tr><tr><td align="left" valign="top"><p>
@@ -57,15 +57,24 @@
             configuration should happen before starting the <abbr class="abbrev">JACK</abbr> server.
                 </p></td></tr></table></div><p>
             </p></li><li class="listitem"><p><a name="sect.preferences.jack.track_output"></a><span class="bold"><strong>Track output</strong></span>: determines which audio settings will be applied to the outgoing
-            audio of the per-instrument <abbr class="abbrev">JACK</abbr> output ports.</p><p><code class="option">Post-Fader</code>:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>note <a class="link" href="ch09s03.html#chpt.pattern_editor.note_properties.velocity">velocity</a> and <a class="link" href="ch09s03.html#chpt.pattern_editor.note_properties.pan">pan</a></p></li><li class="listitem"><p><a class="link" href="ch11s02.html#chpt.instrument_editor.layers.controls.layer_gain">layer gain</a></p></li><li class="listitem"><p>component <a class="link" href="ch11s02.html#chpt.instrument_editor.layers.controls.component_volume">gain</a> and <a class="link" href="ch13s02.html#chpt.mixer.component_strips.fader_and_lcd">volume</a></p></li><li class="listitem"><p>instrument <a class="link" href="ch11.html#chpt.instrument_editor.gain_and_mute_group" title="11.1.2. Gain and Mute Group">gain</a>, <a class="link" href="ch13.html#chpt.mixer.channel_strips.pan">pan</a>, and <a class="link" href="ch13.html#chpt.mixer.channel_strips.fader_and_lcd">volume</a></p></li></ul></div><p><code class="option">Pre-Fader</code>:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>note <a class="link" href="ch09s03.html#chpt.pattern_editor.note_properties.velocity">velocity</a></p></li><li class="listitem"><p><a class="link" href="ch11s02.html#chpt.instrument_editor.layers.controls.layer_gain">layer gain</a></p></li></ul></div><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
+            audio of the per-instrument <abbr class="abbrev">JACK</abbr> output ports.</p><p><code class="option">Post-Fader</code>:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>note <a class="link" href="ch09s03.html#chpt.pattern_editor.note_properties.velocity">velocity</a> and <a class="link" href="ch09s03.html#chpt.pattern_editor.note_properties.pan">pan</a></p></li><li class="listitem"><p><a class="link" href="ch11s02.html#chpt.instrument_editor.layers.controls.layer_gain">layer gain</a></p></li><li class="listitem"><p>component <a class="link" href="ch11s02.html#chpt.instrument_editor.layers.controls.component_gain">gain</a> and <a class="link" href="ch13s02.html#chpt.mixer.component_strips.fader_and_lcd">volume</a></p></li><li class="listitem"><p>instrument <a class="link" href="ch11.html#chpt.instrument_editor.gain_and_mute_group" title="11.1.2. Gain and Mute Group">gain</a>, <a class="link" href="ch11.html#chpt.instrument_editor.general.sustain">sustain</a>,
+              <a class="link" href="ch13.html#chpt.mixer.channel_strips.pan">pan</a>, and
+              <a class="link" href="ch13.html#chpt.mixer.channel_strips.fader_and_lcd">volume</a></p></li><li class="listitem"><p>
+                  <a class="link" href="ch08s07.html" title="8.7. Automation Path">automation
+                  path</a> and <a class="link" href="ch13s04.html" title="13.4. Master Fader Strip">velocity humanization</a>
+                </p></li></ul></div><p><code class="option">Pre-Fader</code>:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>note <a class="link" href="ch09s03.html#chpt.pattern_editor.note_properties.velocity">velocity</a> and <a class="link" href="ch09s03.html#chpt.pattern_editor.note_properties.pan">pan</a></p></li><li class="listitem"><p><a class="link" href="ch11s02.html#chpt.instrument_editor.layers.controls.layer_gain">layer gain</a></p></li><li class="listitem"><p>instrument <a class="link" href="ch11.html#chpt.instrument_editor.general.sustain">sustain</a>
+                </p></li><li class="listitem"><p>
+                  <a class="link" href="ch08s07.html" title="8.7. Automation Path">automation
+                  path</a> and <a class="link" href="ch13s04.html" title="13.4. Master Fader Strip">velocity humanization</a>
+                </p></li></ul></div><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
                 This option is only available if the <abbr class="abbrev">JACK</abbr> audio driver was selected and it will only take effect if the <span class="bold"><strong>Connect to default <abbr class="abbrev">JACK</abbr> output ports</strong></span> option is checked.
               </p></td></tr></table></div></li><li class="listitem"><p><a name="sect.preferences.jack.bbt"></a><span class="bold"><strong>BBT sync method</strong></span>: if
             Hydrogen uses <abbr class="abbrev">JACK</abbr> transport in the presence of an external <abbr class="abbrev">JACK</abbr>
             Timebase master (TBM), it will use the provided measure and
             tempo information instead of the local one of either the <a class="link" href="ch07s03.html" title="7.3. BPM Control and Metronome">song's
             tempo</a> or the Tempo Markers
-            added to the <a class="link" href="ch08s04.html" title="8.4. Timeline">Timeline</a>.  But due to
-            limitations in the current implementation, Hydrogen can not set
+            added to the <a class="link" href="ch08s04.html" title="8.4. Timeline">Timeline</a>. But due to
+            fundamental design choices within Hydrogen, it can not set
             both measure and speed provided by <abbr class="abbrev">JACK</abbr> for arbitrary pattern
             combinations. You have two options here. Either drop all measure
             changes in the TBM and work with tempo changes only to support
@@ -77,9 +86,9 @@
                 This option is only available if the <abbr class="abbrev">JACK</abbr> audio driver was selected.
               </p><p>
                 For this option to take effect the
-                <span class="inlinemediaobject"><img src="../img/btn_jack_transport_off.png" alt='Grey button containing the text "J.TRANS".'></span>
+                <span class="inlinemediaobject"><img src="../img/generated_en/playerControlJackTransportButton.png" alt='Grey button containing the text "J.TRANS".'></span>
                 button has to be activated and the
-                <span class="inlinemediaobject"><img src="../img/btn_jack_master_off.png" alt='Grey button containing the text "J.MASTER".'></span>                
+                <span class="inlinemediaobject"><img src="../img/generated_en/playerControlJackMasterButton.png" alt='Grey button containing the text "J.MASTER".'></span>                
                 button deactivated in the <a class="link" href="ch07s05.html" title="7.5. JACK Control">Main Toolbar</a> (next to
                 having a <abbr class="abbrev">JACK</abbr> TBM application).</p></td></tr></table></div><div class="tip" style="margin-left: 5%;"><table border="0" summary="Tip"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="../img/admonitions/tip.svg"></td><th align="left">Tip</th></tr><tr><td align="left" valign="top"><p>
 	            Hydrogen can be registered as <abbr class="abbrev">JACK</abbr> Timebase Master via the <a class="link" href="ch07s05.html" title="7.5. JACK Control">Main Toolbar</a>.

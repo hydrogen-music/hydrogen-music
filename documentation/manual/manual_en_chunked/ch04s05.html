@@ -16,39 +16,32 @@
               </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
 	              You have to activate <abbr class="abbrev">LASH</abbr> support in the <a class="link" href="ch05.html#fig.preferences.general_tab" title="Figure 5.1. The General Tab">General</a> tab of the Preference dialog in order to use it.
                 </p></td></tr></table></div><p>
-            </p></li><li class="listitem"><p>
-	          <span class="bold"><strong><abbr class="abbrev">JACK</abbr> Session</strong></span>:
-              <a class="ulink" href="https://jackaudio.org" target="_blank"><abbr class="abbrev">JACK</abbr> Session</a> has been marked <a class="ulink" href="https://jackaudio.org/news/2020/10/15/jack2-v1915-release-and-current-status.html" target="_blank">deprecated</a> by the <abbr class="abbrev">JACK</abbr> project.
-              </p><div class="warning" style="margin-left: 5%;"><table border="0" summary="Warning"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Warning]" src="../img/admonitions/warning.svg"></td><th align="left">Warning</th></tr><tr><td align="left" valign="top"><p>
-	              Hydrogen versions &lt;= 1.1 still feature this Session Management protocol. But it will be removed in future releases.
-                </p></td></tr></table></div><p>
             </p></li></ul></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="chpt.overview.session_management.nsm"></a>4.5.1. NSM</h3></div></div></div><p>
             Hydrogen will be under session management if you start it via a <abbr class="abbrev">NSM</abbr> server application, like <a class="ulink" href="https://github.com/Houston4444/RaySession" target="_blank">RaySession</a>. You can easily check whether Hydrogen is aware of the session by checking out the <code class="option">Project</code> option of the <a class="link" href="ch06.html" title="Chapter 6. Main Menu">Main Menu</a> as some action will have changed in order to comply to the <abbr class="abbrev">NSM</abbr> API.
           </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
-	            <span class="bold"><strong>Replace With New Song</strong></span>:
+	            <span class="bold"><strong>Replace With New Song</strong></span>
                 instead of <a class="link" href="ch06.html#sect.main_menu.projects.new">New</a>. Replaces the song associated with the session by an empty one.
               </p></li><li class="listitem"><p>
-	            <span class="bold"><strong>Import Into Session</strong></span>:
+	            <span class="bold"><strong>Import Into Session</strong></span>
                 instead of <a class="link" href="ch06.html#sect.main_menu.projects.open">Open</a>. Replaces the song associated with the session by a song of your choice.
               </p></li><li class="listitem"><p>
-	            <span class="bold"><strong>Import Recent Info Session</strong></span>:
+	            <span class="bold"><strong>Import Recent Info Session</strong></span>
                 instead of <a class="link" href="ch06.html#sect.main_menu.projects.open_recent">Open Recent</a>. Replaces the song associated with the session by one of the recently used songs.
-                </p><div class="warning" style="margin-left: 5%;"><table border="0" summary="Warning"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Warning]" src="../img/admonitions/warning.svg"></td><th align="left">Warning</th></tr><tr><td align="left" valign="top"><p>
-	                In Hydrogen version 1.1 the import into a session is not yet fully supported. While the selected file will be loaded and you can work with it, Hydrogen won't recall it after closing and opening the session. You need to copy the corresponding <a class="link" href="ch20.html#chpt.file_types.h2song">.h2song</a> file manually into the session folder to make your choice permanent.
-                  </p></td></tr></table></div><p>
               </p></li><li class="listitem"><p>
-	            <span class="bold"><strong>Export From Session As</strong></span>:
-                instead of <a class="link" href="ch06.html#sect.main_menu.projects.save_as">Save As</a>. Stores the song associated with the session at a location of your choice as <a class="link" href="ch20.html#chpt.file_types.h2song">.h2song</a> file.
+	            <span class="bold"><strong>Export From Session As</strong></span>
+                instead of <a class="link" href="ch06.html#sect.main_menu.projects.save_as">Save As</a>. Stores the song associated with the session at a location of your choice as <a class="link" href="ch21.html#chpt.file_types.h2song">.h2song</a> file.
 
                 </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
 	                In contrast to the <span class="emphasis"><em>Save As</em></span> command the underlying path of the current song will not be changed. All subsequent <span class="emphasis"><em>Save</em></span> actions will store the current state of the song to the file in the session folder and <span class="bold"><strong>not</strong></span> to the path of the exported file.
                   </p></td></tr></table></div><p>
-              </p></li></ul></div><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
-              The <a class="link" href="ch06.html#sect.main_menu.projects.open_demo">Open Demo</a> option will be missing.
-            </p></td></tr></table></div><p>
+              </p></li></ul></div><p>
 	        Both the song and the preferences associated with the session will be stored in a session folder called <code class="filename">Hydrogen.*</code>. In addition, the drumkit (and its samples) used with the song will linked into the session folder as well. If the link is replaced by a folder containing a valid drumkit, this one will be used over the system and user drumkits.
 
             </p><div class="tip" style="margin-left: 5%;"><table border="0" summary="Tip"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="../img/admonitions/tip.svg"></td><th align="left">Tip</th></tr><tr><td align="left" valign="top"><p>
-	            This allows you to create fully self sufficient backup of your Hydrogen session using <span class="command"><strong>tar -chf</strong></span>. These can be even ported and used to systems which do not have the required drumkits installed.
+	            This allows you to create fully self sufficient backups of your Hydrogen session using <span class="command"><strong>tar -chf</strong></span>. These can even be ported and used on systems which do not have the required drumkits installed.
+              </p></td></tr></table></div><p>
+
+            </p><div class="warning" style="margin-left: 5%;"><table border="0" summary="Warning"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Warning]" src="../img/admonitions/warning.svg"></td><th align="left">Warning</th></tr><tr><td align="left" valign="top"><p>
+                Note that only the stock <a class="link" href="ch04s02.html" title="4.2. Drumkit Concept">drumkit</a> loaded last will be linked in the session folder. In case you only alter instrument parameters or delete instruments or samples this will work perfectly fine. But as soon as you add instruments from other drumkits or external samples, the linked drumkit folder won't contain all samples required by your current song anymore. You need to <a class="link" href="ch06s03.html#sect.main_menu.drumkits.save">saved</a> the kit (or create a new one) in order to ensure consistency.
               </p></td></tr></table></div><p>
           </p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch04s04.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch04.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch04s06.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">4.4. Recording in Hydrogen </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 4.6. Command-line Options</td></tr></table></div></body></html>
