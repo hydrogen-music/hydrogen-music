@@ -15,13 +15,15 @@ Due to the variety of linux distributions we do not provide packages for Linux o
 
 # Windows:
 
-Current stable version: 
+Current stable version:
 
-* [Hydrogen 1.1.1 64-Bit](https://github.com/hydrogen-music/hydrogen/releases/download/1.1.1/Hydrogen-1.1.1-win64.exe)
-* [Hydrogen 1.1.1 32-Bit](https://github.com/hydrogen-music/hydrogen/releases/download/1.1.1/Hydrogen-1.1.1-win32.exe)
+* [Hydrogen 1.2.0 64-Bit](https://github.com/hydrogen-music/hydrogen/releases/download/1.2.0/Hydrogen-1.2.0-win64.exe)
+* [Hydrogen 1.2.0 32-Bit](https://github.com/hydrogen-music/hydrogen/releases/download/1.2.0/Hydrogen-1.2.0-win32.exe)
 
 Older versions:
 
+* [Hydrogen 1.1.1 64-Bit](https://github.com/hydrogen-music/hydrogen/releases/download/1.1.1/Hydrogen-1.1.1-win64.exe)
+* [Hydrogen 1.1.1 32-Bit](https://github.com/hydrogen-music/hydrogen/releases/download/1.1.1/Hydrogen-1.1.1-win32.exe)
 * [Hydrogen 1.0.2 64bit](https://sourceforge.net/projects/hydrogen/files/Hydrogen/1.0.0%20Binaries/Hydrogen-1.0.2-win64.exe/download)
 * [Hydrogen 1.0.2 32bit](https://sourceforge.net/projects/hydrogen/files/Hydrogen/1.0.0%20Binaries/Hydrogen-1.0.2-win32.exe/download)
 * [Windows installer 0.9.7 64-Bit](https://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.7%20Binaries/Hydrogen-0.9.7-rc1-win64.exe/download) (0.9.7 RC-1 win64)
@@ -32,13 +34,13 @@ Older versions:
  
 # Mac OS X:
 
-Current stable version
-
-* [Hydrogen 1.1.1 (OS X 10.12 and above)](https://github.com/hydrogen-music/hydrogen/releases/download/1.1.1/Hydrogen-1.1.1-x86_64.dmg)
+Current stable version:
+* [Hydrogen 1.2.0 (OS X 10.12 and above)](https://github.com/hydrogen-music/hydrogen/releases/download/1.2.0/Hydrogen-1-2.0.dmg)
 * [Hydrogen 1.0.0-rc1 (OS X 10.10 and 10.11)](https://github.com/hydrogen-music/hydrogen/releases/download/1.0.0-rc1/Hydrogen-legacy.dmg)
 
 Older versions:
 
+* [Hydrogen 1.1.1 (OS X 10.12 and above)](https://github.com/hydrogen-music/hydrogen/releases/download/1.1.1/Hydrogen-1.1.1-x86_64.dmg)
 * [OS X (10.12 and above), Hydrogen 1.0.2](https://sourceforge.net/projects/hydrogen/files/Hydrogen/1.0.0%20Binaries/Hydrogen-1.0.2.dmg/download)
 * [OS X (10.10 and 10.11), Hydrogen 1.0.1](https://sourceforge.net/projects/hydrogen/files/Hydrogen/1.0.0%20Binaries/Hydrogen-legacy-1.0.1.dmg/download)
 * [OS X (Intel), 0.9.7](https://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.7%20Binaries/Hydrogen-0.9.7.dmg/download)
@@ -53,7 +55,7 @@ Older versions:
 
 The hydrogen sourcecode for the most recent release can be fetched via github:
 
-	git clone -b releases/1.1  git://github.com/hydrogen-music/hydrogen.git
+	git clone -b releases/1.2  git://github.com/hydrogen-music/hydrogen.git
 
 For more information about building hydrogen from source, see our Linux compilation howto.
 

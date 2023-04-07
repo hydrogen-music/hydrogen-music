@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "Hydrogen 1.2.0 released"
+date:   2023-04-07 21:11:00 BST
+
+categories: jekyll update
+---
+
+Release 1.2.0 of Hydrogen is the new stable release of Hydrogen. This release brings new features as well as many bug fixes, and is generally recommended for all users.
+
+New features:
+
+- New scalable SVG-based GUI components with more standardized UX
+- Configurable colour themes and adjustable font size to increase accessibility
+- Pattern and Song editor can follow playback
+- Stacked mode and virtual patterns can show notes from other patterns alongside currently selecte pattern
+- Tagging improvements
+- New OSC commands
+- Builtin crash reporter
+- Slightly changed ADSR behaviour to align with natural user expectations
+
+In addition there are many bug fixes, smaller tweaks to behaviour, and many under-the-hood improvements to audio processing structure, timekeeping and performance, as well as GUI speed.
+
+Source code and binary releases for Windows and macOS are available from [GitHub](https://github.com/hydrogen-music/hydrogen/releases/tag/1.2.0).
