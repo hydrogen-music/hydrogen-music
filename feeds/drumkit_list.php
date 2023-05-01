@@ -581,7 +581,7 @@
                 <url>https://github.com/GuiPassoskt/hydrogen-drumkits/raw/main/Dave%20Grohl.h2drumkit</url>
                 <info>Drum kit used by Dave Grohl of the band Nirvana</info>
                 <author>Guilherme Passos</author>
-                <license>GPL</license>
+                <license>CC BY</license>
         </drumkit>
 
         <drumkit>
@@ -589,7 +589,7 @@
                 <url>https://github.com/GuiPassoskt/hydrogen-drumkits/raw/main/Ian%20Paice%20.h2drumkit</url>
                 <info>Drum kit used by Ian Paice of the band Deep Purple</info>
                 <author>Guilherme Passos</author>
-                <license>GPL</license>
+                <license>CC BY</license>
         </drumkit>
 
         <drumkit>
@@ -597,7 +597,7 @@
                 <url>https://github.com/GuiPassoskt/hydrogen-drumkits/raw/main/John%20Bonham.h2drumkit</url>
                 <info>Drum kit used by John Bonham of the band Led Zepplin</info>
                 <author>Guilherme Passos</author>
-                <license>GPL</license>
+                <license>CC BY</license>
         </drumkit>
 
         <drumkit>
@@ -605,7 +605,7 @@
                 <url>https://github.com/GuiPassoskt/hydrogen-drumkits/raw/main/Travis%20Barker.h2drumkit</url>
                 <info>Drum kit used by Travis Barker of the band Blink 182</info>
                 <author>Guilherme Passos</author>
-                <license>GPL</license>
+                <license>CC BY</license>
         </drumkit>
 
         <drumkit>
@@ -613,7 +613,7 @@
                 <url>https://github.com/GuiPassoskt/hydrogen-drumkits/raw/main/Tre%20Cool.h2drumkit</url>
                 <info>Drum kit used by Tre Cool of the band Green Day</info>
                 <author>Guilherme Passos</author>
-                <license>GPL</license>
+                <license>CC BY</license>
         </drumkit>
 
 
