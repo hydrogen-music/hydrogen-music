@@ -358,7 +358,45 @@ Please visit http://forzee.org/ for contacts.
 
 <drumkit><name>VariBreaks (sf)</name><url>http://prdownloads.sf.net/hydrogen/VariBreaks.h2drumkit</url><info>All sounds in this kit have been created from scratch using Roland V-Synth. The source material were samples of sounds based on sine and noise waveforms processed with COSM blocks, which were then re-synthesized multiple times using VariPhrase and COSM technologies.</info><author>Artemiy Pavlov</author><license></license></drumkit>
 
+<drumkit>
+        <name>Dave Grohl</name>
+        <url>https://sourceforge.net/projects/hydrogen/files/Sound%20Libraries/Main%20sound%20libraries/Dave%20Grohl.h2drumkit</url>
+        <info>Drum kit used by Dave Grohl of the band Nirvana</info>
+        <author>Guilherme Passos</author>
+        <license>CC BY</license>
+</drumkit>
 
+<drumkit>
+        <name>Ian Paice</name>
+        <url>https://sourceforge.net/projects/hydrogen/files/Sound%20Libraries/Main%20sound%20libraries/Ian%20Paice%20.h2drumkit</url>
+        <info>Drum kit used by Ian Paice of the band Deep Purple</info>
+        <author>Guilherme Passos</author>
+        <license>CC BY</license>
+</drumkit>
+
+<drumkit>
+        <name>John Bonham</name>
+        <url>https://sourceforge.net/projects/hydrogen/files/Sound%20Libraries/Main%20sound%20libraries/John%20Bonham.h2drumkit</url>
+        <info>Drum kit used by John Bonham of the band Led Zepplin</info>
+        <author>Guilherme Passos</author>
+        <license>CC BY</license>
+</drumkit>
+
+<drumkit>
+        <name>Travis Barker</name>
+        <url>https://sourceforge.net/projects/hydrogen/files/Sound%20Libraries/Main%20sound%20libraries/Travis%20Barker.h2drumkit</url>
+        <info>Drum kit used by Travis Barker of the band Blink 182</info>
+        <author>Guilherme Passos</author>
+        <license>CC BY</license>
+</drumkit>
+
+<drumkit>
+        <name>Tre Cool</name>
+        <url>https://sourceforge.net/projects/hydrogen/files/Sound%20Libraries/Main%20sound%20libraries/Tre%20Cool.h2drumkit</url>
+        <info>Drum kit used by Tre Cool of the band Green Day</info>
+        <author>Guilherme Passos</author>
+        <license>CC BY</license>
+</drumkit>
 
 
 	<pattern>
