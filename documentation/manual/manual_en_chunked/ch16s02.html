@@ -1,5 +1,67 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>16.2. MIDI-learnable Widgets</title><link rel="stylesheet" type="text/css" href="../res/docbook.css"><script src="../res/docbook.js" type="text/javascript"></script><meta name="generator" content="DocBook XSL Stylesheets V1.79.1"><link rel="home" href="index.html" title="Hydrogen v1.2 Manual"><link rel="up" href="ch16.html" title="Chapter 16. MIDI API"><link rel="prev" href="ch16.html" title="Chapter 16. MIDI API"><link rel="next" href="ch17.html" title="Chapter 17. OSC API"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">16.2. MIDI-learnable Widgets</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch16.html">Prev</a> </td><th width="60%" align="center">Chapter 16. MIDI API</th><td width="20%" align="right"> <a accesskey="n" href="ch17.html">Next</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="chpt.midi.learnable"></a>16.2. MIDI-learnable Widgets</h2></div></div></div><p><abbr class="abbrev">MIDI</abbr> Events can be mapped to Actions in the dedicated table at the bottom of the <a class="link" href="ch16.html#chpt.midi.actions" title="16.1. MIDI Actions"><abbr class="abbrev">MIDI</abbr> tab</a> of the Preferences Dialog. For more convenient handling some of these Actions are associated with GUI elements and can directly be mapped to <abbr class="abbrev">MIDI</abbr> Events by pressing <span class="keycap"><strong>Shift</strong></span> while <span class="emphasis"><em>left-clicking</em></span> the widget.
-       </p><p>Such elements are:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>the <a class="link" href="ch13s02.html#chpt.mixer.component_strips.fader_and_lcd">volume faders</a> in the Instrument Channel Strips</p></li><li class="listitem"><p>the <a class="link" href="ch13.html#chpt.mixer.channel_strips.fx_volume">FX volume knobs</a> in the Instrument Channel Strips</p></li><li class="listitem"><p>the <a class="link" href="ch13.html#chpt.mixer.channel_strips.pan">pan rotaries</a> in the Instrument Channel Strips</p></li><li class="listitem"><p>the <a class="link" href="ch13s04.html" title="13.4. Master Fader Strip">Master Fader Strip</a> in the Mixer</p></li></ul></div><p>A 'Waiting for <abbr class="abbrev">MIDI</abbr> input...' popup informs you that Hydrogen is now waiting for you to press 
-       a key or turn/move a controller on your <abbr class="abbrev">MIDI</abbr> device.
-       </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>If the element that does not support <abbr class="abbrev">MIDI</abbr> automation, a different popup will inform you.
-         </p></td></tr></table></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch16.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch16.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch17.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 16. MIDI API </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Chapter 17. OSC API</td></tr></table></div></body></html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>16.2. MIDI Note Rendering</title><link rel="stylesheet" type="text/css" href="../res/docbook.css"><script src="../res/docbook.js" type="text/javascript"></script><meta name="generator" content="DocBook XSL Stylesheets V1.79.1"><link rel="home" href="index.html" title="Hydrogen v1.2.1 Manual"><link rel="up" href="ch16.html" title="Chapter 16. MIDI"><link rel="prev" href="ch16.html" title="Chapter 16. MIDI"><link rel="next" href="ch16s03.html" title="16.3. MIDI Output"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">16.2. MIDI Note Rendering</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch16.html">Prev</a> </td><th width="60%" align="center">Chapter 16. MIDI</th><td width="20%" align="right"> <a accesskey="n" href="ch16s03.html">Next</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="chpt.midi.note"></a>16.2. MIDI Note Rendering</h2></div></div></div><p>
+         Hydrogen can be used as <abbr class="abbrev">MIDI</abbr> synth for your
+         <abbr class="abbrev">MIDI</abbr> device. All settings in both <a class="link" href="ch11.html" title="Chapter 11. Instrument Editor">Instrument Editor</a> and <a class="link" href="ch13.html" title="Chapter 13. Mixer">Mixer</a> are applied but instead of notes
+         picked up from patterns while playback is rolling, incoming
+         <abbr class="abbrev">MIDI</abbr> messages will trigger sounds. In addition, all
+         incoming <abbr class="abbrev">MIDI</abbr> notes can be <a class="link" href="ch04s04.html" title="4.4. Recording in Hydrogen">recorded</a>.
+       </p><p>
+         <span class="emphasis"><em>NOTE_ON</em></span> type <abbr class="abbrev">MIDI</abbr> messages will
+         trigger a note while <span class="emphasis"><em>NOTE_OFF</em></span> will stop all note
+         rendering in the corresponding instrument. This behavior might be
+         exactly what you expected from an edrum but, on the other hand, also
+         might be a pain when using a <abbr class="abbrev">MIDI</abbr> keyboard (since
+         releasing a key will stop the note). In this case you can disable
+         <span class="emphasis"><em>NOTE_OFF</em></span> message handling by unchecking <a class="link" href="ch05s03.html#chpt.preferences.midi_tab.ignore_note_off">Ignore
+         note-off</a> in the Preferences.
+       </p><p>
+         Which incoming <abbr class="abbrev">MIDI</abbr> note is mapped to which particular
+         instrument does depend on multiple settings. First of all, each
+         <span class="emphasis"><em>NOTE_ON</em></span> message is assigned a <span class="bold"><strong>channel</strong></span> - the default one in the General
+         <abbr class="abbrev">MIDI</abbr> standard is <code class="option">10</code>. Using <a class="link" href="ch05s03.html#chpt.preferences.midi_tab.channel">Channel</a> in the
+         Preferences you can set whether Hydrogen should listen to incoming
+         notes on all channels or just to a single one. The second degree of
+         freedom of a note is its <span class="bold"><strong>pitch</strong></span>. Depending on the current <a class="link" href="ch16s02.html#chpt.midi.note.input_mode" title="16.2.1. Input Mode">Input Mode</a> it is either
+         mapped to a pitch-shifted sample of the currently selected instrument
+         or an instrument of the current drumkit. The latter will be discussed
+         in section <a class="link" href="ch16s02.html#chpt.midi.note.mapping" title="16.2.2. MIDI Note Mapping">MIDI Note
+         Mapping</a> in more detail.
+       </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
+           When <span class="emphasis"><em>NOTE_ON</em></span> messages are <a class="link" href="ch16s04.html#chpt.midi.controlling.actions" title="16.4.2. Actions">mapped to Actions</a> they
+           will be discarded and do <span class="emphasis"><em>not</em></span> trigger sound when
+           <a class="link" href="ch05s03.html#chpt.preferences.midi_tab.discard_messages">Discard
+           MIDI messages after action has been triggered</a> is checked in
+           the Preferences.
+         </p></td></tr></table></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="chpt.midi.note.input_mode"></a>16.2.1. Input Mode</h3></div></div></div><p>
+	      Using <span class="bold"><strong>Input Mode</strong></span> in <a class="link" href="ch06s06.html" title="6.6. Options">Options</a> within the Main Menu
+	      you can choose between two different ways of triggering sounds and
+	      record notes.
+         </p><p>
+           <code class="option">Drumkit</code> maps different <abbr class="abbrev">MIDI</abbr> notes
+           (or <a class="link" href="ch04s03.html" title="4.3. Virtual Keyboard">Virtual
+           Keyboard</a> strokes) to different instruments of the current
+           drumkit. <code class="option">Instrument</code>, on the other hand, maps them to
+           pitch-shifted samples of the instrument currently selected in the
+           <a class="link" href="ch09.html" title="Chapter 9. Pattern Editor">Pattern Editor</a>. You can
+           use these modes to record notes into both <a class="link" href="ch09s02.html" title="9.2. Drum Pattern Editor">Drumkit Editor</a> and <a class="link" href="ch09s04.html" title="9.4. Piano Roll Editor">Piano Roll Editor</a>
+           respectively. The third property of a <abbr class="abbrev">MIDI</abbr> note, its
+           <span class="bold"><strong>velocity</strong></span>, will be used as <a class="link" href="go01.html#def.velocity" title="Velocity">velocity</a> for the triggered note.
+         </p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="chpt.midi.note.mapping"></a>16.2.2. MIDI Note Mapping</h3></div></div></div><p>
+           If <a class="link" href="ch16s02.html#chpt.midi.note.input_mode" title="16.2.1. Input Mode">Input Mode</a> was
+           set to <code class="option">Drumkit</code>, Hydrogen has two ways of dealing
+           with incoming MIDI notes: order-based and output-based.
+         </p><p>
+           Per default mapping in done <span class="bold"><strong>order-based</strong></span>. Hydrogen maps incoming
+           <abbr class="abbrev">MIDI</abbr> notes of pitch <code class="option">36</code> and above to
+           instruments of your drumkit. A <abbr class="abbrev">MIDI</abbr> note of pitch
+           <code class="option">36</code> will trigger a sample of the first instrument of
+           your current drumkit, one of pitch <code class="option">37</code> a sample from
+           the second one and so forth. When choosing this option you can
+           control mapping by drag-dropping the instruments into the desired
+           order.
+         </p><p>
+           Alternatively you can use <span class="bold"><strong>output-based</strong></span> mapping by checking <a class="link" href="ch05s03.html#chpt.preferences.midi_tab.input_as_output">Use output note
+           as input note</a> in the Preferences. This way an incoming
+           <abbr class="abbrev">MIDI</abbr> note is mapped to the instrument which's <a class="link" href="ch11.html#fig.instrument_editor.midi_out_settings">MIDI Output
+           Note</a> setting in the Instrument Editor matches its
+           pitch.
+         </p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch16.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch16.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch16s03.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 16. MIDI </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 16.3. MIDI Output</td></tr></table></div></body></html>
