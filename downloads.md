@@ -35,7 +35,7 @@ Older versions:
 # Mac OS X:
 
 Current stable version:
-* [Hydrogen 1.2.1 (OS X 10.12 and above)](https://github.com/hydrogen-music/hydrogen/releases/download/1.2.1/Hydrogen-1-2.1.dmg)
+* [Hydrogen 1.2.1 (OS X 10.12 and above)](https://github.com/hydrogen-music/hydrogen/releases/download/1.2.1/Hydrogen-1.2.1.dmg)
 * [Hydrogen 1.0.0-rc1 (OS X 10.10 and 10.11)](https://github.com/hydrogen-music/hydrogen/releases/download/1.0.0-rc1/Hydrogen-legacy.dmg)
 
 Older versions:
