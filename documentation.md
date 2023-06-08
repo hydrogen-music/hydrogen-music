@@ -11,7 +11,7 @@ This is the hydrogen documentation page.
 
 The Hydrogen manuals are available in English for the following versions:
 
-#### Hydrogen 1.2
+#### Hydrogen 1.2.1
 +  [single page HTML](../documentation/manual/manual_en.html)
 +  [chunked HTML](../documentation/manual/manual_en_chunked/index.html)
 
