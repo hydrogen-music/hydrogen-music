@@ -11,7 +11,14 @@ This site provides downloads for our installers, sources and demos.
 
 # Linux:
 
-Due to the variety of linux distributions we do not provide packages for Linux ourselves. You can check the compiled list of [Repology](https://repology.org/project/hydrogen-drum-machine/versions) to see which version is available for which distribution. If you do not find one for yours, please ask the people behind your distribution to include Hydrogen.
+You can install the latest version of Hydrogen from
+[flathub](https://flathub.org/apps/org.hydrogenmusic.Hydrogen) or
+check whether a recent version is contained in your distribution's
+repo (see
+[Repology](https://repology.org/project/hydrogen-drum-machine/versions)
+for a compiled list). If you do not find one for yours, please ask the
+people behind your distribution to include Hydrogen.
+
 
 # Windows:
 
@@ -35,8 +42,8 @@ Older versions:
 # Mac OS X:
 
 Current stable version:
-* [Hydrogen 1.2.1 (OS X 10.12 and above)](https://github.com/hydrogen-music/hydrogen/releases/download/1.2.1/Hydrogen-1.2.1.dmg)
-* [Hydrogen 1.0.0-rc1 (OS X 10.10 and 10.11)](https://github.com/hydrogen-music/hydrogen/releases/download/1.0.0-rc1/Hydrogen-legacy.dmg)
+* [Hydrogen 1.2.1 (OS X 10.14 and above)](https://github.com/hydrogen-music/hydrogen/releases/download/1.2.1/Hydrogen-1.2.1.dmg)
+* [Hydrogen 1.2.1 (OS X 10.13)](https://github.com/hydrogen-music/hydrogen/releases/download/1.2.1/Hydrogen-1.2.1-HighSierra.dmg)
 
 Older versions:
 
