@@ -11,10 +11,8 @@ This site provides downloads for our installers, sources and demos.
 
 # Linux:
 
-You can install the latest version of Hydrogen from
-[flathub](https://flathub.org/apps/org.hydrogenmusic.Hydrogen) or
-check whether a recent version is contained in your distribution's
-repo (see
+You can check whether a recent version is contained in your
+distribution's repo (see
 [Repology](https://repology.org/project/hydrogen-drum-machine/versions)
 for a compiled list). If you do not find one for yours, please ask the
 people behind your distribution to include Hydrogen.
