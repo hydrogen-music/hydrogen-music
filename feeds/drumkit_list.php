@@ -368,7 +368,7 @@ Please visit http://forzee.org/ for contacts.
 
 <drumkit>
         <name>Ian Paice</name>
-        <url>https://sourceforge.net/projects/hydrogen/files/Sound%20Libraries/Main%20sound%20libraries/Ian%20Paice%20.h2drumkit</url>
+        <url>https://sourceforge.net/projects/hydrogen/files/Sound%20Libraries/Main%20sound%20libraries/Ian%20Paice.h2drumkit</url>
         <info>Drum kit used by Ian Paice of the band Deep Purple</info>
         <author>Guilherme Passos</author>
         <license>CC BY</license>
