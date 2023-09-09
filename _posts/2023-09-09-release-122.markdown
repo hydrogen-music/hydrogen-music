@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hydrogen 1.2.2 released"
-date:   2023-09-09 20:00:00 BST
+date:   2023-09-09 16:00:00 UTC
 
 categories: jekyll update
 ---
