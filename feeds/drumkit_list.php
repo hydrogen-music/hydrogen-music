@@ -251,36 +251,6 @@ Please visit http://forzee.org/ for contacts.
 
 <drumkit><name>Millo's MultiLayered 3 (sf)</name><url>http://prdownloads.sf.net/hydrogen/Millo_MultiLayered3.h2drumkit</url><info>This is the third version of a ludwig drumkit. Recorded at cricketstudios.it, released under the GPL. Feel free to modify it and integrate it with other sounds. If you end up with good sounding demos with it, please mail them to emillo@emillo.net</info><author>Emiliano Grilli</author><license></license></drumkit>
 
-<!-- Links seem to be dead by now..
-<drumkit>
-<name>Roland TR-909</name>
-<url>http://www.hydrogen-music.org/download/drumkits/Roland TR-909.h2drumkit</url>
-<info></info>
-<author>Artemiy Pavlov</author>
-</drumkit>
-
-<drumkit>
-<name>Roland TR-808</name>
-<url>http://www.hydrogen-music.org/download/drumkits/Roland TR-808.h2drumkit</url>
-<info></info>
-<author>Artemiy Pavlov</author>
-</drumkit>
-
-<drumkit>
-<name>Roland TR-707</name>
-<url>http://www.hydrogen-music.org/download/drumkits/Roland TR-707.h2drumkit</url>
-<info></info>
-<author>Artemiy Pavlov</author>
-</drumkit>
-
-<drumkit>
-<name>Roland TR-606</name>
-<url>http://www.hydrogen-music.org/download/drumkits/Roland TR-606.h2drumkit</url>
-<info></info>
-<author>Artemiy Pavlov</author>
-</drumkit>
--->
-
 <drumkit>
 <name>Roland_MC-307_CR78&amp;Cheaps</name>
 <url>http://hydro.smoors.de/Roland_MC-307_CR78&amp;Cheaps.h2drumkit</url>
@@ -396,6 +366,42 @@ Please visit http://forzee.org/ for contacts.
         <info>Drum kit used by Tre Cool of the band Green Day</info>
         <author>Guilherme Passos</author>
         <license>CC BY</license>
+</drumkit>
+
+<drumkit>
+	<name>AVLDrumkits-BlackPearl-2023</name>
+	<url>https://sourceforge.net/projects/hydrogen/files/Sound%20Libraries/Main%20sound%20libraries/AVLDrumkits-BlackPearl-2023.h2drumkit</url>
+        <info>Black Pearl Studio Drumkit reformatted and repacked for newer Hydrogen versions</info>
+        <author>Glen MacArthur</author>
+        <license>CC BY-SA</license>
+</drumkit>
+<drumkit>
+	<name>AVLDrumkits-BlondeBop</name>
+	<url>https://sourceforge.net/projects/hydrogen/files/Sound%20Libraries/Main%20sound%20libraries/AVLDrumkits-BlondeBop.h2drumkit</url>
+        <info>A Sampled 4pc. TAMA Club Jam Bop Kit - Regular Stick Version.</info>
+        <author>Glen MacArthur</author>
+        <license>CC BY-SA</license>
+</drumkit>
+<drumkit>
+	<name>AVLDrumkits-BlondeBop-HotRod</name>
+	<url>https://sourceforge.net/projects/hydrogen/files/Sound%20Libraries/Main%20sound%20libraries/AVLDrumkits-BlondeBop-HotRod.h2drumkit</url>
+        <info>A Sampled 4pc. TAMA Club Jam Bop Kit - Hot Rod Version.</info>
+        <author>Glen MacArthur</author>
+        <license>CC BY-SA</license>
+</drumkit>
+<drumkit>
+	<name>AVLDrumkits-BuskmansHoliday</name>
+	<url>https://sourceforge.net/projects/hydrogen/files/Sound%20Libraries/Main%20sound%20libraries/AVLDrumkits-BuskmansHoliday.h2drumkit</url>
+        <info>Hand percussion samples for Acoustic Buskers and Performers to use for accompaniment.</info>
+        <author>Glen MacArthur</author>
+        <license>CC BY-SA</license>
+</drumkit>
+<drumkit>
+	<name>AVLDrumkits-RedZeppelin-2023</name>
+	<url>https://sourceforge.net/projects/hydrogen/files/Sound%20Libraries/Main%20sound%20libraries/AVLDrumkits-RedZeppelin-2023.h2drumkit</url>
+        <info>Ludwig Centennial Series Drumkit. Repacked and updated for newer Hydrogen versions.</info>
+        <author>Glen MacArthur</author>
+        <license>CC BY-SA</license>
 </drumkit>
 
 
