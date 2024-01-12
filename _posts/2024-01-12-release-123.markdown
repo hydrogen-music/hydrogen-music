@@ -46,4 +46,4 @@ It fixes a number of bugs and inconsistencies found since version 1.2.2 and is g
 - Timing drift (and artifacts) in playback track rendering on some hosts is
   fixed (#1920).
 
-Source code and binary releases can be found as usual on [GitHub](https://github.com/hydrogen-music/hydrogen/releases/tag/1.2.2)
+Source code and binary releases can be found as usual on [GitHub](https://github.com/hydrogen-music/hydrogen/releases/tag/1.2.3)
