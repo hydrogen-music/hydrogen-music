@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Chapter 9. Pattern Editor</title><link rel="stylesheet" type="text/css" href="../res/docbook.css"><script src="../res/docbook.js" type="text/javascript"></script><meta name="generator" content="DocBook XSL Stylesheets V1.79.1"><link rel="home" href="index.html" title="Hydrogen v1.2.2 Manual"><link rel="up" href="pt02.html" title="Part II. Using Hydrogen"><link rel="prev" href="ch08s07.html" title="8.7. Automation Path"><link rel="next" href="ch09s02.html" title="9.2. Drum Pattern Editor"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 9. Pattern Editor</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch08s07.html">Prev</a> </td><th width="60%" align="center">Part II. Using Hydrogen</th><td width="20%" align="right"> <a accesskey="n" href="ch09s02.html">Next</a></td></tr></table><hr></div><div class="chapter"><div class="titlepage"><div><div><h2 class="title"><a name="chpt.pattern_editor"></a>Chapter 9. Pattern Editor</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="sect1"><a href="ch09.html#chpt.pattern_editor.general">9.1. General</a></span></dt><dd><dl><dt><span class="sect2"><a href="ch09.html#chpt.pattern_editor.controls">9.1.1. Controls</a></span></dt><dt><span class="sect2"><a href="ch09.html#chpt.pattern_editor.sidebar">9.1.2. Sidebar</a></span></dt></dl></dd><dt><span class="sect1"><a href="ch09s02.html">9.2. Drum Pattern Editor</a></span></dt><dt><span class="sect1"><a href="ch09s03.html">9.3. Note Properties Editor</a></span></dt><dt><span class="sect1"><a href="ch09s04.html">9.4. Piano Roll Editor</a></span></dt></dl></div><div class="figure"><a name="fig.PatternEditor_DrumMode"></a><p class="title"><b>Figure 9.1. Pattern Editor in Drum Mode</b></p><div class="figure-contents"><div class="mediaobject"><img src="../img/generated_en/PatternEditor_DrumMode.png" alt="Pattern Editor in Drum Mode"></div></div></div><br class="figure-break"><p>This is where it all happens, this is where you can make music :-)</p><p>The <span class="emphasis"><em>Pattern Editor</em></span>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Chapter 9. Pattern Editor</title><link rel="stylesheet" type="text/css" href="../res/docbook.css"><script src="../res/docbook.js" type="text/javascript"></script><meta name="generator" content="DocBook XSL Stylesheets V1.79.1"><link rel="home" href="index.html" title="Hydrogen v1.2.3 Manual"><link rel="up" href="pt02.html" title="Part II. Using Hydrogen"><link rel="prev" href="ch08s07.html" title="8.7. Automation Path"><link rel="next" href="ch09s02.html" title="9.2. Drum Pattern Editor"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 9. Pattern Editor</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch08s07.html">Prev</a> </td><th width="60%" align="center">Part II. Using Hydrogen</th><td width="20%" align="right"> <a accesskey="n" href="ch09s02.html">Next</a></td></tr></table><hr></div><div class="chapter"><div class="titlepage"><div><div><h2 class="title"><a name="chpt.pattern_editor"></a>Chapter 9. Pattern Editor</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="sect1"><a href="ch09.html#chpt.pattern_editor.general">9.1. General</a></span></dt><dd><dl><dt><span class="sect2"><a href="ch09.html#chpt.pattern_editor.general.note_types">9.1.1. Note Types</a></span></dt><dt><span class="sect2"><a href="ch09.html#chpt.pattern_editor.controls">9.1.2. Controls</a></span></dt><dt><span class="sect2"><a href="ch09.html#chpt.pattern_editor.sidebar">9.1.3. Sidebar</a></span></dt></dl></dd><dt><span class="sect1"><a href="ch09s02.html">9.2. Drum Pattern Editor</a></span></dt><dt><span class="sect1"><a href="ch09s03.html">9.3. Note Properties Editor</a></span></dt><dt><span class="sect1"><a href="ch09s04.html">9.4. Piano Roll Editor</a></span></dt></dl></div><div class="figure"><a name="fig.PatternEditor_DrumMode"></a><p class="title"><b>Figure 9.1. Pattern Editor in Drum Mode</b></p><div class="figure-contents"><div class="mediaobject"><img src="../img/generated_en/PatternEditor_DrumMode.png" alt="Pattern Editor in Drum Mode"></div></div></div><br class="figure-break"><p>This is where it all happens, this is where you can make music :-)</p><p>The <span class="emphasis"><em>Pattern Editor</em></span>
       allows you to create and modify the pattern selected in the <a class="link" href="ch08s03.html" title="8.3. Sidebar">Sidebar</a> of the Song Editor by adding/removing notes and tuning 
       a number of <a class="link" href="ch09s03.html" title="9.3. Note Properties Editor">per-note properties</a>, like velocity and pan.
       The Pattern Editor 
@@ -15,51 +15,114 @@
           If you are editing a pattern in <a class="link" href="ch08s02.html#chpt.song_editor.editor_modes.pattern_mode" title="8.2.4. Selected Pattern Mode">Selected Pattern Mode</a> you will always hear the pattern you are 
           editing when you playback is rolling.
         </p><p>
-          If you are working in <a class="link" href="ch08s02.html#chpt.song_editor.editor_modes.stacked" title="8.2.5. Stacked Pattern Mode">Stacked Pattern Mode</a> you will hear the <span class="emphasis"><em>active</em></span> pattern(s), 
+          If you are working in <a class="link" href="ch08s02.html#chpt.song_editor.editor_modes.stacked" title="8.2.5. Stacked Pattern Mode">Stacked Pattern Mode</a> you will hear the <span class="emphasis"><em>active</em></span> pattern(s),
           not necessarily the pattern you are currently editing.
-        </p></td></tr></table></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="chpt.pattern_editor.general"></a>9.1. General</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="chpt.pattern_editor.controls"></a>9.1.1. Controls</h3></div></div></div><div class="figure"><a name="fig.PatternEditorControls"></a><p class="title"><b>Figure 9.2. Pattern Editor Controls</b></p><div class="figure-contents"><div class="mediaobject"><img src="../img/generated_en/PatternEditorControls.png" alt="Pattern Editor Controls"></div></div></div><br class="figure-break"><p>The top part of the Pattern Editor contains a number of controls applying to both the <a class="link" href="ch09s02.html" title="9.2. Drum Pattern Editor">Drumkit Editor</a> and the <a class="link" href="ch09s04.html" title="9.4. Piano Roll Editor">Piano Roll Editor</a>:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: opencircle; "><li class="listitem" style="list-style-type: circle"><p><a name="chpt.pattern_editor.controls.size"></a>
+        </p></td></tr></table></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="chpt.pattern_editor.general"></a>9.1. General</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="chpt.pattern_editor.general.note_types"></a>9.1.1. Note Types</h3></div></div></div><p>
+            </p><div class="informalfigure"><a name="fig.NoteOff_NoteLength"></a><div class="mediaobject"><img src="../img/generated_en/NoteOff_NoteLength.png" alt="Four notes are displayed in one line of the Pattern Editor. The one to the left is rendered as black circle. The one right of it consistents of an identical black circle as well as a black triangle expands over two grid cells. The third one is a a semi-transparent circle and the right-most one is rendered as a blue circle."></div></div><p>
+            There are a couple of different notes you can create and encounter
+            within the Pattern Editor. From left to right: regular, custom
+            length, inaccessible, and stop-note.
+          </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a name="chpt.pattern_editor.general.note_types.regular"></a>
+                <span class="inlinemediaobject"><img src="../img/generated_en/NoteType_Regular.png" alt="Solid black circle."></span>
+                : <span class="bold"><strong>Regular note</strong></span> (or just
+                <span class="bold"><strong>note</strong></span>) can be created using
+                <span class="emphasis"><em>left-clicking</em></span> or <span class="keycap"><strong>Enter</strong></span>.
+              </p><p>
+                Triggers playback of a whole sample of the associated instrument.
+              </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
+                  The inner color of the circle represents the note's velocity.
+                  Black: <code class="option">80%</code>, red: <code class="option">100%</code>, blue:
+                  <code class="option">50%</code>, white: <code class="option">0%</code>. But in
+                  contrast to a stop-note these circles do always have a black
+                  outline.
+                </p></td></tr></table></div></li><li class="listitem"><p><a name="chpt.pattern_editor.general.note_types.custom_length"></a>
+                <span class="inlinemediaobject"><img src="../img/generated_en/NoteType_CustomLength.png" alt="Solid black circle extended to the right by a rectangle of the same color."></span>
+                : <span class="bold"><strong>Custom length note</strong></span> can be
+                set by <span class="emphasis"><em>right-click dragging</em></span> a regular
+                note.
+              </p><p>
+                Similar to a regular note but only plays back the sample until
+                the specified point. Afterwards the <a class="link" href="ch11.html#chpt.instrument_editor.envelope_parameters" title="11.1.1. Envelope Parameters">Release</a>
+                of the instrument kicks in to cut off the sample gracefully
+                (small values) or to add a fade out (larger values).
+              </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
+                  The length of the note is specified in ticks and changes along
+                  with the tempo. The sample, however, consists of a certain
+                  amount of audio frames and will <span class="emphasis"><em>not</em></span>
+                  change with tempo (unless you activated <a class="link" href="ch07s03.html" title="7.3. BPM Control and Metronome">Rubberband</a>).
+                </p></td></tr></table></div></li><li class="listitem"><p><a name="chpt.pattern_editor.general.note_types.inaccessible"></a>
+                <span class="inlinemediaobject"><img src="../img/generated_en/NoteType_Inaccessible.png" alt="Semi-transparent black circle."></span>
+                : <span class="bold"><strong>Inaccessible note</strong></span>
+              </p><p>
+                A regular note which is <span class="emphasis"><em>not</em></span> part of the
+                pattern you are currently editing. Instead, it belongs to a
+                different one currently played as well. This could be within the
+                same column in <a class="link" href="ch08s02.html#chpt.song_editor.editor_modes.song_mode" title="8.2.3. Song Mode">Song
+                Mode</a> while the Pattern Editor is <a class="link" href="ch08.html#chpt.song_editor.main_controls.pattern_editor_lock">locked</a>,
+                activated in <a class="link" href="ch08s02.html#chpt.song_editor.editor_modes.stacked" title="8.2.5. Stacked Pattern Mode">Stacked Pattern
+                Mode</a>, or as part of a <a class="link" href="ch08s03.html#chpt.song_editor.sidebar.virtual_pattern">Virtual
+                Pattern</a>.
+              </p></li><li class="listitem"><p><a name="chpt.pattern_editor.general.note_types.stop_note"></a>
+                <span class="inlinemediaobject"><img src="../img/generated_en/NoteType_StopNote.png" alt="Solid blue circle."></span>
+                : <span class="bold"><strong>Stop-note</strong></span> can be created
+                using <span class="keycap"><strong>Shift</strong></span> +
+                <span class="emphasis"><em>left-clicking</em></span>
+              </p><p>
+                Stops rendering of all notes associated to the corresponding
+                instrument. Afterwards the <a class="link" href="ch11.html#chpt.instrument_editor.envelope_parameters" title="11.1.1. Envelope Parameters">Release</a>
+                of the instrument kicks in to cut off the samples gracefully
+                (small values) or to add fade outs (larger values).
+              </p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="chpt.pattern_editor.controls"></a>9.1.2. Controls</h3></div></div></div><div class="figure"><a name="fig.PatternEditorControls"></a><p class="title"><b>Figure 9.2. Pattern Editor Controls</b></p><div class="figure-contents"><div class="mediaobject"><img src="../img/generated_en/PatternEditorControls.png" alt="Pattern Editor Controls"></div></div></div><br class="figure-break"><p>The top part of the Pattern Editor contains a number of controls applying to both the <a class="link" href="ch09s02.html" title="9.2. Drum Pattern Editor">Drumkit Editor</a> and the <a class="link" href="ch09s04.html" title="9.4. Piano Roll Editor">Piano Roll Editor</a>:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: opencircle; "><li class="listitem" style="list-style-type: circle"><p><a name="chpt.pattern_editor.controls.size"></a>
                 <span class="inlinemediaobject"><img src="../img/generated_en/lcd_size.png" alt='Two blue combo boxes showing "4.00" and "4" and are labeled "Size".'></span>
-                
+
                : lets you choose the length of the pattern (in note values).
               </p><p>
                 The left combo box represents the numerator of your current measure. You can enter a decimal numerator, like <code class="option">4.5/4</code>, but since resolution in Hydrogen is limited,
                 some values are not supported and can not be entered.
               </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
                   Hydrogen supports (only) the following denominators (right combo box): <code class="option">1</code>, <code class="option">2</code>, <code class="option">3</code>, <code class="option">4</code>, <code class="option">6</code>, <code class="option">8</code>, <code class="option">12</code>, <code class="option">16</code>, <code class="option">24</code>, <code class="option">32</code>, <code class="option">48</code>, <code class="option">64</code>, <code class="option">96</code>, and <code class="option">192</code>
-                  because these are the factors of the maximum resolution (192 ticks per whole note).        
+                  because these are the factors of the maximum resolution (192 ticks per whole note).
                 </p></td></tr></table></div><div class="tip" style="margin-left: 5%;"><table border="0" summary="Tip"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="../img/admonitions/tip.svg"></td><th align="left">Tip</th></tr><tr><td align="left" valign="top"><p>
                   Typing <span class="keycap"><strong>/</strong></span> within the numerator (first combo box) also you to quickly jump to the denominator.
                 </p></td></tr></table></div></li><li class="listitem" style="list-style-type: circle"><p><a name="chpt.pattern_editor.controls.res"></a>
             <span class="inlinemediaobject"><img src="../img/generated_en/lcd_res.png" alt='Blue display showing "1/16" and titled "RES".'></span>
                  : this is the current grid resolution (<code class="option">1/4</code> through <code class="option">1/64</code> with triplet-based resolutions marked as <code class="option">1/8T</code>).
               </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
-                  If you are working
-                  with a resolution of <code class="option">1/16</code> you can't go back to <code class="option">1/8</code> and remove an upbeat 16th note. On
-                  the other hand, if you are working with a resolution of <code class="option">1/8</code> and you try to
-                  insert a note in the middle of two bars (looking for a <code class="option">1/16</code> bars precision),
-                  notes will be placed in the previous or in the following 8th bar.  This
-                  constraint can be removed if you disable the whole grid resolution (choose
-                  <code class="option">off</code> from the grid resolution combo box). Now you'll be able to place
-                notes wherever you prefer.</p></td></tr></table></div></li><li class="listitem" style="list-style-type: circle"><p>
+                  If you are working with a resolution of <code class="option">1/16</code>
+                  you can't go back to <code class="option">1/8</code> and remove an upbeat
+                  16th note by clicking it. But you can still select and remove
+                  it via dragging or keyboard.</p></td></tr></table></div></li><li class="listitem" style="list-style-type: circle"><p>
                 <span class="inlinemediaobject"><img src="../img/generated_en/btn_hear.png" alt="Blue button containing a black speaker symbol."></span>
-                : when checked Hydrogen 
-                will play back samples as they are being added to the pattern (even if transport is not rolling).
+                : when checked Hydrogen will play back notes as they are being
+                added to the pattern (even if transport is not rolling).
               </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
-	              When disabled you will still hear the preview sound when clicking on the instrument name in the <a class="link" href="ch09.html#chpt.pattern_editor.sidebar" title="9.1.2. Sidebar">Sidebar</a>. Be sure to click at the left-most position - where the preview is silent - in case you don't want to get disturbed.
+	              When disabled you will still hear the preview sound when
+	              clicking on the instrument name in the <a class="link" href="ch09.html#chpt.pattern_editor.sidebar" title="9.1.3. Sidebar">Sidebar</a>. Be sure to
+	              click at the left-most position - where the preview is silent -
+	              in case you don't want to get disturbed. Or switch the currently
+	              selected instrument using <span class="keycap"><strong>↑</strong></span> and
+	              <span class="keycap"><strong>↓</strong></span>.
                 </p></td></tr></table></div></li><li class="listitem" style="list-style-type: circle"><p>
             <span class="inlinemediaobject"><img src="../img/generated_en/btn_quant_off.png" alt="Blue button showing a black 2 by 3 grid."></span> : enables/disables quantization.  When checked,
             notes <a class="link" href="ch04s04.html" title="4.4. Recording in Hydrogen">recorded</a> using
             incoming MIDI messages or Hydrogen's <a class="link" href="ch04s03.html" title="4.3. Virtual Keyboard">Virtual Keyboard</a>
             will automatically respect the grid resolution currently applied,
             just like notes inserted by clicking. </p></li><li class="listitem" style="list-style-type: circle"><p><a name="chpt.pattern_editor.controls.input"></a>
-            <span class="inlinemediaobject"><img src="../img/generated_en/btn_drum_piano_off.png" alt="Grey button containing a small piano illustration with three white and two black keys."></span> /  <span class="inlinemediaobject"><img src="../img/generated_en/btn_drum_piano_on.png" alt="Blue button with a quasi-3D display a cylinder with black outlines, blue sides, and a white top."></span> : switches between <a class="link" href="ch09s02.html" title="9.2. Drum Pattern Editor">Drumkit Editor</a> and <a class="link" href="ch09s04.html" title="9.4. Piano Roll Editor">Piano Roll Editor</a>.</p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="chpt.pattern_editor.sidebar"></a>9.1.2. Sidebar</h3></div></div></div><div class="figure"><a name="fig.pattern_editor.sidebar"></a><p class="title"><b>Figure 9.3. The Sidebar of the Pattern Editor</b></p><div class="figure-contents"><div class="mediaobject"><img src="../img/generated_en/PatternEditorInstr_V2.png" alt="The Sidebar of the Pattern Editor"></div></div></div><br class="figure-break"><p>The section on the left shows you what drumkit is currently selected (GMRockKit by default) and below that you can see
-        the instruments that are part of this kit.</p><p><span class="emphasis"><em>Left-clicking</em></span> the box containing the instrument name will play back a sample of the instrument. Which layer will be select depends on the horizontal position of the mouse click representing zero <a class="link" href="go01.html#def.velocity" title="Velocity">velocity</a> to the left and maximum velocity to the right. In addition, each instrument has its own set of features that are accessible by 
+            <span class="inlinemediaobject"><img src="../img/generated_en/btn_drum_piano_off.png" alt="Grey button containing a small piano illustration with three white and two black keys."></span> /  <span class="inlinemediaobject"><img src="../img/generated_en/btn_drum_piano_on.png" alt="Blue button with a quasi-3D display a cylinder with black outlines, blue sides, and a white top."></span> : switches between <a class="link" href="ch09s02.html" title="9.2. Drum Pattern Editor">Drumkit Editor</a> and <a class="link" href="ch09s04.html" title="9.4. Piano Roll Editor">Piano Roll Editor</a>.</p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="chpt.pattern_editor.sidebar"></a>9.1.3. Sidebar</h3></div></div></div><div class="figure"><a name="fig.pattern_editor.sidebar"></a><p class="title"><b>Figure 9.3. The Sidebar of the Pattern Editor</b></p><div class="figure-contents"><div class="mediaobject"><img src="../img/generated_en/PatternEditorInstr_V2.png" alt="The Sidebar of the Pattern Editor"></div></div></div><br class="figure-break"><p>
+          The section on the left shows you which drumkit was loaded last
+        and below that you can see the instruments that are part of the current
+        song.
+        </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
+            Keep in mind that these are not necessarily the instruments of the
+            kit associated with the displayed name! Each song has its own set of
+            instruments.
+          </p></td></tr></table></div><p><span class="emphasis"><em>Left-clicking</em></span> the box containing the instrument name will play back a sample of the instrument. Which layer will be select depends on the horizontal position of the mouse click representing zero <a class="link" href="go01.html#def.velocity" title="Velocity">velocity</a> to the left and maximum velocity to the right. In addition, each instrument has its own set of features that are accessible by
         <span class="emphasis"><em>right-clicking</em></span> the instrument.  From the context menu that pops up you can select.</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: opencircle; "><li class="listitem" style="list-style-type: circle"><p><span class="bold"><strong>Delete notes</strong></span>:
           removes all notes for this instrument in this pattern.  </p></li><li class="listitem" style="list-style-type: circle"><p><a name="chpt.pattern_editor.sidebar.fill_notes"></a><span class="bold"><strong>Fill notes</strong></span>: this allows you to fill
             up the pattern with notes for the selected instrument.
             </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
 	            Depending on the choice you make (<code class="option">fill all</code>, <code class="option">fill 1/2</code>, <code class="option">fill 1/4</code> ...)
-                notes will be placed at all, 1/2, 1/4, etc of the note positions <span class="bold"><strong>that are allowed by 
+                notes will be placed at all, 1/2, 1/4, etc of the note positions <span class="bold"><strong>that are allowed by
                 the grid setting</strong></span>.  So be careful not to mix up the 'musical' 1/2-note and the 'fill 1/2' note.
               </p></td></tr></table></div><p>
             </p></li><li class="listitem" style="list-style-type: circle"><p><span class="bold"><strong>Randomize velocity</strong></span>:
@@ -78,7 +141,7 @@
             this section of the menu has actions which operate on
             notes played by the instrument in <span class="emphasis"><em>all</em></span>
             the patterns of the song.
-            </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><span class="bold"><strong>Cut notes</strong></span>: 
+            </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><span class="bold"><strong>Cut notes</strong></span>:
                 remove <span class="emphasis"><em>all</em></span> notes played on
                 this instrument, in all patterns, and keep them in the
                 clipboard.
@@ -105,16 +168,15 @@
                 </p></li><li class="listitem"><p><span class="bold"><strong>Delete
                 Instrument</strong></span>: well, deletes the instrument ;-)</p></li></ul></div></li></ul></div><p>The
         <span class="inlinemediaobject"><img src="../img/generated_en/btn_instrument_line_mute_off.png" alt='Grey button containing a black "M".'></span>
-        button <a class="link" href="go01.html#def.mute" title="Mute">mutes</a> the instrument and 
+        button <a class="link" href="go01.html#def.mute" title="Mute">mutes</a> the instrument and
         <span class="inlinemediaobject"><img src="../img/generated_en/btn_instrument_line_solo_off.png" alt='Grey button containing a black "S".'></span>
         solos it.
-        </p><p>The order of the instruments can be rearranged by simply <span class="emphasis"><em>dragging</em></span> an instrument 
-        up/down in the list and <span class="emphasis"><em>dropping</em></span> it on a new position within the drumkit.  Doing so 
+        </p><p>The order of the instruments can be rearranged by simply <span class="emphasis"><em>dragging</em></span> an instrument
+        up/down in the list and <span class="emphasis"><em>dropping</em></span> it on a new position within the drumkit.  Doing so
         will not change the sequence of notes you have created for that instrument, nor will
         it change anything about the song or pattern you are working on.</p><div class="warning" style="margin-left: 5%;"><table border="0" summary="Warning"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Warning]" src="../img/admonitions/warning.svg"></td><th align="left">Warning</th></tr><tr><td align="left" valign="top"><p>
-	        It <span class="bold"><strong>
-        will</strong></span> however, have an <span class="bold"><strong>impact</strong></span> on the <a class="link" href="ch16s02.html#chpt.midi.note.mapping" title="16.2.2. MIDI Note Mapping"><abbr class="abbrev">MIDI</abbr> note 
-        mapping</a>.
+	        It <span class="bold"><strong> will</strong></span>, however, have an <span class="bold"><strong>impact</strong></span> on the <a class="link" href="ch16s02.html#chpt.midi.note.mapping" title="16.2.2. MIDI Note Mapping"><abbr class="abbrev">MIDI</abbr> note
+	        mapping</a>.
           </p></td></tr></table></div><div class="warning" style="margin-left: 5%;"><table border="0" summary="Warning"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Warning]" src="../img/admonitions/warning.svg"></td><th align="left">Warning</th></tr><tr><td align="left" valign="top"><p>
 	        Rearranging the instruments will also mess up the <a class="link" href="ch05s02.html#sect.preferences.jack.per_instrument_outs">per-instrument</a> <abbr class="abbrev">JACK</abbr> output ports. Be sure to have your drumkit set up before starting wiring.
           </p></td></tr></table></div></div></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch08s07.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="pt02.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch09s02.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">8.7. Automation Path </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 9.2. Drum Pattern Editor</td></tr></table></div></body></html>
