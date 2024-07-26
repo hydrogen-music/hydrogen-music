@@ -58,7 +58,11 @@ Older versions:
 * [OS X_ppc.dmg, 0.9.5-beta1](http://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.5%20Binaries/Hydrogen_0.9.5-beta1_ppc.dmg/download)
 * [OS X_i386.dmg, 0.9.5-beta1](http://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.5%20Binaries/hydrogen_0.9.5-beta1_i386.dmg/download)
 
-
+If you do not find the latest releases for your mac OS version, this is most
+probably just due to limitations of our build pipeline allowing us to only build
+artifacts for current versions. Chances are high that latest Hydrogen will run
+smooth on your system too when you [build it
+yourself](https://github.com/hydrogen-music/hydrogen/wiki/Building-Hydrogen-from-Source-(macOS)).
  
 ## Sources
 
