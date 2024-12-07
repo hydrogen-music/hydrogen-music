@@ -13,7 +13,7 @@ This site provides downloads for our installers, sources and demos.
 
 Current stable version:
 
-* [Hydrogen 1.2.3 AppImage](https://github.com/hydrogen-music/hydrogen/releases/download/1.2.3/Hydrogen-1.2.3-x86_64.AppImage)
+* [Hydrogen 1.2.4 AppImage](https://github.com/hydrogen-music/hydrogen/releases/download/1.2.4/Hydrogen-1.2.4-x86_64.AppImage)
 
 In addition, you can check whether a recent version is contained in
 your distribution's repo (see
@@ -21,16 +21,23 @@ your distribution's repo (see
 for a compiled list). If you do not find one for yours, please ask the
 people behind your distribution to include Hydrogen.
 
+Older versions:
+
+* [Hydrogen 1.2.3 AppImage](https://github.com/hydrogen-music/hydrogen/releases/download/1.2.3/Hydrogen-1.2.3-x86_64.AppImage)
 
 # Windows:
 
 Current stable version:
 
-* [Hydrogen 1.2.3 64-Bit](https://github.com/hydrogen-music/hydrogen/releases/download/1.2.3/Hydrogen-1.2.3-win64.exe)
-* [Hydrogen 1.2.3 32-Bit](https://github.com/hydrogen-music/hydrogen/releases/download/1.2.3/Hydrogen-1.2.3-win32.exe)
+* [Hydrogen 1.2.4 64-Bit](https://github.com/hydrogen-music/hydrogen/releases/download/1.2.4/Hydrogen-1.2.4-win64.exe)
+
+Due to limitations of our build pipeline we only provide 32bit binaries for
+Windows up to version 1.2.3 of Hydrogen.
 
 Older versions:
 
+* [Hydrogen 1.2.3 64-Bit](https://github.com/hydrogen-music/hydrogen/releases/download/1.2.3/Hydrogen-1.2.3-win64.exe)
+* [Hydrogen 1.2.3 32-Bit](https://github.com/hydrogen-music/hydrogen/releases/download/1.2.3/Hydrogen-1.2.3-win32.exe)
 * [Hydrogen 1.1.1 64-Bit](https://github.com/hydrogen-music/hydrogen/releases/download/1.1.1/Hydrogen-1.1.1-win64.exe)
 * [Hydrogen 1.1.1 32-Bit](https://github.com/hydrogen-music/hydrogen/releases/download/1.1.1/Hydrogen-1.1.1-win32.exe)
 * [Hydrogen 1.0.2 64bit](https://sourceforge.net/projects/hydrogen/files/Hydrogen/1.0.0%20Binaries/Hydrogen-1.0.2-win64.exe/download)
@@ -44,10 +51,12 @@ Older versions:
 # Mac OS X:
 
 Current stable version:
-* [Hydrogen 1.2.3 (OS X 10.14 and above)](https://github.com/hydrogen-music/hydrogen/releases/download/1.2.3/Hydrogen-1.2.3.dmg)
+
+* [Hydrogen 1.2.4 (OS X 10.14 and above)](https://github.com/hydrogen-music/hydrogen/releases/download/1.2.4/Hydrogen-1.2.4.dmg)
 
 Older versions:
 
+* [Hydrogen 1.2.3 (OS X 10.14 and above)](https://github.com/hydrogen-music/hydrogen/releases/download/1.2.3/Hydrogen-1.2.3.dmg)
 * [Hydrogen 1.2.1 (OS X 10.13)](https://github.com/hydrogen-music/hydrogen/releases/download/1.2.1/Hydrogen-1.2.1-HighSierra.dmg)
 * [Hydrogen 1.1.1 (OS X 10.12 and above)](https://github.com/hydrogen-music/hydrogen/releases/download/1.1.1/Hydrogen-1.1.1-x86_64.dmg)
 * [OS X (10.12 and above), Hydrogen 1.0.2](https://sourceforge.net/projects/hydrogen/files/Hydrogen/1.0.0%20Binaries/Hydrogen-1.0.2.dmg/download)

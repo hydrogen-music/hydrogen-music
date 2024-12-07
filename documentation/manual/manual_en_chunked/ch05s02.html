@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>5.2. Audio System</title><link rel="stylesheet" type="text/css" href="../res/docbook.css"><script src="../res/docbook.js" type="text/javascript"></script><meta name="generator" content="DocBook XSL Stylesheets V1.79.1"><link rel="home" href="index.html" title="Hydrogen v1.2.3 Manual"><link rel="up" href="ch05.html" title="Chapter 5. Preferences"><link rel="prev" href="ch05.html" title="Chapter 5. Preferences"><link rel="next" href="ch05s03.html" title="5.3. MIDI System"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.2. Audio System</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch05.html">Prev</a> </td><th width="60%" align="center">Chapter 5. Preferences</th><td width="20%" align="right"> <a accesskey="n" href="ch05s03.html">Next</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="chpt.preferences.audio_tab"></a>5.2. Audio System</h2></div></div></div><div class="figure"><a name="fig.preferences.audio_tab"></a><p class="title"><b>Figure 5.2. The Audio System Tab</b></p><div class="figure-contents"><div class="mediaobject"><img src="../img/generated_en/PreferencesAudioSystem_V3.png" alt="The Audio System Tab"></div></div></div><br class="figure-break"><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>5.2. Audio System</title><link rel="stylesheet" type="text/css" href="../res/docbook.css"><script src="../res/docbook.js" type="text/javascript"></script><meta name="generator" content="DocBook XSL Stylesheets V1.79.1"><link rel="home" href="index.html" title="Hydrogen v1.2.4 Manual"><link rel="up" href="ch05.html" title="Chapter 5. Preferences"><link rel="prev" href="ch05.html" title="Chapter 5. Preferences"><link rel="next" href="ch05s03.html" title="5.3. MIDI System"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.2. Audio System</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch05.html">Prev</a> </td><th width="60%" align="center">Chapter 5. Preferences</th><td width="20%" align="right"> <a accesskey="n" href="ch05s03.html">Next</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="chpt.preferences.audio_tab"></a>5.2. Audio System</h2></div></div></div><div class="figure"><a name="fig.preferences.audio_tab"></a><p class="title"><b>Figure 5.2. The Audio System Tab</b></p><div class="figure-contents"><div class="mediaobject"><img src="../img/generated_en/PreferencesAudioSystem_V3.png" alt="The Audio System Tab"></div></div></div><br class="figure-break"><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
 	          <span class="bold"><strong>Audio System</strong></span>: let's you choose the audio driver used by Hydrogen to connect to your computer's sound card.
             </p><p>
 	          Available options:
@@ -14,10 +14,7 @@
                 professional audio server which permits very low lag and exchanges
                 with other audio software. The <abbr class="abbrev">JACK</abbr>
                 server will start automatically if not already running.
-                </p><div class="tip" style="margin-left: 5%;"><table border="0" summary="Tip"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="../img/admonitions/tip.svg"></td><th align="left">Tip</th></tr><tr><td align="left" valign="top"><p>
-	                We strongly recommend using
-                    this driver to have the best out of Hydrogen.
-                  </p></td></tr></table></div></li><li class="listitem"><p><code class="option">ALSA</code>: The widely adopted
+                </p></li><li class="listitem"><p><code class="option">ALSA</code>: The widely adopted
                 Linux standard audio driver.</p></li><li class="listitem"><p><code class="option">OSS</code>: The <abbr class="abbrev">OSS</abbr> audio driver
                 uses <code class="filename">/dev/dsp</code> and it's based on the <abbr class="abbrev">OSS</abbr> interface which is supported
                 by the vast majority of sound cards available for Linux; this said,
@@ -36,7 +33,11 @@
             </p></li><li class="listitem"><p>
 	          <span class="bold"><strong>Device</strong></span>:
               specifies the particular sound card the audio driver will use.
-            </p></li><li class="listitem"><p>
+            </p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
+                The Preferences dialog does not support hot plugging. In case
+                you connected your device while the dialog was already opened,
+                be sure to close and reopen it again.
+              </p></td></tr></table></div></li><li class="listitem"><p>
 	          <span class="bold"><strong>Buffer size</strong></span>:
               specifies the size of the batch of time Hydrogen will
               process in one run. Supported values are from
@@ -68,30 +69,6 @@
                   path</a> and <a class="link" href="ch13s04.html" title="13.4. Master Fader Strip">velocity humanization</a>
                 </p></li></ul></div><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
                 This option is only available if the <abbr class="abbrev">JACK</abbr> audio driver was selected and it will only take effect if the <span class="bold"><strong>Connect to default <abbr class="abbrev">JACK</abbr> output ports</strong></span> option is checked.
-              </p></td></tr></table></div></li><li class="listitem"><p><a name="sect.preferences.jack.bbt"></a><span class="bold"><strong>BBT sync method</strong></span>: if
-            Hydrogen uses <abbr class="abbrev">JACK</abbr> transport in the presence of an external <abbr class="abbrev">JACK</abbr>
-            Timebase master (TBM), it will use the provided measure and
-            tempo information instead of the local one of either the <a class="link" href="ch07s03.html" title="7.3. BPM Control and Metronome">song's
-            tempo</a> or the Tempo Markers
-            added to the <a class="link" href="ch08s04.html" title="8.4. Timeline">Timeline</a>. But due to
-            fundamental design choices within Hydrogen, it can not set
-            both measure and speed provided by <abbr class="abbrev">JACK</abbr> for arbitrary pattern
-            combinations. You have two options here. Either drop all measure
-            changes in the TBM and work with tempo changes only to support
-            arbitrary patterns (using option <code class="option">constant
-            measure</code>) or to keep the length of each pattern
-            consistent with the corresponding measure in the TBM and to use
-            both tempo and measure provided by <abbr class="abbrev">JACK</abbr> (option
-            <code class="option">matching bars</code>).</p><div class="note" style="margin-left: 5%;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../img/admonitions/note.svg"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>
-                This option is only available if the <abbr class="abbrev">JACK</abbr> audio driver was selected.
-              </p><p>
-                For this option to take effect the
-                <span class="inlinemediaobject"><img src="../img/generated_en/playerControlJackTransportButton.png" alt='Grey button containing the text "J.TRANS".'></span>
-                button has to be activated and the
-                <span class="inlinemediaobject"><img src="../img/generated_en/playerControlJackMasterButton.png" alt='Grey button containing the text "J.MASTER".'></span>                
-                button deactivated in the <a class="link" href="ch07s05.html" title="7.5. JACK Control">Main Toolbar</a> (next to
-                having a <abbr class="abbrev">JACK</abbr> TBM application).</p></td></tr></table></div><div class="tip" style="margin-left: 5%;"><table border="0" summary="Tip"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="../img/admonitions/tip.svg"></td><th align="left">Tip</th></tr><tr><td align="left" valign="top"><p>
-	            Hydrogen can be registered as <abbr class="abbrev">JACK</abbr> Timebase Master via the <a class="link" href="ch07s05.html" title="7.5. JACK Control">Main Toolbar</a>.
               </p></td></tr></table></div></li><li class="listitem"><p><span class="bold"><strong>Connect to default <abbr class="abbrev">JACK</abbr> output
             ports</strong></span>: connects the main stereo <abbr class="abbrev">JACK</abbr> output ports of the <a class="link" href="ch13s04.html" title="13.4. Master Fader Strip">Master Fader Strip</a> to
             the default <abbr class="abbrev">JACK</abbr> input ports of your system
@@ -111,8 +88,10 @@
               </p></td></tr></table></div><div class="warning" style="margin-left: 5%;"><table border="0" summary="Warning"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Warning]" src="../img/admonitions/warning.svg"></td><th align="left">Warning</th></tr><tr><td align="left" valign="top"><p>
 	            There are no <abbr class="abbrev">JACK</abbr> output ports for the <a class="link" href="ch07s03.html" title="7.3. BPM Control and Metronome">Metronome</a> and the <a class="link" href="ch08s06.html" title="8.6. Playback Track">Playback Track</a>. Their audio is only available via the main stereo output ports of Hydrogen.
               </p></td></tr></table></div></li><li class="listitem"><p>
-	          <span class="bold"><strong>Enable <abbr class="abbrev">JACK</abbr> timebase master support</strong></span>:
-              whether Hydrogen will respond to or ignore the incoming BBT (tempo and measure) information sent by the <abbr class="abbrev">JACK</abbr> server.
+	          <span class="bold"><strong>Enable <a class="link" href="ch07s05.html" title="7.5. JACK Control"><abbr class="abbrev">JACK</abbr>
+	          Timebase support</a></strong></span>: whether Hydrogen will respond to
+	          or ignore the incoming tempo and bar, beat, tick (BBT) position
+	          information sent by the <abbr class="abbrev">JACK</abbr> server.
 
               </p><div class="tip" style="margin-left: 5%;"><table border="0" summary="Tip"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Tip]" src="../img/admonitions/tip.svg"></td><th align="left">Tip</th></tr><tr><td align="left" valign="top"><p>
 	              Some <abbr class="abbrev">JACK</abbr> clients are not well written or have fallen into despair. As a result Hydrogen could receive nuisance signals messing up its playback. If you encounter weird jumps in the transport position and/or Hydrogen is out of sync after relocating the transport position, you might try to uncheck this option.
