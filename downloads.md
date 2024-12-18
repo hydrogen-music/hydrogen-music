@@ -52,6 +52,7 @@ Older versions:
 
 Current stable version:
 
+* [Hydrogen 1.2.4 (AppleSilicon)](https://github.com/hydrogen-music/hydrogen/releases/download/1.2.4/Hydrogen-1.2.4-AppleSilicon.dmg)
 * [Hydrogen 1.2.4 (OS X 10.14 and above)](https://github.com/hydrogen-music/hydrogen/releases/download/1.2.4/Hydrogen-1.2.4.dmg)
 
 Older versions:
