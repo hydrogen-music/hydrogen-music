@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Hydrogen 1.2.6 released"
+date:   2025-07-29 12:00:00 UTC
+
+categories: jekyll update
+---
+
+We are happy to announce patch release version 1.2.6 of Hydrogen!
+
+This patch release fixes a bug introduced in 1.2.5 and other minor issues.
+
+### Added
+
+- The AppImage version does now provide all drumkits in `/usr/share/hydrogen/data/drumkits/` and `/usr/local/share/hydrogen/data/drumkits/` via the "Sound Library" as session kits.
+
+### Changed
+
+- Sample loading in songs has been made more portable.
+
+### Fixed
+
+- Fix velocity automation for patterns that are not of size 4/4 (#2171).
+- Fix saving and loading of sample files introduced in 1.2.5 (#2174)
+
+
+Source code and binary releases can be found as usual on [GitHub](https://github.com/hydrogen-music/hydrogen/releases/tag/1.2.6).
