@@ -1,0 +1,23 @@
+---
+title: "Playback and Envelope Editor"
+sidebar_label: "Playback and Envelope Editor"
+---
+
+![Figure 12.4. The Envelope Section of the Sample Editor](/img/docs/generated_en/SampleEditor_Envelope.png)
+
+The bottom part of the Sample Editor features some basic controls and the Envelope Editor.
+
+- **Apply Changes**: applies all settings of the Sample Editor to the selected sample in a non-destructive way.
+- **Play**: plays back the underlying sample with the latest changes applied to it.
+- **Play original sample**: plays back the underlying sample (without applying any changes).
+- **panorama/volume**: dropdown specifying whether the [pan(orama)](./04-glossary#def.pan) or `volume` of the sample will be tweaked in the Envelope Editor.
+
+Using the Envelope Editor you can fine-tune both the volume and panorama (pan) of your sample.
+ This is done by creating [envelopes](./04-glossary#def.envelopegenerator) by
+:::note
+The volume envelope is blue and the pan envelope is yellow.
+:::
+1. First select `volume` or `panorama` in the [dropdown](./02-using-hydrogen/09-sample-editor-playback#chpt.sample_editor.playback_and_envelope_editor.dropdown) to the right.
+2. *Left-clicking* in the Envelope Editor will add a point to the selected envelope or allows you to *drag* an existing one.
+3. *Right-clicking* will delete a point.
+4. Hit [Apply Changes](./02-using-hydrogen/09-sample-editor-playback#chpt.sample_editor.playback_and_envelope_editor.apply_changes) to make your changes take effect.

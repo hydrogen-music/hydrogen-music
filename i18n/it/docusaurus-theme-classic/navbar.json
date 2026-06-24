@@ -1,0 +1,42 @@
+{
+  "title": {
+    "message": "Hydrogen",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Logo Hydrogen",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Docs": {
+    "message": "Documentazione",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Features": {
+    "message": "Funzionalità",
+    "description": "Navbar item with label Features"
+  },
+  "item.label.Downloads": {
+    "message": "Download",
+    "description": "Navbar item with label Downloads"
+  },
+  "item.label.FAQ": {
+    "message": "FAQ",
+    "description": "Navbar item with label FAQ"
+  },
+  "item.label.Screenshots": {
+    "message": "Screenshot",
+    "description": "Navbar item with label Screenshots"
+  },
+  "item.label.Dev Zone": {
+    "message": "Zona Sviluppatori",
+    "description": "Navbar item with label Dev Zone"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

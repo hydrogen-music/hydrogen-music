@@ -22,7 +22,24 @@ const config: Config = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'fr', 'it'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        htmlLang: 'en-US',
+        direction: 'ltr',
+      },
+      fr: {
+        label: 'Français',
+        htmlLang: 'fr-FR',
+        direction: 'ltr',
+      },
+      it: {
+        label: 'Italiano',
+        htmlLang: 'it-IT',
+        direction: 'ltr',
+      },
+    },
   },
 
   presets: [
@@ -76,6 +93,15 @@ const config: Config = {
         {to: '/faq', label: 'FAQ', position: 'left'},
         {to: '/screenshots', label: 'Screenshots', position: 'left'},
         {to: '/devzone', label: 'Dev Zone', position: 'left'},
+        {
+          type: 'docsVersionDropdown',
+          position: 'right',
+          dropdownActiveClassDisabled: true,
+        },
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
         {
           type: 'html',
           position: 'right',

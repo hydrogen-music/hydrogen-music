@@ -1,0 +1,62 @@
+{
+  "version.label": {
+    "message": "v1.2",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.Manual": {
+    "message": "Manuel",
+    "description": "The label for category 'Manual' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.getting-started": {
+    "message": "Démarrage",
+    "description": "The label for category 'getting-started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.using-hydrogen": {
+    "message": "Utiliser Hydrogen",
+    "description": "The label for category 'using-hydrogen' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.overview": {
+    "message": "Aperçu",
+    "description": "The label for category 'overview' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.preferences": {
+    "message": "Préférences",
+    "description": "The label for category 'preferences' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.main-menu": {
+    "message": "Menu principal",
+    "description": "The label for category 'main-menu' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.main-toolbar": {
+    "message": "Barre d'outils",
+    "description": "The label for category 'main-toolbar' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.song-editor": {
+    "message": "Éditeur de morceau",
+    "description": "The label for category 'song-editor' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.pattern-editor": {
+    "message": "Éditeur de pattern",
+    "description": "The label for category 'pattern-editor' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mixer": {
+    "message": "Mixeur",
+    "description": "The label for category 'mixer' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.midi": {
+    "message": "MIDI",
+    "description": "The label for category 'midi' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.examples": {
+    "message": "Exemples",
+    "description": "The label for category 'examples' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.reference": {
+    "message": "Référence",
+    "description": "The label for category 'reference' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Tutorial": {
+    "message": "Tutoriel",
+    "description": "The label for category 'Tutorial' in sidebar 'docsSidebar'"
+  }
+}

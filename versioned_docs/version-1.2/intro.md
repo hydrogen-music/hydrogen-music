@@ -9,4 +9,4 @@ Welcome to the Hydrogen documentation.
 
 ## Architecture Decision Records
 
-The [ADR folder](../adr) documents the technical decisions made during the website migration.
+The [ADR folder](./adr/001-framework-docusaurus.md) documents the technical decisions made during the website migration.
