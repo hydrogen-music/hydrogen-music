@@ -1,0 +1,9 @@
+release:
+  label: Release
+  permalink: /release
+  description: Hydrogen release announcements
+
+update:
+  label: Update
+  permalink: /update
+  description: Project updates and milestones

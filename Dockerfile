@@ -1,23 +1,24 @@
-#syntax=docker/dockerfile:1
-FROM ruby:2.7.8-slim-bullseye
-
-MAINTAINER theGreatWhiteShark <princess.trudildis@posteo.de>
-
+# Build stage
+FROM node:22-alpine AS build
 WORKDIR /app
-ADD . /app
+COPY package.json pnpm-lock.yaml .npmrc ./
+RUN npm install -g pnpm@11.9.0
+RUN pnpm install --frozen-lockfile --config.allow-builds="*"
+COPY . .
+RUN pnpm build
 
-RUN apt-get update
-RUN apt-get install -y make gcc g++
+# Development serve stage (for local dev)
+FROM node:22-alpine AS dev
+WORKDIR /app
+RUN npm install -g pnpm@11.9.0
+COPY package.json pnpm-lock.yaml .npmrc ./
+RUN pnpm install --config.allow-builds="*"
+COPY . .
+EXPOSE 3000
+CMD ["pnpm", "start"]
 
-RUN gem install commonmarker -v '0.17.11'
-
-# Update bundler
-RUN bundle update --bundler
-
-## Install dependencies
-RUN bundle install
-
-## Forward port
-EXPOSE 4000
-
-CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0"]
+# Production serve stage
+FROM nginx:alpine AS production
+COPY --from=build /app/build /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

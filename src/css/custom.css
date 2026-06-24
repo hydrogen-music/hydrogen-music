@@ -1,0 +1,43 @@
+/**
+ * Hydrogen Music — Custom CSS overrides for Docusaurus/Infima
+ * Brand color: #2f71a2 (blue)
+ */
+
+:root {
+  --ifm-color-primary: #2f71a2;
+  --ifm-color-primary-dark: #296491;
+  --ifm-color-primary-darker: #265e89;
+  --ifm-color-primary-darkest: #1f4c6f;
+  --ifm-color-primary-light: #357fb3;
+  --ifm-color-primary-lighter: #3885bb;
+  --ifm-color-primary-lightest: #4a93c6;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Dark mode palette */
+[data-theme='dark'] {
+  --ifm-color-primary: #5ba3d5;
+  --ifm-color-primary-dark: #4b95c4;
+  --ifm-color-primary-darker: #458dbb;
+  --ifm-color-primary-darkest: #3975a0;
+  --ifm-color-primary-light: #6bb1de;
+  --ifm-color-primary-lighter: #71b7e7;
+  --ifm-color-primary-lightest: #8fc4ef;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Logo sizing */
+.navbar__brand .navbar__logo src {
+  height: 32px;
+}
+
+/* Custom link styling for external links */
+a[href^="http"] {
+  text-decoration: none;
+}
+
+a[href^="http"]:hover {
+  text-decoration: underline;
+}
