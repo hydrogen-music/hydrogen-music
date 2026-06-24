@@ -98,5 +98,4 @@ Use **Docusaurus v3** as the static site framework.
 - [Docusaurus Docs](https://docusaurus.io/)
 - [Docusaurus i18n](https://docusaurus.io/docs/i18n/introduction)
 - [Docusaurus Versioning](https://docusaurus.io/docs/versioning)
-- [Current Jekyll setup](../_config.yml)
-- [Current Dockerfile](../Dockerfile)
+- [Current Dockerfile](https://github.com/hydrogen-music/hydrogen-music/blob/main/Dockerfile)

@@ -77,6 +77,6 @@ services:
 ## References
 - [Node Docker official image](https://hub.docker.com/_/node)
 - [Nginx Docker official image](https://hub.docker.com/_/nginx)
-- [Current Dockerfile](../Dockerfile)
+- [Current Dockerfile](https://github.com/hydrogen-music/hydrogen-music/blob/main/Dockerfile)
 - ADR-001 (Framework choice)
 - ADR-002 (Package manager)

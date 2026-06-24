@@ -72,6 +72,6 @@ pnpm run export-standalone --version=1.2 --lang=it --output=standalone/manual_it
 - **Build pipeline:** CI must run `pnpm build` then `pnpm run export-standalone` before committing standalone output. Or standalone is generated at release time.
 
 ## References
-- [Current CMakeLists.txt](../extern/documentation/CMakeLists.txt)
+- [Current CMakeLists.txt](https://github.com/hydrogen-music/hydrogen-music/tree/main/extern/documentation/CMakeLists.txt)
 - ADR-001 (Framework choice)
 - ADR-005 (Versioning strategy)

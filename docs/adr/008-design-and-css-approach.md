@@ -75,6 +75,5 @@ src/
 ## References
 - [Docusaurus Theme](https://docusaurus.io/docs/styling-layout)
 - [Docusaurus CSS Custom Properties](https://docusaurus.io/docs/styling-layout#css-custom-properties)
-- [Current CSS](../css/main.scss)
-- [DocBook CSS](../extern/documentation/res/docbook.css)
+- [DocBook CSS](https://github.com/hydrogen-music/hydrogen-music/tree/main/extern/documentation/res/docbook.css)
 - ADR-001 (Framework choice)

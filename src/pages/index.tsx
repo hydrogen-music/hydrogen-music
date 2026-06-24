@@ -22,7 +22,7 @@ export default function Home(): ReactNode {
             </Link>
             <Link
               className="button button--secondary button--lg margin-hr--sm"
-              to="/docs">
+               to="/docs/intro">
               Documentation
             </Link>
             <Link

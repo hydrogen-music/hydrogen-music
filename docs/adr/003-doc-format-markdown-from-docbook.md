@@ -44,5 +44,5 @@ Convert all DocBook XML documentation to **Markdown (with MDX for advanced featu
 ## References
 - [DocBook to Markdown conversion](https://www.oxygenxml.com/doc/ug-oxygen/topics/converting-docbook-to-markdown.html)
 - [Docusaurus MDX](https://docusaurus.io/docs/markdown-features/mdx)
-- [Current DocBook README](../extern/documentation/README.md)
+- [Current DocBook README](https://github.com/hydrogen-music/hydrogen-music/tree/main/extern/documentation/README.md)
 - ADR-001 (Framework choice)
