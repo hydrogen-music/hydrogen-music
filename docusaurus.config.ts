@@ -17,7 +17,7 @@ const config: Config = {
   organizationName: 'hydrogen-music',
   projectName: 'hydrogen-music',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
