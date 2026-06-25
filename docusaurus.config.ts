@@ -20,6 +20,12 @@ const config: Config = {
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
+  markdown: {
+    hooks: {
+      onBrokenMarkdownImages: 'ignore',
+    },
+  },
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'fr', 'it'],
