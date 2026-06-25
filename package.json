@@ -20,7 +20,11 @@
     "@docusaurus/preset-classic": "^3.10.1"
   },
   "browserslist": {
-    "production": [">0.5%", "not dead", "not op_mini all"],
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
@@ -30,5 +34,8 @@
   "engines": {
     "node": ">=22.13"
   },
-  "packageManager": "pnpm@11.9.0"
+  "packageManager": "pnpm@11.9.0",
+  "dependencies": {
+    "@easyops-cn/docusaurus-search-local": "^0.55.2"
+  }
 }
