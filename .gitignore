@@ -2,7 +2,7 @@
 /build/
 /.docusaurus/
 /standalone/
-/pnpm-store/
+/.pnpm-store/
 /nbproject/private/
 
 *~
