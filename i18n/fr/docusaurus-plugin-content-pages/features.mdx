@@ -1,0 +1,46 @@
+---
+slug: /features
+title: Fonctionnalités
+---
+
+import FeatureCard from '@site/src/components/FeatureCard';
+
+# Fonctionnalités
+
+<div className="features-grid">
+
+<FeatureCard title="Général" icon="🎵">
+  - Interface graphique très intuitive, modulaire, rapide et conviviale, basée sur Qt.
+  - Moteur audio stéréo basé sur les échantillons, avec importation de sons au formats .wav, .au et .aiff.
+  - Support des échantillons dans des fichiers FLAC compressés.
+</FeatureCard>
+
+<FeatureCard title="Séquenceur et Mixeur" icon="🎛️">
+  - Séquenceur basé sur des patterns, avec un nombre illimité de patterns et la possibilité de les enchaîner en une chanson.
+  - Jusqu'à 192 ticks par pattern avec niveau individuel par événement et longueur de pattern variable.
+  - Pistes d'instruments illimitées avec contrôle du volume, mute, solo et panoramique.
+  - Support multi-couches pour les instruments (jusqu'à 16 échantillons par instrument).
+  - Éditeur d'échantillons avec fonctions de base de découpage et de boucle.
+  - Fonctions d'étirement temporel et de changement de hauteur via rubberband-cli.
+  - Listes de lecture avec fonction de script.
+  - Tab-tempo avancé.
+  - Fenêtre de direction avec métronome visuel et balises de position dans la chanson.
+  - Chronologie avec tempo variable.
+  - Mode pattern simple et empilé.
+  - Export/Import de patterns individuels dans les projets de chanson.
+  - Apprentissage MIDI via Shift+Clic sur de nombreux contrôles de l'interface, combiné à un éditeur de paramètres MIDI.
+  - Possibilité d'importer/exporter des fichiers de chanson.
+  - Fonctions uniques d'humanisation de la vélocité, du temps, de la hauteur et du swing.
+  - Lecture simultanée de plusieurs patterns.
+</FeatureCard>
+
+<FeatureCard title="Audio et MIDI" icon="🎧">
+  - Pilotes audio JACK, ALSA, PortAudio et OSS.
+  - Entrée JACK MIDI, ALSA MIDI et PortMidi avec canal MIDI entrant assignable (1..16, TOUS).
+  - Import/export de drumkits.
+  - Export de la chanson au format wav, aiff, flac ou ogg.
+  - Export de la chanson en fichier MIDI.
+  - Export de la chanson en fichier LilyPond.
+</FeatureCard>
+
+</div>

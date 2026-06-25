@@ -1,0 +1,46 @@
+---
+slug: /features
+title: Caratteristiche
+---
+
+import FeatureCard from '@site/src/components/FeatureCard';
+
+# Caratteristiche
+
+<div className="features-grid">
+
+<FeatureCard title="Generale" icon="🎵">
+  - Interfaccia grafica molto intuitiva, modulare, veloce e basata su Qt.
+  - Motore audio stereo basato su campioni, con importazione di campionamenti nei formati .wav, .au e .aiff.
+  - Supporto per campioni in file FLAC compressi.
+</FeatureCard>
+
+<FeatureCard title="Sequencer e Mixer" icon="🎛️">
+  - Sequencer basato su pattern, con numero illimitato di pattern e possibilità di concatenarli in una canzone.
+  - Fino a 192 tick per pattern con livello individuale per ogni evento e lunghezza variabile del pattern.
+  - Tracce strumento illimitate con controllo del volume, mute, solo e pan.
+  - Supporto multistrato per gli strumenti (fino a 16 campioni per ogni strumento).
+  - Editor Campioni, con funzioni base di taglio e loop.
+  - Funzioni di time-stretch e pitch tramite rubberband-cli.
+  - Playlist con funzione di scripting.
+  - Tap-tempo avanzato.
+  - Finestra Regia con metronomo visivo e tag di posizione nella canzone.
+  - Timeline con tempo variabile.
+  - Modalità pattern singolo e sovrapposto.
+  - Esportazione/Importazione di singoli pattern nei progetti canzone.
+  - Apprendimento MIDI tramite Shift+Click del mouse su molti controller GUI combinato con un editor delle impostazioni MIDI.
+  - Possibilità di importare/esportare file canzone.
+  - Funzioni uniche di velocità umana, tempo umano, pitch e swing.
+  - Più pattern riprodotti contemporaneamente.
+</FeatureCard>
+
+<FeatureCard title="Audio e MIDI" icon="🎧">
+  - Driver audio JACK, ALSA, PortAudio e OSS.
+  - Input JACK MIDI, ALSA MIDI e PortMidi con canale MIDI-in assegnabile (1..16, TUTTI).
+  - Importazione/esportazione di drumkit.
+  - Esportazione canzone in file wav, aiff, flac o ogg.
+  - Esportazione canzone in file MIDI.
+  - Esportazione canzone in file LilyPond.
+</FeatureCard>
+
+</div>

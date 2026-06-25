@@ -1,0 +1,253 @@
+---
+slug: /faq
+title: FAQ
+---
+
+Cette page répertorie un certain nombre de questions fréquemment posées et leurs réponses.
+
+Pour plus d'informations sur l'utilisation d'Hydrogen, veuillez lire le manuel et consulter les vidéos tutorielles (les deux sont disponibles sous l'onglet Documentation).
+
+Si vous ne trouvez pas de réponse à votre question dans la FAQ, le manuel ou les vidéos, n'hésitez pas à poser votre question via [Github](https://github.com/hydrogen-music/hydrogen-music/issues) ou sur notre [liste de diffusion](https://sourceforge.net/projects/hydrogen/lists/hydrogen-devel).
+
+# Questions fréquemment posées
+
+[Comment installer un nouveau drumkit ?](#comment-installer-un-nouveau-drumkit)
+
+[J'utilise Windows et je ne peux pas installer un nouveau drumkit, pourquoi ?](#jutilise-windows-et-je-ne-peux-pas-installer-un-nouveau-drumkit-pourquoi)
+
+[Pourquoi Hydrogen mute-t-il automatiquement les instruments lorsque les échantillons manquent ?](#pourquoi-hydrogen-mute-t-il-automatiquement-les-instruments-lorsque-les-echantillons-manquent)
+
+[J'ai connecté mon périphérique MIDI à Hydrogen mais je n'entends rien. Quel est le problème ?](#jai-connecte-mon-peripherique-midi-a-hydrogen-mais-jentends-rien-quel-est-le-probleme)
+
+[Puis-je changer le tempo en plein milieu d'une chanson ?](#peux-je-changer-le-tempo-en-plein-milieu-dune-chanson)
+
+[Comment faire taire un son ? (par exemple une paire de charierts)](#comment-faire-taire-un-son-par-exemple-une-paire-de-charierts)
+
+[Les pads de mon périphérique MIDI ne correspondent pas aux bons sons, comment puis-je corriger cela ?](#les-pads-de-mon-peripherique-midi-ne-correspondent-pas-aux-bons-sons-comment-puis-je-corriger-cela)
+
+[Puis-je vendre des chansons (en ligne) que j'ai créées avec Hydrogen ?](#puis-je-vendre-des-chansons-en-ligne-que-jai-creees-avec-hydrogen)
+
+[Existe-t-il un générateur de patterns dans Hydrogen ? (qui puisse créer un pattern hip-hop, valse, rock …)](#existe-t-il-un-generateur-de-patterns-dans-hydrogen-qui-puisse-creer-un-pattern-hip-hop-valse-rock-)
+
+[Comment couper/copier/déplacer/supprimer une partie d'une chanson ?](#comment-coupercopierdeplacer-supprimer-une-partie-dune-chanson)
+
+[Comment créer / modifier / importer / exporter un drumkit ?](#comment-creer--modifier--importer--exporter-un-drumkit)
+
+[Comment installer Hydrogen sur mon Mac ?](#comment-installer-hydrogen-sur-mon-mac)
+
+[Les changements de tempo sont perdus lorsque j'exporte une chanson, pourquoi ?](#les-changements-de-tempo-sont-perdus-lorsque-jexporte-une-chanson-pourquoi)
+
+[Quand H2 sera-t-il disponible en tant que plugin LV2 ?](#quand-h2-sera-t-il-disponible-en-tant-que-plugin-lv2)
+
+[Pourquoi Hydrogen mute-t-il automatiquement les instruments lorsque les échantillons manquent ?](#pourquoi-hydrogen-mute-t-il-automatiquement-les-instruments-lorsque-les-echantillons-manquent)
+
+[J'ai copié ma chanson sur un autre ordinateur et il n'y a aucun son, pourquoi ?](#jai-copie-ma-chanson-sur-un-autre-ordinateur-et-il-ny-a-aucun-son-pourquoi)
+
+[Windows 8 : mon menu clic droit n'apparaît pas !](#windows-8-mon-menu-clic-droit-napparait-pas)
+
+[Comment puis-je partager mon drumkit H2 ?](#comment-puis-je-partager-mon-drumkit-h2)
+
+[Pourquoi ne puis-je pas construire Hydrogen avec un environnement Anaconda actif ?](#pourquoi-ne-puis-je-pas-construire-hydrogen-avec-un-environnement-anaconda-actif)
+
+---
+
+# Comment installer un nouveau drumkit ?
+
+**Réponse** : Vous pouvez télécharger des drumkits via le gestionnaire de bibliothèques sonores ou manuellement. Le gestionnaire de bibliothèques sonores est accessible via le menu « Instrument ». Après avoir choisi « Importer la bibliothèque sonore », vous pouvez mettre à jour la liste des serveurs et installer votre drumkit préféré. Si vous avez déjà téléchargé un fichier .h2drumkit, vous pouvez également l'installer via la boîte de dialogue de la bibliothèque sonore. Passez à l'onglet « Fichier local » puis choisissez le fichier souhaité.
+
+[Haut](#questions-frequemment-posees)
+
+---
+
+# J'utilise Windows et je ne peux pas installer un nouveau drumkit, pourquoi ?
+
+**Réponse** : Vérifiez quelle version vous avez installée. L'installation de drumkits via cette procédure ne fonctionne pas sous la version 0.9.4. Vous devriez mettre à jour vers la version la plus récente (0.9.5 ou supérieur). Téléchargez votre installateur sur la page de téléchargement.
+
+[Haut](#questions-frequemment-posees)
+
+---
+
+# J'ai connecté mon périphérique MIDI à Hydrogen mais je n'entends rien. Quel est le problème ?
+
+**Réponse** : Vérifiez d'abord si le MIDI de votre drumkit atteint Hydrogen : à chaque fois que vous appuyez sur une touche de votre contrôleur, la LED « MIDI-IN » dans Hydrogen devrait s'allumer. Si ce n'est pas le cas, il y a probablement un problème avec votre routage MIDI. Vérifiez vos routages Jack-MIDI, ou si vous n'utilisez pas Jack, vérifiez si vous avez sélectionné le bon pilote MIDI, l'entrée (votre contrôleur) et le canal. Ces paramètres peuvent être modifiés via Outils - Préférences - onglet « Système MIDI ». Pour commencer, il est préférable de régler le canal sur « Tous ».
+
+Gardez à l'esprit qu'Hydrogen utilise un mappage MIDI fixe (plus d'informations dans le manuel) ; si votre contrôleur envoie une note qui ne correspond à aucun instrument de votre drumkit, vous n'entendrez rien. Vous pouvez utiliser un outil comme KMidimon pour vérifier les messages MIDI provenant de votre contrôleur. Si les notes ne correspondent pas, vous devrez modifier le mappage MIDI sur votre contrôleur pour qu'il corresponde au mappage d'Hydrogen.
+
+[Haut](#questions-frequemment-posees)
+
+---
+
+# Puis-je changer le tempo en plein milieu d'une chanson ?
+
+**Réponse** : Oui, c'est possible : cliquez sur le bouton « BPM » (juste en dessous des boutons de transport) et la chronologie BPM à côté de ce bouton sera activée. Vous pouvez maintenant ajouter un « marqueur BPM » en cliquant sur la chronologie BPM à l'endroit où vous souhaitez que le tempo change. Entrez le nouveau tempo dans la boîte de dialogue et cliquez sur OK. Vous pouvez modifier le marqueur BPM en cliquant à nouveau dessus.
+
+[Haut](#questions-frequemment-posees)
+
+---
+
+# Comment faire taire un son ? (par exemple une paire de charierts)
+
+**Réponse** : Utilisez un « groupe de muette » pour cela. Sous l'onglet Général de l'éditeur d'instrument, vous pouvez définir le groupe de muette auquel appartient l'instrument. Si deux instruments ou plus appartiennent au même groupe de muette, ils se feront taire mutuellement. Ainsi, si le son de charière ouverte a été déclenché, il sera tué dès que le son de charière fermée sera déclenché.
+
+[Haut](#questions-frequemment-posees)
+
+---
+
+# Les pads de mon périphérique MIDI ne correspondent pas aux bons sons, comment puis-je corriger cela ?
+
+**Réponse** : Hydrogen utilise un mappage d'entrée MIDI fixe. Vous pouvez cependant réorganiser le mappage en faisant simplement glisser un instrument de votre drumkit vers le haut ou vers le bas dans la liste du drumkit. La position de l'instrument dans la liste détermine la note MIDI à laquelle ce son est mappé : position 1 = note 36, position 2 = 37, etc.
+
+[Haut](#questions-frequemment-posees)
+
+---
+
+# Puis-je vendre des chansons (en ligne) que j'ai créées avec Hydrogen ?
+
+**Réponse** : Hydrogen et les bibliothèques sonores principales h2 (que vous pouvez télécharger depuis le serveur Sourceforge) sont sous licence GPL2/GPL/CC. Cela signifie que vous pouvez les utiliser gratuitement dans vos propres travaux et vendre la musique que vous avez créée avec. Si vous utilisez d'autres bibliothèques sonores (commerciales ou « trouvées » quelque part sur le web), vous _devez_ lire attentivement l'accord de licence avant de les utiliser dans une chanson que vous souhaitez vendre.
+
+[Haut](#questions-frequemment-posees)
+
+---
+
+# Existe-t-il un générateur de patterns dans Hydrogen ? (qui puisse créer un pattern hip-hop, valse, rock …)
+
+**Réponse** : Non, Hydrogen ne dispose pas d'une telle fonctionnalité, mais vous pouvez facilement importer des patterns existants via Projet > Ouvrir un pattern. Si vous cherchez sur le forum, vous pourriez tomber sur des personnes qui ont créé des patterns et les ont mis à disposition sur leur propre site.
+
+[Haut](#questions-frequemment-posees)
+
+---
+
+# Comment couper/copier/déplacer/supprimer une partie d'une chanson ?
+
+**Réponse** : Assurez-vous d'abord d'avoir activé le « Mode sélection » :
+
++ Supprimer : sélectionnez la zone de la chanson que vous souhaitez supprimer et appuyez sur la touche Supprimer
++ Déplacer : sélectionnez la zone de la chanson que vous souhaitez déplacer et faites-la simplement glisser vers son nouvel emplacement
++ Copier : sélectionnez la zone de la chanson que vous souhaitez déplacer et faites-la glisser avec Ctrl vers son nouvel emplacement
++ Couper : il n'existe pas de véritable option de coupe (comme Ctrl-X). Utilisez plutôt l'action Déplacer/Copier
+
+[Haut](#questions-frequemment-posees)
+
+---
+
+# Comment créer / modifier / importer / exporter un drumkit ?
+
+**Réponse** : Toutes ces questions sont abordées dans le tutoriel n°5 sur la page Vidéos.
+
+[Haut](#questions-frequemment-posees)
+
+---
+
+# Comment installer Hydrogen sur mon Mac ?
+
+**Réponse** : Vous pouvez télécharger l'installateur Mac (fichier .dmg) depuis la page de téléchargement. Pour plus d'informations sur l'installation d'un fichier .dmg, consultez [cette page](http://www.ofzenandcomputing.com/how-to-install-dmg-files-mac/).
+
+[Haut](#questions-frequemment-posees)
+
+---
+
+# Les changements de tempo sont perdus lorsque j'exporte une chanson, pourquoi ?
+
+**Réponse** : Il s'agit d'une limitation connue dans les premières versions bêta Hydrogen V0.9.6 (et antérieures). Le problème a été corrigé dans le code (dans notre dépôt GIT) et sera donc disponible dans la prochaine version (la 0.9.6 officielle). La solution temporaire consiste à enregistrer la sortie d'Hydrogen à l'aide d'une application d'enregistrement audio comme Ardour, Qtractor, etc.
+
+[Haut](#questions-frequemment-posees)
+
+---
+
+# Quand H2 sera-t-il disponible en tant que plugin LV2 ?
+
+**Réponse** : Actuellement, il n'est pas prévu de créer une version LV2 d'Hydrogen. D'autres projets travaillent cependant dans ce sens : [Composite](http://riggable.com/composite/) et (le plus récent) [DrMr](https://github.com/nicklan/drmr).
+
+[Haut](#questions-frequemment-posees)
+
+---
+
+# Pourquoi Hydrogen mute-t-il automatiquement les instruments lorsque les échantillons manquent ?
+
+**Réponse** : Hydrogen met automatiquement en sourdine les instruments dont il ne trouve pas l'échantillon (ou les échantillons). Cela signifie généralement que le drumkit (alias bibliothèque sonore) n'est pas chargé ou n'a pas pu être trouvé. Si le drumkit utilisé est un drumkit standard, vous devez vérifier s'il est installé et le télécharger si ce n'est pas le cas (consultez cette partie du manuel pour plus d'informations). Une fois installé, rechargez-le et tout devrait fonctionner correctement.
+
+[Haut](#questions-frequemment-posees)
+
+---
+
+# J'ai copié ma chanson sur un autre ordinateur et il n'y a aucun son, pourquoi ?
+
+**Réponse** : Tout d'abord, sachez qu'Hydrogen a besoin de deux choses pour pouvoir jouer une chanson : la chanson (fichier .h2song) et les échantillons pour chaque instrument. Ces échantillons sont regroupés dans un drumkit (alias bibliothèque sonore).
+
+Le fichier de chanson et le drumkit sont deux choses totalement indépendantes !
+
+Si les sons ne sont pas disponibles pour Hydrogen, il mettra ces instruments en sourdine (voir également la question précédente de cette FAQ). Donc, si vous souhaitez copier une chanson de l'ordinateur PC1 vers PC2, voici la meilleure façon de procéder :
+
+A) Vous utilisez les drumkits standards livrés avec Hydrogen :
+
+Assurez-vous que le drumkit que vous utilisez pour votre chanson sur PC1 est également disponible sur PC2. Utilisez la fonction de téléchargement de drumkit pour l'installer sur PC2 si nécessaire (consultez cette partie du manuel pour plus d'informations).
+
+B) Vous utilisez un drumkit « personnalisé » pour votre chanson (c'est-à-dire un drumkit que vous avez créé à partir de vos propres échantillons, ou en utilisant des échantillons d'autres drumkits) :
+
+Sur PC1 :
+
++ enregistrez votre drumkit sur PC1 sous un nouveau nom (Instrument > Enregistrer la bibliothèque)
++ votre nouveau drumkit sera maintenant disponible dans la bibliothèque sonore sur PC1
++ (avec votre chanson toujours ouverte) chargez le drumkit que vous venez de sauvegarder (dans la bibliothèque sonore, faites un clic droit sur le drumkit et appuyez sur « charger »)
++ sauvegardez la chanson
++ exportez le drumkit (Instrument > Exporter la bibliothèque)
++ une fois tout cela fait, vous aurez deux fichiers : la chanson (.h2song) et le drumkit que vous venez d'exporter
+
+Sur PC2 :
+
++ copiez les deux fichiers vers PC2
++ importez le drumkit (Instrument > Importer la bibliothèque), le drumkit est maintenant disponible dans la bibliothèque sonore de PC2
++ ouvrez la chanson
++ chargez le drumkit que vous utilisez pour cette chanson (dans la bibliothèque sonore, faites un clic droit sur le drumkit et appuyez sur « charger »)
++ sauvegardez la chanson
++ c'est terminé
+
+[Haut](#questions-frequemment-posees)
+
+---
+
+# Windows 8 : mon menu clic droit n'apparaît pas !
+
+**Réponse** : Exécutez Hydrogen en mode de compatibilité Windows 7.
+
+[Haut](#questions-frequemment-posees)
+
+---
+
+# Comment puis-je partager mon drumkit H2 ?
+
+**Réponse** : Si vous avez créé votre propre drumkit Hydrogen à partir de vos propres fichiers échantillons, vous voudrez peut-être le partager avec la communauté Hydrogen.
+
+La première étape consiste à vérifier correctement les métadonnées de votre drumkit. Contient-il une description appropriée ? Tous les autres champs sont-ils à jour ?
+Comme vous souhaitez publier votre drumkit auprès d'un large public, vous devez choisir une licence pour votre kit.
+
+L'étape suivante est la publication du drumkit lui-même. Nous recommandons de créer un projet sur l'une des plateformes d'hébergement open source comme GitHub. Selon la licence choisie, cela permet à d'autres personnes de collaborer sur votre drumkit. Le dépôt doit contenir le contenu de votre fichier h2drumkit (échantillons et drumkit.xml) et non le fichier h2drumkit lui-même. Si vous ne savez pas comment configurer un tel dépôt ou si vous souhaitez simplement publier votre fichier h2drumkit, vous pouvez sauter cette étape et télécharger votre fichier h2drumkit sur un service d'hébergement de fichiers de votre choix. Si votre drumkit est sous licence GPL (ou une licence compatible), il est possible que nous puissions héberger le drumkit pour vous.
+
+À ce stade, vous pouvez envoyer un e-mail à notre liste de diffusion de développement si vous pensez que votre drumkit devrait être répertorié dans la liste en ligne des drumkits d'Hydrogen, ou publier un lien vers votre fichier h2drumkit sur notre forum.
+
+[Haut](#questions-frequemment-posees)
+
+---
+
+# Pourquoi ne puis-je pas construire Hydrogen avec un environnement Anaconda actif ?
+
+**Réponse** : Lors de l'installation d'Anaconda sur votre ordinateur, vous devez ajouter un chemin pointant vers ses binaires installés à votre variable _PATH_. Les exécutables situés à cet emplacement ne sont pas liés aux objets partagés et aux en-têtes fournis par votre système, mais à ceux qu'**conda** a installés lui-même. En général, les binaires de votre système et ceux d'Anaconda peuvent coexister harmonieusement. Mais lors de la construction de packages à l'aide de **cmake**, comme Hydrogen, des conflits peuvent survenir. L'un d'eux se produit lors de l'installation de Qt5 ou d'un package qui en dépend via Anaconda. En effet, les scripts cmake recherchent exclusivement les bibliothèques dans les fichiers de votre système et ignorent ceux installés via conda. Plutôt que de rendre ces derniers disponibles pour cmake, il est généralement préférable de disposer d'une variable globale séparée contenant le chemin de recherche sans aucune référence à Anaconda et de l'utiliser lors du processus de compilation.
+
+Dans votre fichier **.bashrc**, préparez une deuxième variable juste avant d'ajouter Anaconda à votre chemin de recherche :
+
+```bash
+export NOCONDA_PATH=$PATH
+export PATH=$HOME/anaconda3/bin:$PATH
+```
+
+Maintenant, chaque fois que vous souhaitez compiler Hydrogen depuis les sources, utilisez ces commandes modifiées à la place :
+
+```bash
+mkdir build && cd build
+export PATH=$NOCONDA_PATH && cmake ..
+make && sudo make install
+```
+
+[Haut](#questions-frequemment-posees)
+
+---
