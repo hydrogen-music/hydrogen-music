@@ -11,7 +11,8 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve --host 0.0.0.0",
     "write-translations": "docusaurus write-translations",
-    "version": "docusaurus docs:version"
+    "version": "docusaurus docs:version",
+    "export-standalone": "node scripts/export-standalone.mjs"
   },
   "devDependencies": {
     "@docusaurus/core": "^3.10.1",

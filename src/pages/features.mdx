@@ -3,38 +3,44 @@ slug: /features
 title: Features
 ---
 
+import FeatureCard from '@site/src/components/FeatureCard';
+
 # Features
 
-## General
+<div className="features-grid">
 
-- Very user-friendly, modular, fast and intuitive graphical interface based on Qt.
-- Sample-based stereo audio engine, with import of sound samples in .wav, .au and .aiff formats.
-- Support of samples in compressed FLAC files.
+<FeatureCard title="General" icon="🎵">
+  - Very user-friendly, modular, fast and intuitive graphical interface based on Qt.
+  - Sample-based stereo audio engine, with import of sound samples in .wav, .au and .aiff formats.
+  - Support of samples in compressed FLAC files.
+</FeatureCard>
 
-## Sequencer and Mixer
+<FeatureCard title="Sequencer and Mixer" icon="🎛️">
+  - Pattern-based sequencer, with unlimited number of patterns and ability to chain patterns into a song.
+  - Up to 192 ticks per pattern with individual level per event and variable pattern length.
+  - Unlimited instrument tracks with volume, mute, solo, pan capabilities.
+  - Multi layer support for instruments (up to 16 samples for each instrument).
+  - Sample Editor, with basic cut and loop functions.
+  - Time-stretch and pitch functions via rubberband-cli.
+  - Play-lists with scripting function.
+  - Advanced tab-tempo.
+  - Director Window with a visual metronome and song position tags.
+  - Time-line with variable tempo.
+  - Single and stacked pattern mode.
+  - Export/Import single patterns into song projects.
+  - MIDI learning via Shift+MouseClick on many GUI controllers combined with a MIDI settings editor.
+  - Ability to import/export song files.
+  - Unique human velocity, human time, pitch and swing functions.
+  - Multiple patterns playing at once.
+</FeatureCard>
 
-- Pattern-based sequencer, with unlimited number of patterns and ability to chain patterns into a song.
-- Up to 192 ticks per pattern with individual level per event and variable pattern length.
-- Unlimited instrument tracks with volume, mute, solo, pan capabilities.
-- Multi layer support for instruments (up to 16 samples for each instrument).
-- Sample Editor, with basic cut and loop functions.
-- Time-stretch and pitch functions via rubberband-cli.
-- Play-lists with scripting function.
-- Advanced tab-tempo.
-- Director Window with a visual metronome and song position tags.
-- Time-line with variable tempo.
-- Single and stacked pattern mode.
-- Export/Import single patterns into song projects.
-- MIDI learning via Shift+MouseClick on many GUI controllers combined with a MIDI settings editor.
-- Ability to import/export song files.
-- Unique human velocity, human time, pitch and swing functions.
-- Multiple patterns playing at once.
+<FeatureCard title="Audio and MIDI" icon="🎧">
+  - JACK, ALSA, PortAudio and OSS audio drivers.
+  - JACK MIDI, ALSA MIDI and PortMidi input with assignable MIDI-in channel (1..16, ALL).
+  - Import/export of drumkits.
+  - Export song to wav, aiff, flac or ogg file.
+  - Export song to MIDI file.
+  - Export song to LilyPond file.
+</FeatureCard>
 
-## Audio and MIDI
-
-- JACK, ALSA, PortAudio and OSS audio drivers.
-- JACK MIDI, ALSA MIDI and PortMidi input with assignable MIDI-in channel (1..16, ALL).
-- Import/export of drumkits.
-- Export song to wav, aiff, flac or ogg file.
-- Export song to MIDI file.
-- Export song to LilyPond file.
+</div>

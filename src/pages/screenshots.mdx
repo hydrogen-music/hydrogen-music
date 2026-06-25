@@ -3,24 +3,15 @@ slug: /screenshots
 title: Screenshots
 ---
 
-## Hydrogen Main Window
+import ScreenshotGallery from '@site/src/components/ScreenshotGallery';
 
-![Hydrogen main window](/screenshots/main-window.png)
+# Screenshots
 
----
-
-## Audio File Browser with Sample Preview
-
-![Audio file browser](/screenshots/audio-filebrowser.png)
-
----
-
-## Sample Editor
-
-![Sample editor](/screenshots/sample-editor.png)
-
----
-
-## Online Soundlibrary Import Interface
-
-![Soundlibrary import](/screenshots/soundlibrary.png)
+<ScreenshotGallery
+  images={[
+    { src: '/screenshots/main-window.png', alt: 'Hydrogen main window', caption: 'Hydrogen Main Window' },
+    { src: '/screenshots/audio-filebrowser.png', alt: 'Audio file browser with sample preview', caption: 'Audio File Browser with Sample Preview' },
+    { src: '/screenshots/sample-editor.png', alt: 'Sample editor', caption: 'Sample Editor' },
+    { src: '/screenshots/soundlibrary.png', alt: 'Online soundlibrary import interface', caption: 'Online Soundlibrary Import Interface' },
+  ]}
+/>

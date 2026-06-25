@@ -1,6 +1,8 @@
-/node_modules/
-/build/
-/.docusaurus/
+ /node_modules/
+ /build/
+ /.docusaurus/
+ /standalone/
+ /pnpm-store/
 /nbproject/private/
 
 *~
