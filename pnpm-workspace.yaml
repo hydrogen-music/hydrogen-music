@@ -1,2 +1,5 @@
 allowBuilds:
+  '@swc/core': false
   core-js: false
+
+verifyDepsBeforeRun: false
