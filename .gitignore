@@ -3,6 +3,7 @@
 /.docusaurus/
 /standalone/
 /.pnpm-store/
+/.npmrc
 /nbproject/private/
 
 *~
