@@ -1,6 +1,9 @@
 {
   "name": "hydrogen-music",
-  "version": "0.0.0",
+  "version": "2.0.0",
+  "homepage": "http://hydrogen-music.org/",
+  "bugs": "https://github.com/hydrogen-music/hydrogen-music/issues",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",

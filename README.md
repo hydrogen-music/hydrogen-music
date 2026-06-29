@@ -65,28 +65,23 @@ The production image uses nginx and is optimized for small size.
 
 ## Documentation
 
-### Converting DocBook to Markdown
-
-The manual and tutorial were originally written in DocBook XML. The conversion script handles the transformation:
-
-```bash
-node scripts/convert-docbook-html.mjs
-```
-
 ### Standalone HTML export
 
-Export documentation as standalone HTML for bundling with the Hydrogen app:
+The standalone HTML version of the documentation bundled and shipped with Hydrogen is exported via the following command:
 
 ```bash
 pnpm run export-standalone --version=1.2 --lang=en --type=manual
 pnpm run export-standalone --version=1.2 --lang=fr --type=tutorial
 ```
 
-Output goes to the `standalone/` directory.
+Output goes to the `standalone/` directory. This one will be moved to
+https://github.com/hydrogen-music/documentation, tagged, and included into
+`hydrogen` as a git submodule.
 
 ## Translations
 
-The site supports English, French, and Italian. To add or update translations:
+Current (partial) translations are available in French and Italian. To add or
+update translations:
 
 1. Static pages: edit files in `i18n/{locale}/docusaurus-plugin-content-pages/`
 2. Documentation: edit files in `i18n/{locale}/docusaurus-plugin-content-docs/current/`
@@ -105,7 +100,3 @@ The site is automatically deployed to GitHub Pages via GitHub Actions when chang
 - Please create a pull request for any changes
 
 The source code of Hydrogen itself is hosted at [GitHub](https://github.com/hydrogen-music/hydrogen).
-
-## License
-
-The Hydrogen website content is licensed under the same terms as the Hydrogen project (GPL v2+).

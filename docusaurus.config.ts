@@ -11,7 +11,7 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://hydrogen-music.org',
+  url: 'http://hydrogen-music.org',
   baseUrl: '/',
 
   organizationName: 'hydrogen-music',
@@ -22,7 +22,7 @@ const config: Config = {
 
   markdown: {
     hooks: {
-      onBrokenMarkdownImages: 'ignore',
+      onBrokenMarkdownImages: 'warn',
     },
   },
 
@@ -167,7 +167,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Hydrogen Music. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Hydrogen Dev Team. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
