@@ -18,11 +18,11 @@ const config: Config = {
   projectName: 'hydrogen-music',
 
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
 
   markdown: {
     hooks: {
       onBrokenMarkdownImages: 'warn',
+      onBrokenMarkdownLinks: 'warn',
     },
   },
 
@@ -136,37 +136,6 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {label: 'Manual', to: '/docs/manual/intro'},
-            {label: 'Tutorial', to: '/docs/tutorial/intro'},
-          ],
-        },
-        {
-          title: 'Project',
-          items: [
-            {label: 'Features', to: '/features'},
-            {label: 'Downloads', to: '/downloads'},
-            {label: 'FAQ', to: '/faq'},
-            {label: 'Screenshots', to: '/screenshots'},
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Forum',
-              href: 'https://github.com/hydrogen-music/hydrogen/discussions',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/hydrogen-music/hydrogen',
-            },
-          ],
-        },
-      ],
       copyright: `Copyright © ${new Date().getFullYear()} Hydrogen Dev Team. Built with Docusaurus.`,
     },
     prism: {
