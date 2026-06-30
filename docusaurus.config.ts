@@ -17,12 +17,12 @@ const config: Config = {
   organizationName: 'hydrogen-music',
   projectName: 'hydrogen-music',
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
 
   markdown: {
     hooks: {
-      onBrokenMarkdownImages: 'warn',
-      onBrokenMarkdownLinks: 'warn',
+      onBrokenMarkdownImages: 'throw',
+      onBrokenMarkdownLinks: 'throw',
     },
   },
 
