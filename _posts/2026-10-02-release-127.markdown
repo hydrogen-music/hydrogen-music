@@ -1,0 +1,43 @@
+---
+layout: post
+title:  "Hydrogen 1.2.7 released"
+date:   2026-10-02 12:00:00 UTC
+
+categories: jekyll update
+---
+
+This patch release contains minor bug fixes, updated translations, and improved forward compatibility for the upcoming 2.0 release.
+
+### Added
+
+- Support for songs and drumkits created with version `0.9.3` (#2193).
+- Linux man pages for the `h2cli` and `h2player` applications have been added.
+- Forward compatibility to version 2.0:
+  - `hydrogen.conf` regarding MIDI input channel values.
+  - `.h2pattern`, in which the `<pitch>` and `<category>` node will be dropped and `<tags>` introduced.
+  - `.h2song`, in which the playback track will be stored as a full-blown instrument and the `<tags>` node introduced.
+  - drumkits, in the `<tags>` node will be introduced.
+- Swedish translation updated by @yeager.
+
+### Changed
+
+- When timeline is activated or tempo is synced to an external application, tempo changes via keyboard shortcuts, MIDI, or OSC commands as well as Beat Counter and Tap Tempo are now discarded.
+- Big update of the `hydrogen` man page.
+- Instead of using the raw font family names of the config file, they are validated first and might trigger a fallback to a safer font. This was done to prevent crashes of `libfontconfig` on Linux (#2343).
+- Default font was changed to "Sans Serif" (#2343).
+
+### Fixed
+
+- OSC endpoint `/Hydrogen/SAVE_PREFERENCES` does now actually save the preferences (instead of the song).
+- Keyboard events for settings values on rotaries and faders are not shadowed by the virtual keyboard anymore.
+- Using bpm, beat counter, and tap tempo MIDI actions or OSC commands while timeline is activate does no longer result in countless popups.
+- Pattern loading and deleting via the Sound Library has been fixed.
+- Online drumkit download from SourceForge when compiled with Qt6 (none of our release artifacts).
+- Segfault on Port-MIDI host error by @rrrapha.
+- Fixed linker error on OpenBSD by @rrrapha.
+- Fixed performance issue when using JACK audio with rubberband.
+- Parameter loss in the MIDI table within the preferences (#2328).
+- Fixed XDG app ID by @City-busz.
+- Rubberband support compiled into Hydrogen is no longer deactivated in case the rubberband CLI is not installed on the system.
+
+Source code and binary releases can be found as usual on [GitHub](https://github.com/hydrogen-music/hydrogen/releases/tag/1.2.7).
